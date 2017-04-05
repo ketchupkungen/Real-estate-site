@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 
 @NgModule({
   imports:[ 
@@ -13,7 +14,8 @@ import { HeaderComponent } from './header.component';
   ],
   declarations: [ 
   	AppComponent,
-  	HeaderComponent 
+  	HeaderComponent,
+  	FooterComponent
   ],
   bootstrap:    [ AppComponent ]
 })
