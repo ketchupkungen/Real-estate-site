@@ -1,7 +1,7 @@
 {
 	"name": "Dhyr & Rumson",
 	"contact": {
-		"phone": 040-27301,
+		"phone": "040-27301",
 		"mail": {
 			"hq": "hq@dhyrorumson.se",
 			"support": "support@dhyrorumson.se"
@@ -17,7 +17,7 @@
 			"first-name":"Kalle", //two way relation with objects?
 			"last-name":"Bengtsson", //egen databas till sellers?
 			"contact": {
-				"phone": 070-2730125,
+				"phone": "070-2730125",
 				"mail": "KalleB@dhyrorumson.se"
 			}
 		},
@@ -25,7 +25,7 @@
 			"first-name":"Mango",
 			"last-name":"Lugosson",
 			"contact": {
-				"phone": 070-1140524,
+				"phone": "070-1140524",
 				"mail": "MangoL@dhyrorumson.se"
 			}
 		},
@@ -33,7 +33,7 @@
 			"first-name":"Erika",
 			"last-name":"Östrand",
 			"contact": {
-				"phone": 070-2201148,
+				"phone": "070-2201148",
 				"mail": "ErikaÖ@dhyrorumson.se"
 			}
 		}
