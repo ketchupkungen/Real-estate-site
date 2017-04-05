@@ -4,4 +4,11 @@ import { Component } from '@angular/core';
   selector: 'header',
   templateUrl: 'templates/header.html',
 })
-export class HeaderComponent {  }
+export class HeaderComponent { 
+	logo = 'Dhyr & Rumson';
+	menuChoices = [
+		'Sälja',
+		'Köpa',
+		'Kontakt'
+	];
+}
