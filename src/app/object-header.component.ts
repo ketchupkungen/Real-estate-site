@@ -4,4 +4,16 @@ import { Component } from '@angular/core';
   selector: 'object-header',
   templateUrl: 'templates/object-header.html',
 })
-export class ObjectHeaderComponent {  }
+export class ObjectHeaderComponent {
+    activeLink: string = 'Översikt';
+    links = [
+            'Översikt',
+            'Fakta',
+            'Bilder',
+            'Planritning',
+            'Kontakt'
+    ];
+    setActive(activeLink: string) {
+        this.activeLink = activeLink;
+    }
+}
