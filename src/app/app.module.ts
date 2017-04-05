@@ -5,15 +5,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
+import { ObjectHeaderComponent } from './object-header.component';
 
 @NgModule({
-  imports:[ 
-  	BrowserModule, 
-  	NgbModule.forRoot() 
+  imports: [
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   declarations: [ 
   	AppComponent,
-  	HeaderComponent 
+  	HeaderComponent,
+  	FooterComponent,
+    ObjectHeaderComponent
   ],
   bootstrap:    [ AppComponent ]
 })

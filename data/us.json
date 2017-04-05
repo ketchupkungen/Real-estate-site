@@ -34,7 +34,39 @@
 			"last-name":"Östrand",
 			"contact": {
 				"phone": "070-2201148",
-				"mail": "ErikaÖ@dhyrorumson.se"
+				"mail": "ErikaO@dhyrorumson.se"
+			}
+		},
+		{
+			"first-name":"Sture",
+			"last-name":"Eriksson",
+			"contact": {
+				"phone": "070-6701848",
+				"mail": "StureE@dhyrorumson.se"
+			}
+		},
+		{
+			"first-name":"Erik",
+			"last-name":"Olsson",
+			"contact": {
+				"phone": "070-3401948",
+				"mail": "ErikO@dhyrorumson.se"
+			}
+		},
+		{
+			"first-name":"Bob",
+			"last-name":"Bobsson",
+			"contact": {
+				"phone": "070-1207148",
+				"mail": "BobB@dhyrorumson.se"
+			}
+		},
+		{
+			"first-name":"Göran",
+			"last-name":"Jörgensen",
+			"contact": {
+				"phone": "070-1897148",
+				"mail": "GoranJ@dhyrorumson.se"
 			}
 		}
 	]

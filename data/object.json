@@ -68,4 +68,265 @@
 			{"src":"img/object6-id2.jpg"}
 		]
 	}
+	,
+	{
+		"id": 3,
+		"price": 400000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 120,
+		"totalArea": 180,
+		"sellerId": 1,
+		"place": {
+			"city": "Kristianstad",
+			"adress": "Kristianstadvägen 23",
+			"postcode": 29142
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 4,
+		"price": 650000,
+		"room": 8,
+		"bathrooms": 3,
+		"area": 150,
+		"totalArea": 190,
+		"sellerId": 1,
+		"place": {
+			"city": "Kristanstad",
+			"adress": "Kristianstadvägen 8",
+			"postcode": 29165
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 5,
+		"price": 250000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 100,
+		"totalArea": 140,
+		"sellerId": 2,
+		"place": {
+			"city": "Kristanstad",
+			"adress": "Kristianstadvägen 5",
+			"postcode": 29164
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 6,
+		"price": 260000,
+		"room": 5,
+		"bathrooms": 2,
+		"area": 120,
+		"totalArea": 160,
+		"sellerId": 2,
+		"place": {
+			"city": "Kristanstad",
+			"adress": "Kristianstadvägen 5",
+			"postcode": 29163
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 7,
+		"price": 270000,
+		"room": 6,
+		"bathrooms": 1,
+		"area": 130,
+		"totalArea": 180,
+		"sellerId": 2,
+		"place": {
+			"city": "Kristanstad",
+			"adress": "Kristianstadvägen 9",
+			"postcode": 29162
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 8,
+		"price": 200000,
+		"room": 6,
+		"bathrooms": 2,
+		"area": 120,
+		"totalArea": 170,
+		"sellerId": 3,
+		"place": {
+			"city": "Helsingborg",
+			"adress": "Gustavlundsvägen 8",
+			"postcode": 25662
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 9,
+		"price": 100000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 100,
+		"totalArea": 120,
+		"sellerId": 4,
+		"place": {
+			"city": "Helsingborg",
+			"adress": "Landskronavägen 1",
+			"postcode": 25234
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 10,
+		"price": 100000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 100,
+		"totalArea": 120,
+		"sellerId": 4,
+		"place": {
+			"city": "Helsingborg",
+			"adress": "Landskronavägen 2",
+			"postcode": 25233
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 11,
+		"price": 100000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 100,
+		"totalArea": 120,
+		"sellerId": 5,
+		"place": {
+			"city": "Helsingborg",
+			"adress": "Landskronavägen 3",
+			"postcode": 25230
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	},
+	{
+		"id": 12,
+		"price": 100000,
+		"room": 5,
+		"bathrooms": 1,
+		"area": 100,
+		"totalArea": 120,
+		"sellerId": 5,
+		"place": {
+			"city": "Helsingborg",
+			"adress": "Landskronavägen 4",
+			"postcode": 25231
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	}
 ]
