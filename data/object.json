@@ -2,9 +2,17 @@
 	{
 		"id": 1,
 		"price": 350000,
+		"buildDate": 1978,
+		"showings":[
+			{
+				"from":"2017-05-01 12:00:00",
+				"to":"2017-05-01 16:00:00"
+			}
+		],
 		"rooms": 4,
 		"bathrooms": 1,
 		"area": 80,
+		"totalArea": 120,
 		"sellerId": 2, //sellers Id
 		"place": {
 			"city": "Malmö", //komun?
@@ -28,9 +36,17 @@
 	{
 		"id": 2,
 		"price": 600000,
+		"buildDate": 1990,
+		"showings":[
+			{
+				"from":"2017-04-21 10:00:00",
+				"to":"2017-04-21 13:00:00"
+			}
+		],
 		"room": 7,
 		"bathrooms": 2,
 		"area": 140,
+		"totalArea": 170,
 		"sellerId": 1,
 		"place": {
 			"city": "Tomelilla",
