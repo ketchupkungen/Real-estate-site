@@ -14,12 +14,13 @@ import { SearchComponent } from './search.component';
     BrowserModule,
     NgbModule.forRoot()
   ],
-  declarations: [ 
+  declarations: [
   	AppComponent,
   	HeaderComponent,
   	FooterComponent,
+    //ContactFormContactViewComponent,
     ObjectHeaderComponent,
-    SearchComponent
+    SearchComponent,
   ],
   bootstrap:    [ AppComponent ]
 })
