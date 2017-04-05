@@ -1,7 +1,7 @@
 {
 	"name": "Dhyr & Rumson",
 	"contact": {
-		"phone": 040-27301,
+		"phone": "040-27301",
 		"mail": {
 			"hq": "hq@dhyrorumson.se",
 			"support": "support@dhyrorumson.se"
@@ -17,7 +17,7 @@
 			"first-name":"Kalle", //two way relation with objects?
 			"last-name":"Bengtsson", //egen databas till sellers?
 			"contact": {
-				"phone": 070-2730125,
+				"phone": "070-2730125",
 				"mail": "KalleB@dhyrorumson.se"
 			}
 		},
@@ -25,7 +25,7 @@
 			"first-name":"Mango",
 			"last-name":"Lugosson",
 			"contact": {
-				"phone": 070-1140524,
+				"phone": "070-1140524",
 				"mail": "MangoL@dhyrorumson.se"
 			}
 		},
@@ -33,7 +33,7 @@
 			"first-name":"Erika",
 			"last-name":"Östrand",
 			"contact": {
-				"phone": 070-2201148,
+				"phone": "070-2201148",
 				"mail": "ErikaO@dhyrorumson.se"
 			}
 		},
@@ -41,7 +41,7 @@
 			"first-name":"Sture",
 			"last-name":"Eriksson",
 			"contact": {
-				"phone": 070-6701848,
+				"phone": "070-6701848",
 				"mail": "StureE@dhyrorumson.se"
 			}
 		},
@@ -49,7 +49,7 @@
 			"first-name":"Erik",
 			"last-name":"Olsson",
 			"contact": {
-				"phone": 070-3401948,
+				"phone": "070-3401948",
 				"mail": "ErikO@dhyrorumson.se"
 			}
 		},
@@ -57,7 +57,7 @@
 			"first-name":"Bob",
 			"last-name":"Bobsson",
 			"contact": {
-				"phone": 070-1207148,
+				"phone": "070-1207148",
 				"mail": "BobB@dhyrorumson.se"
 			}
 		},
@@ -65,7 +65,7 @@
 			"first-name":"Göran",
 			"last-name":"Jörgensen",
 			"contact": {
-				"phone": 070-1897148,
+				"phone": "070-1897148",
 				"mail": "GoranJ@dhyrorumson.se"
 			}
 		}
