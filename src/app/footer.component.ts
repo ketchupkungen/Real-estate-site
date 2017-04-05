@@ -2,7 +2,8 @@ import { Component} from '@angular/core';
 
 @Component({
 	selector: 'footer',
-	templateUrl: 'templates/footer.html'
+	templateUrl: 'templates/footer.html',
+	styleUrls: [ './footer.component.css' ]
 })
 
 export class FooterComponent {
@@ -10,7 +11,7 @@ export class FooterComponent {
 	tags = [
 
 		'Kontakter',
-		'Omm oss',
+		'Om oss',
 		'Support'
 
 	];
