@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
   templateUrl: 'templates/contactform-contactview.html'
 })
 
-export class ObjectHeaderComponent {  }
+export class ContactFormContactViewComponent {  }
+
