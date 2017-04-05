@@ -7,16 +7,18 @@
 		</div>
 		<div class="row">
 			<div class="col-6">
-				<ul class="footerLeftLinks">
-					<li *ngFor="let tag of tags"><a href="#">{{tag}}</a></li>
-				</ul>
-			</div>
-			<div class="col-6">
-				<ul class="footerRightLinks">
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<div>
+					<ul>
+						<li *ngFor="let tag of tags"><a href="#">{{tag}}</a></li>
+					</ul>
+				</div>
+				<div class="col-6">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -8,6 +8,7 @@ import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { ObjectHeaderComponent } from './object-header.component';
 import { SearchComponent } from './search.component';
+import { ObjectSmallComponent } from './object-small.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,7 @@ import { SearchComponent } from './search.component';
     //ContactFormContactViewComponent,
     ObjectHeaderComponent,
     SearchComponent,
+  	ObjectSmallComponent
   ],
   bootstrap:    [ AppComponent ]
 })
