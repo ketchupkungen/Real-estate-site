@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'header',
-  templateUrl: 'templates/header.html',
+  templateUrl: 'templates/header-component.html',
 })
-export class HeaderComponent { 
+export class HeaderComponent {
+	isNavbarCollapsed = true;
+
 	logo = 'Dhyr & Rumson';
-	menuChoices = [
+	menuLinks = [
 		'Sälja',
 		'Köpa',
 		'Kontakt'
