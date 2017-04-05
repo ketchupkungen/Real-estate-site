@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+
+      <ngb-alert [dismissible]="false" type="danger">
+        <strong>Fara!</strong> Du leker med Angular... Systemet kan komma att explodera av fel!
+      </ngb-alert>
+
+      <ngb-alert *ngIf="showInfoAlert" [dismissible]="true" type="info" (close)="closeInfoAlert()"><strong>Viktigt!</strong> Vi bara skojade. Systemet kan inte explodera.</ngb-alert>
+
+      <button class="btn btn-primary" (click)="openInfoAlert()">Reset</button>
+
+    </div>
+  </div>
+</div>
+

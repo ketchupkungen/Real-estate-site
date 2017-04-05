@@ -1,0 +1,29 @@
+<div class="container" style="margin-top:40px">
+
+  <div class="row">
+    <div class="col-12">
+      <div ngbDropdown>
+        <button class="btn btn-outline-primary" id="dropdownMenu1" ngbDropdownToggle>
+          <span *ngIf="!chosenCategory">Choose animal category</span>
+          <span *ngIf="chosenCategory">{{chosenCategory}}</span>
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <button class="dropdown-item" *ngFor="let category of animalCategories()" (click)="chooseCategory(category)">{{category}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin:20px 0">
+    <div class="col-sm-4" *ngFor="let animal of animals[chosenCategory]">
+      <div class="card" style="margin-left:-15px">
+        <div class="card-block">
+          <img class="img-fluid" src="imgs/{{animal.img}}" alt="{{animal.name}}">
+          <p>{{animal.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
