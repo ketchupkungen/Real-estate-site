@@ -1,0 +1,40 @@
+.footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 60px;
+background-color: #f5f5f5;
+
+
+}
+
+.footerLinks {
+   text-align: center;
+}
+.footerLinks ul {
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 1px;
+}
+
+.footerLeftLinks {
+	font-family: Times;
+}
+
+.footerLeftLinks {
+	font-family: Times;
+}
+
+@media screen and (max-width: 360px) {
+	.footer {
+	    
+	}
+}
