@@ -1,0 +1,53 @@
+[
+	{
+		"id": 1,
+		"price": 350000,
+		"rooms": 4,
+		"bathrooms": 1,
+		"area": 80,
+		"sellerId": 2, //sellers Id
+		"place": {
+			"city": "Malmö", //komun?
+			"adress": "Gullesväg 1",
+			"postcode": 27032
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem mooo Lorem ipsum
+			Lorem mmii Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum meeee ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id1.jpg"}, //kanske "src":{"img/objec...", "img/objec...", etc}
+			{"src":"img/object2-id1.jpg"}, //kanske "img/object2/pic1" "img/object2/pic2" etc
+			{"src":"img/object3-id1.jpg"},
+			{"src":"img/object4-id1.jpg"},
+			{"src":"img/object5-id1.jpg"},
+			{"src":"img/object6-id1.jpg"},
+			{"src":"img/object7-id1.jpg"}
+		]
+	},
+	{
+		"id": 2,
+		"price": 600000,
+		"room": 7,
+		"bathrooms": 2,
+		"area": 140,
+		"sellerId": 1,
+		"place": {
+			"city": "Tomelilla",
+			"adress": "Skånevägen 3",
+			"postcode": 27143
+		},
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
+			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
+			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
+		"img": [
+			{"src":"img/object1-id2.jpg"},
+			{"src":"img/object2-id2.jpg"},
+			{"src":"img/object3-id2.jpg"},
+			{"src":"img/object4-id2.jpg"},
+			{"src":"img/object5-id2.jpg"},
+			{"src":"img/object6-id2.jpg"}
+		]
+	}
+]
