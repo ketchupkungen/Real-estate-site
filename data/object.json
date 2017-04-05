@@ -5,6 +5,7 @@
 		"rooms": 4,
 		"bathrooms": 1,
 		"area": 80,
+		"totalArea": 120,
 		"sellerId": 2, //sellers Id
 		"place": {
 			"city": "Malmö", //komun?
@@ -31,6 +32,7 @@
 		"room": 7,
 		"bathrooms": 2,
 		"area": 140,
+		"totalArea": 170,
 		"sellerId": 1,
 		"place": {
 			"city": "Tomelilla",
