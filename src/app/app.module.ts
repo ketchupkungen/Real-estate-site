@@ -7,6 +7,7 @@ import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { ObjectHeaderComponent } from './object-header.component';
+import { SearchComponent } from './search.component';
 
 @NgModule({
   imports: [
