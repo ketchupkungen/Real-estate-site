@@ -9,6 +9,7 @@
 				"to":"2017-05-01 16:00:00"
 			}
 		],
+		"sold": false,
 		"rooms": 4,
 		"bathrooms": 1,
 		"area": 80,
@@ -43,6 +44,7 @@
 				"to":"2017-04-21 13:00:00"
 			}
 		],
+		"sold":false,
 		"room": 7,
 		"bathrooms": 2,
 		"area": 140,

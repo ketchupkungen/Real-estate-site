@@ -4,10 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { AppComponent }  from './app.component';
+import { HeaderComponent } from './header.component';
 
 @NgModule({
-  imports:      [ BrowserModule, NgbModule.forRoot() ],
-  declarations: [ AppComponent ],
+  imports:[ 
+  	BrowserModule, 
+  	NgbModule.forRoot() 
+  ],
+  declarations: [ 
+  	AppComponent,
+  	HeaderComponent 
+  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
