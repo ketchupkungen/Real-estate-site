@@ -17,7 +17,8 @@ import { ObjectHeaderComponent } from './object-header.component';
   	AppComponent,
   	HeaderComponent,
   	FooterComponent,
-    ObjectHeaderComponent
+    ObjectHeaderComponent,
+    SearchComponent
   ],
   bootstrap:    [ AppComponent ]
 })
