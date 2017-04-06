@@ -1,11 +1,22 @@
-<div class="col-12">
+<!--<div class="row">
+    <div class="col-12">
+        <ul class="nav">
+            <li *ngFor="let link of links" [ngClass]="{'active': link == activeLink}" class="nav-item">
+                <a (click)="setActive(link)" class="nav-link" href="#">{{link}}</a>
+            </li>
+        </ul>
+    </div>
+</div>-->
+
+<div class="container-fluid">
     <div class="row">
-        <nav class="nav">
-            <a class="nav-link active" href="#">Översikt</a>
-            <a class="nav-link" href="#">Fakta</a>
-            <a class="nav-link" href="#">Bilder</a>
-            <a class="nav-link" href="#">Planritning</a>
-            <a class="nav-link" href="#">Kontakt</a>
-        </nav>
+        <div class="col-12">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <li *ngFor="let link of links" class="nav-item">
+                    <a (click)="setActive(link);" [ngClass]="{'active': link == activeLink}" class="flex-sm-fill text-sm-center nav-link" href="#">{{link}}</a>
+                </li>
+            </nav>
+        </div>
     </div>
 </div>
+
