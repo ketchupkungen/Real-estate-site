@@ -1,13 +1,11 @@
 .footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-top: 200;
-background-color: #f5f5f5;
-color: black;
-padding: 10px;
-
-
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	top: 200;
+	background-color: #f5f5f5;
+	color: black;
+	text-align: center;
 }
 
 .footerLinks ul {
@@ -17,42 +15,41 @@ padding: 10px;
 .footerLinks li {
 	display: inline;
 	color: black;
+	margin: 0;
 }
 .footerLinks a {
 	text-decoration: none;
+	margin: 0 5px 0 5px;
 	font-size: 15px;
 	color: black;
-	margin: 10px; 
+	padding: 5px;
+}
+
+.footerLinks a:hover {
+	color: #808080;
 }
 
 .footerTop {
-	font-family: Times;
+	font-family: 'Dancing Script', cursive;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 	padding: 20px;
-	background-color: #DCDCDC
-	margin: 20px;
+	margin: 20px 0 20px 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-
 }
 
-.footerLeftLinks {
-	font-family: arial;
-	text-align: left;
-
+.footerHr {
+	margin: 5px;
 }
 
-.footerRightLinks {
-	font-family: arial;
-	text-align: right;
+p.copyright {
+	font-family: times;
+	font-size: 10px;
 }
 
-
-
-@media screen and (max-width: 360px) {
-	.footer {
-	    
-	}
+@media screen and (max-width: 900px) {
+	.footerLinks li {
+	display: block;
 }
