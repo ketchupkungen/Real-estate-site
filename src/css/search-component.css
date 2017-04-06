@@ -1,0 +1,17 @@
+.vspace {
+	height: 30px;
+}
+
+.search-component {
+	background-color: AliceBlue;
+}
+
+.search-component .dropdown {
+	width: 100%;
+	color: white;
+}
+
+.search-component .dropdown button {
+	width: 100%;
+	text-align: left;
+}

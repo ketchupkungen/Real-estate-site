@@ -1,7 +1,60 @@
-<div class="container">
-	<div class="row">
-		<div class="col-12">
-			
+<div class="container-fluid search-component">
+	<div class="vspace"></div>
+	<form>
+		<div class="form-group">
+			<label for="searchBox">Sök</label>
+			<input class="form-control" id="searchBox" type="search" placeholder="Sök efter stad, bostadstyp, ort">
 		</div>
+	</form> 
+
+	<div class="row">
+		<div *ngFor="let filter of filterOptions" class="col-3">
+			<div ngbDropdown>
+				<button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+					{{filter.type}}
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<button *ngFor="let option of filter.options" class="dropdown-item">
+						{{option}}
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="col-3">
+			<div ngbDropdown>
+				<button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+					Högsta pris
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<button class="dropdown-item">Action - 1</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div ngbDropdown>
+				<button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+					Boarea (minimum)
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<button class="dropdown-item">Action - 1</button>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="col-3">
+			<div ngbDropdown>
+				<button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+					Typ
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<button class="dropdown-item">Action - 1</button>
+					
+				</div>
+			</div>
+		</div> -->
 	</div>
-</div>
+	<div class="vspace"></div>
+</div> 
