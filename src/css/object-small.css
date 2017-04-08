@@ -1,14 +1,5 @@
 .img-object-small {
+	background-position: 50% 50%;
+  background-size: cover;
   height: 250px;
-}
-
-.container-img {
-  overflow: hidden;
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-	.img-object-small {
-		height: 300px;
-	}
 }
