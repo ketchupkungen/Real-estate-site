@@ -1,4 +1,9 @@
+.card-container {
+	margin-top: 5vh;
+}
+
 .img-object-small {
-	height: 250px;
-	overflow: hidden;
+	background-position: 50% 80%;
+  background-size: cover;
+  height: 250px;
 }

@@ -11,11 +11,38 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12">
-            <nav class="nav nav-pills flex-column flex-sm-row">
-                <li *ngFor="let link of links" class="nav-item">
-                    <a (click)="setActive(link);" [ngClass]="{'active': link == activeLink}" class="flex-sm-fill text-sm-center nav-link" href="#">{{link}}</a>
-                </li>
-            </nav>
+            <ngb-tabset>
+              <ngb-tab title="Översikt">
+                <template ngbTabContent>
+                  <h2>Översikt</h2>
+                  <p>Översikts sida..</p>
+                </template>
+              </ngb-tab>
+              <ngb-tab title="Fakta">
+                <template ngbTabContent>
+                  <h2>Fakta</h2>
+                  <p>Fakta sida..</p>
+                </template>
+              </ngb-tab>
+              <ngb-tab title="Bilder">
+                <template ngbTabContent>
+                  <h2>Bilder</h2>
+                  <p>Bild sida..</p>
+                </template>
+              </ngb-tab>
+              <ngb-tab title="Planritning">
+                <template ngbTabContent>
+                  <h2>Planritning</h2>
+                  <p>Planritningssida..</p>
+                </template>
+              </ngb-tab>
+              <ngb-tab title="Kontakt">
+                <template ngbTabContent>
+                  <h2>Kontakt sida..</h2>
+                  <p>Kontakt sida..</p>
+                </template>
+              </ngb-tab>
+            </ngb-tabset>
         </div>
     </div>
 </div>
