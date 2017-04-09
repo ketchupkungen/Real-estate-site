@@ -1,19 +1,46 @@
-<div class="container">
-	<div class="row">
-		<div class="card mb-3">
-			<div class="row no-gutters">
-				<div class="col-6">
-					<img class="card-img-top img-fluid img-object-small rounded-0" src="img/object1-id1.jpg" alt="Card image cap">
+<div class="container card-container">
+	<div class="row" *ngFor="let object of objects; let i = index">
+		<div class="col-12">
+			<div class="card mb-3 rounded-0">
+				<div class="row no-gutters container-img">
+					<div class="col-sm-12 col-md-6 img-object-small" [style.background-image]="'url(img/objectId'+(i+1)+'-img1.jpg)'">
+				  </div>
+					<div class="hidden-sm-down col-md-6 img-object-small" [style.background-image]="'url(img/objectId'+(i+1)+'-img2.jpg)'">
+				  </div>
 			  </div>
-				<div class="col-6">
-					<img class="card-img-top img-fluid img-object-small rounded-0" src="img/object2-id1.jpg" alt="Card image cap">
+			  <div class="card-block">
+    			<p class="card-text">
+    				<small class="text-muted text-uppercase">{{object.type}}</small>
+    			</p>
+			    <h4 class="card-title">{{object.place.city}}<small class="text-muted">, {{object.place.municipality}}</small></h4>
+		    	<div class="row">
+		    		<div class="col-7">
+		    			<p class="card-text">{{object.place.adress}}</p>
+		    			<p class="card-text">
+		    				<small class="text-muted">{{object.info}}</small>
+		    			</p>
+		    		</div>
+		    		<div class="col-5">
+		    			<p class="card-text">
+		    				<small class="text-muted">PRIS: </small>
+		    				<small class="font-weight-bold">{{object.price}} kr</small>
+		    			</p>
+		    			<p class="card-text">
+		    				<small class="text-muted">MÅNADSAVGIFT: </small>
+		    				<small class="font-weight-bold">{{object.priceMonth}} kr</small>
+		    			</p>
+		    			<p class="card-text">
+		    				<small class="text-muted">RUM: </small>
+		    				<small class="font-weight-bold">{{object.rooms}} st</small>
+		    			</p>
+		    			<p class="card-text">
+		    				<small class="text-muted">BOAREA: </small>
+		    				<small class="font-weight-bold">{{object.area}} kvm</small>
+		    			</p>
+		    		</div>
+	    		</div>
 			  </div>
-		  </div>
-		  <div class="card-block">
-		    <h4 class="card-title">Malmö</h4>
-		    <p class="card-text">Mellingevägen 3</p>
-		    <p class="card-text"><small class="text-muted">Ett hus att sämja dem, ett hus att främja dem, ett hus att djupt i mörkrets vida riken tämja dem!</small></p>
-		  </div>
+			</div>
 		</div>
 	</div>
 </div>
