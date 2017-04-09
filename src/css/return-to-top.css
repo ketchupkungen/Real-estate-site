@@ -37,3 +37,7 @@
 #return-to-top:hover i {
     top: 5px;
 }
+
+.vertical-spacer {
+  height:50px;
+}
