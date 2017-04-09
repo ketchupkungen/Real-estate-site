@@ -5,16 +5,16 @@
 			<label for="searchBox">Sök</label>
 			<input class="form-control" id="searchBox" type="search" placeholder="Sök efter stad, bostadstyp, ort">
 		</div>
-	</form> 
+	</form>
 
 	<div class="row">
 		<div *ngFor="let filter of filterOptions" class="col-3">
 			<div ngbDropdown>
-				<button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+				<button class="btn btn-secondary dropdown-hover" id="dropdownMenu1" ngbDropdownToggle>
 					{{filter.type}}
 				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<button *ngFor="let option of filter.options" class="dropdown-item">
+				<div class="dropdown-menu dropdown-hover" aria-labelledby="dropdownMenu1">
+					<button *ngFor="let option of filter.options" class="dropdown-item dropdown-hover">
 						{{option}}
 					</button>
 				</div>
@@ -39,7 +39,7 @@
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
 					<button class="dropdown-item">Action - 1</button>
-					
+
 				</div>
 			</div>
 		</div>
@@ -51,10 +51,10 @@
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenu1">
 					<button class="dropdown-item">Action - 1</button>
-					
+
 				</div>
 			</div>
 		</div> -->
 	</div>
 	<div class="vspace"></div>
-</div> 
+</div>

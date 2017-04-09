@@ -2,8 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'search',
-  templateUrl: 'templates/search-component.html'
+  templateUrl: 'templates/search-component.html',
+  styleUrls: ['app/search.component.css']
 })
+
 export class SearchComponent {
 	filterOptions = [
 		{
