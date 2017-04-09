@@ -1,3 +1,7 @@
+.card-container {
+	margin-top: 5vh;
+}
+
 .img-object-small {
 	background-position: 50% 50%;
   background-size: cover;
