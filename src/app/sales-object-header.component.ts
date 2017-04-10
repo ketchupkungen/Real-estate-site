@@ -14,17 +14,4 @@ export class SalesObjectHeaderComponent {
       config.justify = 'center';
       config.type = 'pills';
     }
-
-
-    /*links = [
-            'Översikt',
-            'Fakta',
-            'Bilder',
-            'Planritning',
-            'Kontakt'
-    ];*/
-    activeLink: string = 'Översikt';
-    setActive(activeLink: string) {
-        this.activeLink = activeLink;
-    }
 }
