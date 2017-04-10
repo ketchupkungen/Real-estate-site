@@ -8,14 +8,14 @@ import { SalesObject } from '../class/sales-object.class';
 @Injectable()
 export class SalesObjectService { 
 
-	private _objectsUrl = '/data/object.json';
+	private _salesObjectsUrl = './data/sales-objects.json';
 
 	constructor(private _http: Http){ }
 
-	getObjects(): Promise<Object[]> {
-		return this._http.get(this._objectsUrl)
+	getSalesObjects(): Promise<SalesObject[]> {
+		return this._http.get(this._salesObjectsUrl)
 							 .toPromise()
-							 .then(response => response.json() as Object[])
+							 .then(response => response.json().data as SalesObject[])
  							 .catch(this.handleError);
 	}
 

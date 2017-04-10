@@ -2,7 +2,7 @@ import { NgModule }      from '@angular/core';
 import { NgbModule } 		 from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }  from '@angular/router';
-
+import { HttpModule }    from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
@@ -16,6 +16,8 @@ import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
 import { SearchPageComponent} from './search-page.component';
 import { ObjectDetailComponent } from './object-detail.component';
+import { SalesObjectService } from './sales-object.service';
+import { BrokersComponent } from './brokers.component';
 
 
 @NgModule({
@@ -40,7 +42,8 @@ import { ObjectDetailComponent } from './object-detail.component';
         path: 'detail/:id',
         component: ObjectDetailComponent
       }
-    ])
+    ]),
+    HttpModule
   ],
   declarations: [
   	AppComponent,
@@ -54,8 +57,10 @@ import { ObjectDetailComponent } from './object-detail.component';
     LayoutComponent,
     SellWithUsComponent,
     SearchPageComponent,
-    ObjectDetailComponent
+    ObjectDetailComponent,
+    BrokersComponent
   ],
-  bootstrap:    [ AppComponent ]
+  providers: [ SalesObjectService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
