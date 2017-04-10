@@ -18,6 +18,7 @@ import { SearchPageComponent} from './search-page.component';
 import { ObjectDetailComponent } from './object-detail.component';
 import { SalesObjectService } from './sales-object.service';
 import { BrokersComponent } from './brokers.component';
+import { SalesObjectSummaryComponent } from './sales-object-summary.component';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { BrokersComponent } from './brokers.component';
     SellWithUsComponent,
     SearchPageComponent,
     ObjectDetailComponent,
-    BrokersComponent
+    BrokersComponent,
+    SalesObjectSummaryComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
