@@ -1,4 +1,4 @@
-,
+[
 	{
 		"id": 4,
 		"price": 650000,
@@ -12,7 +12,7 @@
 			"adress": "Kristianstadvägen 8",
 			"postcode": 29165
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -38,7 +38,7 @@
 			"adress": "Kristianstadvägen 5",
 			"postcode": 29164
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -64,7 +64,7 @@
 			"adress": "Kristianstadvägen 5",
 			"postcode": 29163
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -90,7 +90,7 @@
 			"adress": "Kristianstadvägen 9",
 			"postcode": 29162
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -116,7 +116,7 @@
 			"adress": "Gustavlundsvägen 8",
 			"postcode": 25662
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -142,7 +142,7 @@
 			"adress": "Landskronavägen 1",
 			"postcode": 25234
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -168,7 +168,7 @@
 			"adress": "Landskronavägen 2",
 			"postcode": 25233
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -194,7 +194,7 @@
 			"adress": "Landskronavägen 3",
 			"postcode": 25230
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -220,7 +220,7 @@
 			"adress": "Landskronavägen 4",
 			"postcode": 25231
 		},
-		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem 
+		"info": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
 			ipsum Lorem iggu Lorem ipsum Lorem sweet ipsum Lorem ipsum
 			Lorem ipsum Lorem badum ipsum Lorem ipsum Lorem ipsum Lorem
 			Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem",
@@ -233,3 +233,4 @@
 			{"src":"img/object6-id2.jpg"}
 		]
 	}
+]
