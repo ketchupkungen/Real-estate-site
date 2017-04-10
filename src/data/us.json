@@ -20,7 +20,7 @@
 				"phone": "070-2730125",
 				"mail": "KalleB@dhyrorumson.se"
 			},
-      "profile_image_src":"img/kallebengtsson.svg"
+      "profile_image_src":"img/employees/kallebengtsson.svg"
 		},
 		{
 			"first-name":"Mango",
@@ -29,7 +29,7 @@
 				"phone": "070-1140524",
 				"mail": "MangoL@dhyrorumson.se"
 			},
-      "profile_image_src":"img/mangolugosson.svg"
+      "profile_image_src":"img/employees/mangolugosson.svg"
 		},
 		{
 			"first-name":"Erika",
@@ -38,7 +38,7 @@
 				"phone": "070-2201148",
 				"mail": "ErikaO@dhyrorumson.se"
 			},
-      "profile_image_src":"img/erikaostrand.svg"
+      "profile_image_src":"img/employees/erikaostrand.svg"
 		},
 		{
 			"first-name":"Sture",
@@ -47,7 +47,7 @@
 				"phone": "070-6701848",
 				"mail": "StureE@dhyrorumson.se"
 			},
-      "profile_image_src":"img/stureeriksson.svg"
+      "profile_image_src":"img/employees/stureeriksson.svg"
 		},
 		{
 			"first-name":"Erik",
@@ -56,7 +56,7 @@
 				"phone": "070-3401948",
 				"mail": "ErikO@dhyrorumson.se"
 			},
-      "profile_image_src":"img/erikolsson.svg"
+      "profile_image_src":"img/employees/erikolsson.svg"
 		},
 		{
 			"first-name":"Bob",
@@ -65,7 +65,7 @@
 				"phone": "070-1207148",
 				"mail": "BobB@dhyrorumson.se"
 			},
-      "profile_image_src":"img/bobbobsson.svg"
+      "profile_image_src":"img/employees/bobbobsson.svg"
 		},
 		{
 			"first-name":"Göran",
@@ -74,7 +74,7 @@
 				"phone": "070-1897148",
 				"mail": "GoranJ@dhyrorumson.se"
 			},
-      "profile_image_src":"img/goranjorgensen.svg"
+      "profile_image_src":"img/employees/goranjorgensen.svg"
 		}
 	]
 }
