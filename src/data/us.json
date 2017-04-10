@@ -14,12 +14,13 @@
 	},
 	"sellers": [
 		{
-			"first-name":"Kalle", //two way relation with objects?
-			"last-name":"Bengtsson", //egen databas till sellers?
+			"first-name":"Kalle",
+			"last-name":"Bengtsson",
 			"contact": {
 				"phone": "070-2730125",
 				"mail": "KalleB@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/kallebengtsson.svg"
 		},
 		{
 			"first-name":"Mango",
@@ -27,7 +28,8 @@
 			"contact": {
 				"phone": "070-1140524",
 				"mail": "MangoL@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/mangolugosson.svg"
 		},
 		{
 			"first-name":"Erika",
@@ -35,7 +37,8 @@
 			"contact": {
 				"phone": "070-2201148",
 				"mail": "ErikaO@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/erikaostrand.svg"
 		},
 		{
 			"first-name":"Sture",
@@ -43,7 +46,8 @@
 			"contact": {
 				"phone": "070-6701848",
 				"mail": "StureE@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/stureeriksson.svg"
 		},
 		{
 			"first-name":"Erik",
@@ -51,7 +55,8 @@
 			"contact": {
 				"phone": "070-3401948",
 				"mail": "ErikO@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/erikolsson.svg"
 		},
 		{
 			"first-name":"Bob",
@@ -59,7 +64,8 @@
 			"contact": {
 				"phone": "070-1207148",
 				"mail": "BobB@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/bobbobsson.svg"
 		},
 		{
 			"first-name":"Göran",
@@ -67,7 +73,8 @@
 			"contact": {
 				"phone": "070-1897148",
 				"mail": "GoranJ@dhyrorumson.se"
-			}
+			},
+      "profile_image_src":"img/goranjorgensen.svg"
 		}
 	]
 }
