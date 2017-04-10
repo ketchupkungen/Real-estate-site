@@ -3,5 +3,18 @@
 	background-image: url("../img/sell-with-us.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 70% 50%;
 }
 
+.contact-form-container h2 {
+	color: white;
+}
+
+.contact-form-container p {
+	color: white;
+}
+
+.contact-form-container form {
+	background: rgb(0, 0, 0); /* fallback color */
+   	background: rgba(0, 0, 0, 0.5);
+}

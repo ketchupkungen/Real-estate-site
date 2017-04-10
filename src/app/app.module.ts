@@ -9,7 +9,7 @@ import { FooterComponent } from './footer.component';
 import { ContactFormContactViewComponent } from './contactform-contactview.component';
 import { ObjectHeaderComponent } from './object-header.component';
 import { SearchComponent } from './search.component';
-import { ObjectSmallComponent } from './object-small.component';
+import { SalesObjectSmallComponent } from './sales-object-small.component';
 import { ReturnToTop } from './return-to-top';
 import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
@@ -27,7 +27,7 @@ import { SellWithUsComponent } from './sell-with-us.component';
     ContactFormContactViewComponent,
     ObjectHeaderComponent,
     SearchComponent,
-  	ObjectSmallComponent,
+  	SalesObjectSmallComponent,
     ReturnToTop,
     LayoutComponent,
     SellWithUsComponent

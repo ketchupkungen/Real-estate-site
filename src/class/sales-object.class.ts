@@ -1,4 +1,4 @@
-export class Object {
+export class SalesObject {
 	id: number;
 	type: string;
 	price: number;
