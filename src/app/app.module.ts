@@ -12,6 +12,8 @@ import { SearchComponent } from './search.component';
 import { ObjectSmallComponent } from './object-small.component';
 import { ReturnToTop } from './return-to-top';
 import { SellWithUsComponent } from './sell-with-us.component';
+import { PlanritningssidanComponent } from './planritningssidan.component';
+
 
 @NgModule({
   imports: [
@@ -28,6 +30,7 @@ import { SellWithUsComponent } from './sell-with-us.component';
   	ObjectSmallComponent,
     ReturnToTop,
     SellWithUsComponent
+    PlanritningssidanComponent
   ],
   bootstrap:    [ AppComponent ]
 })

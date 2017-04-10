@@ -23,6 +23,7 @@
 	font-size: 15px;
 	color: black;
 	padding: 5px;
+	
 }
 
 .footerLinks a:hover {
@@ -42,6 +43,11 @@
 
 .footerHr {
 	margin: 5px;
+}
+
+.footSpace {
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 p.copyright {
