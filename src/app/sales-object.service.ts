@@ -3,10 +3,10 @@ import { Http } 			from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { Object } from './object.class';
+import { SalesObject } from '../class/sales-object.class';
 
 @Injectable()
-export class ObjectService { 
+export class SalesObjectService { 
 
 	private _objectsUrl = '/data/object.json';
 
