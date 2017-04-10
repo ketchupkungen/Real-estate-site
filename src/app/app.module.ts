@@ -1,7 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { NgbModule } 		 from '@ng-bootstrap/ng-bootstrap';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpModule }    from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
@@ -13,11 +13,13 @@ import { SalesObjectSmallComponent } from './sales-object-small.component';
 import { ReturnToTop } from './return-to-top';
 import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
+import { SalesObjectService } from './sales-object.service';
 
 
 @NgModule({
   imports: [
     BrowserModule,
+    HttpModule,
     NgbModule.forRoot()
   ],
   declarations: [
@@ -32,6 +34,7 @@ import { SellWithUsComponent } from './sell-with-us.component';
     LayoutComponent,
     SellWithUsComponent
   ],
-  bootstrap:    [ AppComponent ]
+  providers: [ SalesObjectService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
