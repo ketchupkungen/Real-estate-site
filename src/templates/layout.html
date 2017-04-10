@@ -1,17 +1,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-12">
-			<h2>Planritningar</h2>
-			<p>Ett exempel på en planritning</p>
-			<!--<div *ngFor="let planritning of planritningar">
-				<img ng-src="{{planritning}}">
-			</div>-->
-			<img src="img/planritning1.jpg">
-			<!--<ul>
-				<li *ngFor="let planritning of planritningar">
-					<img ng-src="{{planritning}}"/>
-				</li>
-			</ul>-->
+			<div class="layout">
+				<h2>Planritningar</h2>
+				<div *ngFor="let layout of layouts">
+					<p>{{layout.description}}</p>
+					<img class="thumbnail-image" src="{{layout.img}}">
+				</div>
+				<button class="btn btn-primary" (click)="scrollToTop()">Scrolla upp</button>
+				<a (click)="scrollToTop()" href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+			</div>
 		</div>
 	</div>
 </div>
