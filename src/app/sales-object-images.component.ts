@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
-import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit } from '@angular/core';
+import { SalesObjectService } from './sales-object.service';
+import { SalesObject } 	from '../class/sales-object.class';
 
 @Component({
     selector: 'sales-object-images',
     templateUrl: 'templates/sales-object-images.html',
-    styleUrls: ['css/sales-object-images.css'],
-    providers: [NgbCarouselConfig]
+    styleUrls: ['css/sales-object-images.css']
 })
 
-export class SalesObjectImagesComponent {
-    constructor(config: NgbCarouselConfig) {
-        // customize default values of carousels used by this component tree
-        config.interval = 10000;
-        config.wrap = true;
-        config.keyboard = true;
-    }
+export class SalesObjectImagesComponent implements OnInit {
+    
+    private salesObjects : SalesObject[];
+    
+    constructor(private _salesObjectService: SalesObjectService) { }
+
+	ngOnInit(): void {
+		//
+	}
 }
