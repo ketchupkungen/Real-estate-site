@@ -8,6 +8,17 @@ import { Component} from '@angular/core';
 
 export class ReturnToTop {
 
+    goTo( ) {
+      // this will scroll the page up
+      window.location.hash = 'myAnchor';
+
+      // after page scrolls up, scroll down to correct level
+      // https://github.com/angular/angular/issues/6595
+      setTimeout(() => {
+        document.querySelector('#myAnchor').parentElement.scrollIntoView();
+      });
+    }
+
 }
 
 

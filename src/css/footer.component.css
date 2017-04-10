@@ -1,5 +1,6 @@
 .footer {
 	position: absolute;
+	padding-top: 50px;
 	bottom: 0;
 	width: 100%;
 	top: 200;
@@ -30,7 +31,7 @@
 	color: #808080;
 }
 
-.footerTop {
+/*.footerTop {
 	font-family: 'Dancing Script', cursive;
 	text-align: center;
 	font-size: 25px;
@@ -39,7 +40,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-}
+}*/
 
 .footerHr {
 	margin: 5px;
@@ -55,7 +56,8 @@ p.copyright {
 	font-size: 10px;
 }
 
+/*
 @media screen and (max-width: 900px) {
 	.footerLinks li {
 	display: block;
-}
+}*/

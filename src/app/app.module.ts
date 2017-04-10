@@ -11,8 +11,8 @@ import { ObjectHeaderComponent } from './object-header.component';
 import { SearchComponent } from './search.component';
 import { ObjectSmallComponent } from './object-small.component';
 import { ReturnToTop } from './return-to-top';
+import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
-import { PlanritningssidanComponent } from './planritningssidan.component';
 
 
 @NgModule({
@@ -29,8 +29,8 @@ import { PlanritningssidanComponent } from './planritningssidan.component';
     SearchComponent,
   	ObjectSmallComponent,
     ReturnToTop,
+    LayoutComponent,
     SellWithUsComponent
-    PlanritningssidanComponent
   ],
   bootstrap:    [ AppComponent ]
 })

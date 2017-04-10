@@ -118,4 +118,9 @@ const OBJECTS: Object[] =
 
 export class ObjectSmallComponent {
 	objects = OBJECTS;
+
+	getObjectImg(salesObj: Object, indexNo: number):string {
+		return "url('" + salesObj.img[indexNo].src + "')";
+	}
+
 }
