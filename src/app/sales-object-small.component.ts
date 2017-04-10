@@ -18,8 +18,9 @@ export class SalesObjectSmallComponent implements OnInit {
 		this.getSalesObjects();
 	}
 
+	//This method only gets 3 sales objects at the moment (needs this limit to not send all the data)
 	getSalesObjects(): void {
-		this._salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects);
+		this._salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects.slice(0, 3));
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
