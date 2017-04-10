@@ -14,65 +14,65 @@
 	},
 	"sellers": [
 		{
-			"first-name":"Kalle",
-			"last-name":"Bengtsson",
+			"firstName":"Kalle",
+			"lastName":"Bengtsson",
 			"contact": {
 				"phone": "070-2730125",
-				"mail": "KalleB@dhyrorumson.se"
+				"mail": "kalle.bengtsson@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/kallebengtsson.svg"
 		},
 		{
-			"first-name":"Mango",
-			"last-name":"Lugosson",
+			"firstName":"Mango",
+			"lastName":"Lugosson",
 			"contact": {
 				"phone": "070-1140524",
-				"mail": "MangoL@dhyrorumson.se"
+				"mail": "mango.lugosson@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/mangolugosson.svg"
 		},
 		{
-			"first-name":"Erika",
-			"last-name":"Östrand",
+			"firstName":"Erika",
+			"lastName":"Östrand",
 			"contact": {
 				"phone": "070-2201148",
-				"mail": "ErikaO@dhyrorumson.se"
+				"mail": "erika.ostrand@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/erikaostrand.svg"
 		},
 		{
-			"first-name":"Sture",
-			"last-name":"Eriksson",
+			"firstName":"Sture",
+			"lastName":"Eriksson",
 			"contact": {
 				"phone": "070-6701848",
-				"mail": "StureE@dhyrorumson.se"
+				"mail": "sture.eriksson@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/stureeriksson.svg"
 		},
 		{
-			"first-name":"Erik",
-			"last-name":"Olsson",
+			"firstName":"Erik",
+			"lastName":"Olsson",
 			"contact": {
 				"phone": "070-3401948",
-				"mail": "ErikO@dhyrorumson.se"
+				"mail": "erik.olsson@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/erikolsson.svg"
 		},
 		{
-			"first-name":"Bob",
-			"last-name":"Bobsson",
+			"firstName":"Bob",
+			"lastName":"Bobsson",
 			"contact": {
 				"phone": "070-1207148",
-				"mail": "BobB@dhyrorumson.se"
+				"mail": "bob.bobsson@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/bobbobsson.svg"
 		},
 		{
-			"first-name":"Göran",
-			"last-name":"Jörgensen",
+			"firstName":"Göran",
+			"lastName":"Jörgensen",
 			"contact": {
 				"phone": "070-1897148",
-				"mail": "GoranJ@dhyrorumson.se"
+				"mail": "goran.jorgensen@dhyrorumson.se"
 			},
       "profile_image_src":"img/employees/goranjorgensen.svg"
 		}

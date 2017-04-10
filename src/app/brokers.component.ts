@@ -7,16 +7,14 @@ import { Http } 			  from '@angular/http';
   styleUrls: ['css/brokers.component.css']
 })
 
-export class brokersComponent {
+export class BrokersComponent {
 
-  brokersObj:any;
+  sellersObject:any;
 
   constructor(private http:Http) {
     this.http.get('data/us.json')
-      .subscribe(res => this.brokersObj = res.json());
+      .subscribe(res => this.sellersObject = res.json().sellers);
   }
-
-  sellersObject = this.brokersObj.sellers;
 
 	getBrokerProfileImage(sellerObject:any):string {
 		return sellerObject.profile_image_src;

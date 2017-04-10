@@ -14,6 +14,7 @@ import { ReturnToTop } from './return-to-top';
 import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
 import { SalesObjectService } from './sales-object.service';
+import { BrokersComponent } from './brokers.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { SalesObjectService } from './sales-object.service';
   	SalesObjectSmallComponent,
     ReturnToTop,
     LayoutComponent,
-    SellWithUsComponent
+    SellWithUsComponent,
+    BrokersComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
