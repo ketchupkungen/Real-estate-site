@@ -18,7 +18,8 @@ import { SearchPageComponent} from './search-page.component';
 import { ObjectDetailComponent } from './object-detail.component';
 import { SalesObjectService } from './sales-object.service';
 import { BrokersComponent } from './brokers.component';
-
+import { CompanyCardComponent } from './contact-company.component';
+import { SalesObjectSummaryComponent } from './sales-object-summary.component';
 
 @NgModule({
   imports: [
@@ -30,9 +31,9 @@ import { BrokersComponent } from './brokers.component';
         redirectTo: 'search-page',
         pathMatch: 'full'
       },
-      {  
+      {
         path:'sell-page',
-        component: SellWithUsComponent  
+        component: SellWithUsComponent
       },
       {
         path:'search-page',
@@ -56,9 +57,12 @@ import { BrokersComponent } from './brokers.component';
     ReturnToTop,
     LayoutComponent,
     SellWithUsComponent,
+    BrokersComponent,
+    CompanyCardComponent,
     SearchPageComponent,
     ObjectDetailComponent,
-    BrokersComponent
+    BrokersComponent,
+    SalesObjectSummaryComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
