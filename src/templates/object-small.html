@@ -3,9 +3,9 @@
 		<div class="col-12">
 			<div class="card mb-3 rounded-0">
 				<div class="row no-gutters container-img">
-					<div class="col-sm-12 col-md-6 img-object-small" [style.background-image]="'url(img/objectId'+(i+1)+'-img1.jpg)'">
+					<div class="col-sm-12 col-md-6 img-object-small" [style.background-image]="getObjectImg(object,0)">
 				  </div>
-					<div class="hidden-sm-down col-md-6 img-object-small" [style.background-image]="'url(img/objectId'+(i+1)+'-img2.jpg)'">
+					<div class="hidden-sm-down col-md-6 img-object-small" [style.background-image]="getObjectImg(object,1)">
 				  </div>
 			  </div>
 			  <div class="card-block">
