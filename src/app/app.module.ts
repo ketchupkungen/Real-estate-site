@@ -12,6 +12,8 @@ import { SearchComponent } from './search.component';
 import { ObjectSmallComponent } from './object-small.component';
 import { ReturnToTop } from './return-to-top';
 import { LayoutComponent } from './layout.component';
+import { SellWithUsComponent } from './sell-with-us.component';
+
 
 @NgModule({
   imports: [
@@ -27,7 +29,8 @@ import { LayoutComponent } from './layout.component';
     SearchComponent,
   	ObjectSmallComponent,
     ReturnToTop,
-    LayoutComponent
+    LayoutComponent,
+    SellWithUsComponent
   ],
   bootstrap:    [ AppComponent ]
 })
