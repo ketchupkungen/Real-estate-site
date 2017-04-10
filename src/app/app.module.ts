@@ -15,6 +15,7 @@ import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
 import { SalesObjectService } from './sales-object.service';
 import { BrokersComponent } from './brokers.component';
+import { CompanyCardComponent } from './contact-company.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { BrokersComponent } from './brokers.component';
     ReturnToTop,
     LayoutComponent,
     SellWithUsComponent,
-    BrokersComponent
+    BrokersComponent,
+    CompanyCardComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
