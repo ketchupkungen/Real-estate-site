@@ -9,8 +9,17 @@ export class HeaderComponent {
 
 	logo = 'Dhyr & Rumson';
 	menuLinks = [
-		'Sälja',
-		'Köpa',
-		'Kontakt'
+		{
+			name: 'Sök bostad',
+			path: 'search-page'
+		},
+		{
+			name: 'Sälja',
+			path: 'sell-page'
+		},
+		{
+			name: 'Kontakt',
+			path: 'contact-page'
+		}
 	];
 }
