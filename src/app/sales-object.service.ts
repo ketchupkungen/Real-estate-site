@@ -19,6 +19,11 @@ export class SalesObjectService {
  							 .catch(this.handleError);
 	}
 
+	// getObject(id: number): Promise<Object> {
+	// 	return this.getObjects()
+	// 				.then(objects => objects.find(object => object.id === id));
+	// }
+
 	private handleError(error: any): Promise<any> {
 		console.error('An error occurred', error);
 		return Promise.reject(error.mesage || error);
