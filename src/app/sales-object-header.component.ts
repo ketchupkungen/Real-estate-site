@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'object-header',
-  templateUrl: 'templates/object-header.html',
-  styleUrls: ['app/object-header.component.css'],
+  selector: 'sales-object-header',
+  templateUrl: 'templates/sales-object-header.html',
+  styleUrls: ['css/sales-object-header.css'],
   providers: [NgbTabsetConfig] // add NgbTabsetConfig to the component providers
 })
-export class ObjectHeaderComponent {
+export class SalesObjectHeaderComponent {
 
     constructor(config: NgbTabsetConfig) {
       // customize default values of tabsets used by this component tree

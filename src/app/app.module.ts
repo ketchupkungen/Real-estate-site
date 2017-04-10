@@ -8,7 +8,7 @@ import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { ContactFormContactViewComponent } from './contactform-contactview.component';
-import { ObjectHeaderComponent } from './object-header.component';
+import { SalesObjectHeaderComponent } from './sales-object-header.component';
 import { SearchComponent } from './search.component';
 import { SalesObjectSmallComponent } from './sales-object-small.component';
 import { ReturnToTop } from './return-to-top';
@@ -51,7 +51,7 @@ import { SalesObjectSummaryComponent } from './sales-object-summary.component';
   	HeaderComponent,
   	FooterComponent,
     ContactFormContactViewComponent,
-    ObjectHeaderComponent,
+    SalesObjectHeaderComponent,
     SearchComponent,
   	SalesObjectSmallComponent,
     ReturnToTop,
