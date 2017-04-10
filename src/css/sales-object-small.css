@@ -5,5 +5,10 @@
 .img-object-small {
 	background-position: 50% 80%;
   background-size: cover;
+  border-right: 1px solid lightgrey;
   height: 250px;
+}
+
+.img-object-small:last-child {
+	border-right: 0px;
 }

@@ -1,6 +1,6 @@
 import { Component } 		from '@angular/core';
 
-import { Object } from './object.class';
+import { SalesObject } from '../class/sales-object.class';
 
 const OBJECTS: Object[] = 
 [
@@ -111,11 +111,16 @@ const OBJECTS: Object[] =
 ];
 
 @Component({
-  selector: 'object-small',
-  templateUrl: 'templates/object-small.html',
-  styleUrls: ['css/object-small.css']
+  selector: 'sales-object-small',
+  templateUrl: 'templates/sales-object-small.html',
+  styleUrls: ['css/sales-object-small.css']
 })
 
-export class ObjectSmallComponent {
-	objects = OBJECTS;
+export class SalesObjectSmallComponent {
+	salesObjects = OBJECTS;
+
+	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
+		return "url('" + salesObject.img[indexNo].src + "')";
+	}
+
 }
