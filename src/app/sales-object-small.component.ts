@@ -1,7 +1,7 @@
 import { Component, OnInit } 		from '@angular/core';
 
 import { SalesObjectService } from './sales-object.service';
-import { SalesObject } 				from '../class/sales-object.class';
+import { SalesObject } 	from '../class/sales-object.class';
 
 @Component({
   selector: 'sales-object-small',

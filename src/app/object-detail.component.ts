@@ -9,12 +9,12 @@ import { SalesObject } from '../class/sales-object.class';
  
 @Component({
   selector: 'object-detail-component',
-  templateUrl: `<h1>Hus {{object.id }} detaljer</h1>`,
+  template: `<h1 *ngIf="salesObject">Hus {{ salesObject.info }}detaljer</h1>`,
   providers: [SalesObjectService]
 })
 export class ObjectDetailComponent implements OnInit {
 	
-	object: Object;
+	salesObject: any;
 
 	constructor(
 		private salesObjectService: SalesObjectService,
@@ -23,9 +23,9 @@ export class ObjectDetailComponent implements OnInit {
 	){}
 
 	ngOnInit(): void {
-		// this.route.params
-		// 	.switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
-		// 	.subscribe(object => this.object = object);
+		this.route.params
+			.switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
+			.subscribe(object => this.salesObject = object);
 	}
 
 }
