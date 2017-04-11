@@ -10,9 +10,9 @@ export class FooterComponent {
 
 	tags = [
 
-		'Kontakter',
+		'Kontakt',
 		'Om oss',
-		'Support'
+		'Jobb'
 
 	];
 
