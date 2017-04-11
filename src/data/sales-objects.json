@@ -25,7 +25,16 @@
 				"adress": "Gullesväg 1",
 				"postcode": 27032
 			},
-			"info": "Gedigen villa från 1926 som totalrenoverats och byggts ut med varsam hand. Resultatet - ett unikt och modernt hus med mycket charm! Beläget på en hörntomt där Irisgatan möter Södertorpsvägen finner vi det med en stor härlig tomt.",
+			"text": {
+				"info": "Gavellägenhet med fint ljusinsläpp och öppen planlösning. De öppna ytorna mellan kök och vardagsrum skapar en trivsam och inbjudande känsla. Köket erbjuder gott om förvaring och arbetsytor för kocken. Vardagsrummet rymmer både soffgrupp och tillhörande möblemang där familj och vänner kan samlas. 2 sovrum. Rymligt badrum med klädvårdsavdelning. Inglasad balkong i fritt läge och vacker utsikt. Här i populära Amhult har du gångavstånd till alla tänkbara bekvämligheter som dagligvaruhandel, butiker, bank, apotek caféer, restauranger och kulturhuset Vingen. Goda kommunikationer och närhet till hav och natur.",
+				"shortInfo": "Gedigen villa från 1926 som totalrenoverats och byggts ut med varsam hand. Resultatet - ett unikt och modernt hus med mycket charm! Beläget på en hörntomt där Irisgatan möter Södertorpsvägen finner vi det med en stor härlig tomt.",
+				"roomInfo": [
+					"Välkommen in till ett trevligt och välskött trapphus och ta hissen högst upp i lägenheten.",
+					"I bostaden möts du av en ljus och fräsch hall med klinker och en fin parkett som är genomgående i hela lägenheten. Hallen erbjuder goda av hängnings möjligheter i både öppen och stängd förvaring. Lägenheten är målad 2015 i ljusa färger som skapar en behaglig och fräsch känsla.",
+					"Vardagsrummet har öppen planlösning mot kökets matplats vilket skapar rymd i bostaden. Vardagsrummet är väl tilltaget och rymmer både soffgrupp med tillhörande möblemang och teknikutrustning. Utgång till den härliga inglasade balkongen. De generösa fönsterpartierna gör att ljuset hittar in i bostaden och du kan blicka ut över golfbanan, älven och grannskapet.",
+					"Badrummet når du från hallen. Här har du bostadens tvättavdelning med tvättmaskin, 2014 och torktumlare. Praktisk avlastningsskiva över maskinerna underlättar vid hanteringen av tvätten. Bra skåp skapar extra förvaring. Helkaklat i naturfärger. Badrumskommod med spegel och belysning. Badkar med dusch möjlighet. Handdukstork håller badlakanen torra och varma. Härlig golvvärme."
+				]
+			},
 			"img": [
 				{"src":"/img/objectId1-img1.jpg"},
 				{"src":"/img/objectId1-img2.jpg"},
@@ -60,7 +69,17 @@
 				"adress": "Skånevägen 3",
 				"postcode": 27143
 			},
-			"info": "Ett hus att sämja dem, ett hus att främja dem, ett hus att djupt i mörkrets vida riken tämja dem!",
+			"text": {
+				"info": "På bra pendlingsläge med närhet till både Lund och Malmö finner ni detta välplanerade parhus i populära Dalby. Bostaden är belägen i ett bilfritt och mycket barnvänligt område. Bostaden erbjuder två bra sovrum, vardagsrum med utgång till uteplats och gräsmatta på baksidan, tvättstuga badrum och kök med egen matplats. Bra möjlighet till förvaring på vinden, vilken även kan förädlas till bostad om så önskas. Dalby har mycket att erbjuda i service utbud, bra skolor, möjlighet till kommunikationer och inte att förglömma Dalbys fantastiska natur. Varmt välkomna att boka in er på en visning!",
+				"shortInfo": "Ett hus att sämja dem, ett hus att främja dem, ett hus att djupt i mörkrets vida riken tämja dem!",
+				"roomInfo": [
+					"Välkomnande ingång på tomten via stensatt gång, tomten är inringad av nybyggt staket.",
+					"Ingång sker antingen via tvättstuga eller genom huvudingången. Från huvudingången har ni en bra uppfattning om hela bostaden, Här finns gott om möjlighet för avhängning och förvaring. Hallen är målad och tapetserad och på golvet ligger parkett. Från hallen tar ni er enkelt in i vardagsrummet som ligger rakt fram, här finns gott om plats för både vardagsrumsmöblemang och matplats om så önskas. Här finns även utgång till en uteplats och gräsmatta. Vardagsrummet är vitmålat och på golvet ligger parkettgolv.",
+					"Från hallen når ni även tvättstugan som är utrustad med tvättmaskin, torktumlare, tvättställ och bra förvaring.",
+					"Vidare från hallen når ni köket som med härligt ljusinsläpp ger ett mysigt kök med bra förvaringsmöjlighet och matplats för ca 6 personer.",
+					"Trädgårdstomt med fruktträd, gräsmatta på tre sidor med gott om utrymme för lek och spel."
+				]
+			},
 			"img": [
 				{"src":"img/objectId2-img1.jpg"},
 				{"src":"img/objectId2-img2.jpg"},
@@ -94,7 +113,16 @@
 				"adress": "Kristianstadsvägen 23",
 				"postcode": 29142
 			},
-			"info": "Nämndemansgården med anor från 1800-talet. 7 rum och kök fördelade på ca 250 kvm bostadsyta. Gäststuga , ekonomibyggnad, ladugård samt garage. Trädgårdstomt med stort antal fruktträd. Öppen åkermark. Bostadshuset är i behov av renovering men full av charm och möjligheter.",
+			"text": {
+				"info": "2 rum & kök centralt i Brösarp med bra planlösning och nära till det mesta! Lägenheten har ett stort vardagsrum som ger plats för generös soffa, skrivbord/stuidehörna, TV och TV-bänk. Härifrån når man också balkongen i västerläge. Kök med nyare bänkskivor, köksskåp och vitvaror. Mitt i lägenheten finns badrummet.",
+				"shortInfo": "Nämndemansgården med anor från 1800-talet. 7 rum och kök fördelade på ca 250 kvm bostadsyta. Gäststuga , ekonomibyggnad, ladugård samt garage. Trädgårdstomt med stort antal fruktträd. Öppen åkermark. Bostadshuset är i behov av renovering men full av charm och möjligheter.",
+				"roomInfo": [
+					"Hall med plats för avhängning. Direkt till vänster finns köket som också inrymmer matplatsen. Ny spis 2016, övriga vitvaror är ca 7-8 år gammal. Vidare in i lägenheten kommer en rejäl klädkammare som passar utmärkt för den aktive med mycket kläder och utrustning. Sovrummet som ligger intill har plats för dubbelsäng och bjuder också på generöst med förvaring i garderober.",
+					"Rakt fram finns badrummet med toalett, dusch och handfat. Till höger finns vardagsrummet som också skulle kunna inrymma en extra säng om så behövs.",
+					"Vardagsrummet har öppen planlösning mot kökets matplats vilket skapar rymd i bostaden. Vardagsrummet är väl tilltaget och rymmer både soffgrupp med tillhörande möblemang och teknikutrustning. Utgång till den härliga inglasade balkongen. De generösa fönsterpartierna gör att ljuset hittar in i bostaden och du kan blicka ut över golfbanan, älven och grannskapet.",
+					"Badrummet når du från hallen. Här har du bostadens tvättavdelning med tvättmaskin, 2014 och torktumlare. Praktisk avlastningsskiva över maskinerna underlättar vid hanteringen av tvätten. Bra skåp skapar extra förvaring. Helkaklat i naturfärger. Badrumskommod med spegel och belysning. Badkar med dusch möjlighet. Handdukstork håller badlakanen torra och varma. Härlig golvvärme."
+				]
+			},
 			"img": [
 				{"src":"img/objectId3-img1.jpg"},
 				{"src":"img/objectId3-img2.jpg"},
