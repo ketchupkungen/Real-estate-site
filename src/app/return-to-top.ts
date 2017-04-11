@@ -12,10 +12,12 @@ export class ReturnToTop {
 
       function showScroller(){
           window.scroll();
-            if (window.pageYOffset >= 50) {
-              ('#return-to-top').fadeIn(200);
+          if (window.pageYOffset >= 50) {
+              // nedanstående rad fick npm install att krasha
+              //('#return-to-top').fadeIn(200);
           } else {
-            ('#return-to-top').fadeOut(200);
+              // nedanstående rad fick npm install att krasha
+              // ('#return-to-top').fadeOut(200);
           }
       }
       showScroller();
@@ -37,7 +39,7 @@ export class ReturnToTop {
 
 
 // ===== Scroll to Top ====
-/* 
+/*
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
