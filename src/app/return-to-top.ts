@@ -8,17 +8,29 @@ import { Component} from '@angular/core';
 
 export class ReturnToTop {
 
-    goTo( ) {
-      // this will scroll the page up
-      window.location.hash = 'myAnchor';
+    showScrollToTop() {
 
-      // after page scrolls up, scroll down to correct level
-      // https://github.com/angular/angular/issues/6595
-      setTimeout(() => {
-        document.querySelector('#myAnchor').parentElement.scrollIntoView();
-      });
+      function showScroller(){
+          window.scroll();
+            if (window.pageYOffset >= 50) {
+              ('#return-to-top').fadeIn(200);
+          } else {
+            ('#return-to-top').fadeOut(200);
+          }
+      }
+      showScroller();
     }
 
+    scrollToTop(){
+
+      function scroller(){
+        window.scrollBy(0,-40);
+        if(window.pageYOffset > 0){
+          setTimeout(scroller,10);
+        }
+      }
+      scroller();
+    }
 }
 
 

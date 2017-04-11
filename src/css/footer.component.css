@@ -59,33 +59,3 @@ p.copyright {
 	.footerLinks li {
 	display: block;
 }*/
-
-.return-to-top {
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.1);
-    width: 50px;
-    height: 50px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.return-to-top i {
-    font-size: 23px;
-    color: black;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-.return-to-top:hover {
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 25px;
-    color: white;
-
-}
