@@ -15,7 +15,7 @@ export class SalesObjectService {
 	getSalesObjects(): Promise<SalesObject[]> {
 		return this._http.get(this._salesObjectsUrl)
 							 .toPromise()
-							 .then(response => response.json().data as SalesObject[])
+							 .then(response => response.json() as SalesObject[])
  							 .catch(this.handleError);
 	}
 
