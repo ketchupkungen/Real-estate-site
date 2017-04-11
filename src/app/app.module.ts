@@ -8,7 +8,10 @@ import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { ContactFormContactViewComponent } from './contactform-contactview.component';
-import { ObjectHeaderComponent } from './object-header.component';
+// Menu for a specific salesObject
+import { SalesObjectHeaderComponent } from './sales-object-header.component';
+// Images for a specific salesObject
+import { SalesObjectImagesComponent } from './sales-object-images.component';
 import { SearchComponent } from './search.component';
 import { SalesObjectSmallComponent } from './sales-object-small.component';
 import { ReturnToTop } from './return-to-top';
@@ -32,11 +35,11 @@ import { SalesObjectSummaryComponent } from './sales-object-summary.component';
         pathMatch: 'full'
       },
       {
-        path:'sell-page',
+        path: 'sell-page',
         component: SellWithUsComponent
       },
       {
-        path:'search-page',
+        path: 'search-page',
         component: SearchPageComponent
       },
       {
@@ -47,13 +50,14 @@ import { SalesObjectSummaryComponent } from './sales-object-summary.component';
     HttpModule
   ],
   declarations: [
-  	AppComponent,
-  	HeaderComponent,
-  	FooterComponent,
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
     ContactFormContactViewComponent,
-    ObjectHeaderComponent,
+    SalesObjectHeaderComponent,
+    SalesObjectImagesComponent,
     SearchComponent,
-  	SalesObjectSmallComponent,
+    SalesObjectSmallComponent,
     ReturnToTop,
     LayoutComponent,
     SellWithUsComponent,
