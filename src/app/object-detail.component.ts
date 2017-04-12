@@ -9,7 +9,8 @@ import { SalesObject } from '../class/sales-object.class';
  
 @Component({
   selector: 'object-detail-component',
-  template: `<h1 *ngIf="salesObject">Hus {{ salesObject.info }}detaljer</h1>`,
+  templateUrl: 'templates/object-detail.component.html',
+  styleUrls: ['css/object-detail.component.css'],
   providers: [SalesObjectService]
 })
 export class ObjectDetailComponent implements OnInit {
