@@ -1,7 +1,15 @@
-<div *ngIf="salesObject">
-	<div class="sales-object-detail-background" [style.background-image]="getSalesObjectImg(salesObject,0)">
-		<p class="display-3 text-white">{{ salesObject.place.adress }} {{ salesObject.place.city }}</p>
-		<p class="display-4 text-white">{{ salesObject.place.municipality }}</p>
+<div class="container-fluid" *ngIf="salesObject">
+	<div class="row">
+		<div class="col-12 detail-head-background" [style.background-image]="getSalesObjectImg(salesObject,0)">
+			<div class="row">
+			  <div class="card text-center col-sm-4 col-md-3 border-0 detail-head-info">
+			    <div class="card-block">
+			      <h4 class="card-title">{{ salesObject.place.adress }}</h4>
+			      <p class="card-text">{{ salesObject.place.city }}<small class="text-muted">, {{ salesObject.place.municipality }}</small></p>
+			    </div>
+			  </div>
+		  </div>
+		</div>
+		<sales-object-header></sales-object-header>
 	</div>
-	<sales-object-header></sales-object-header>
 </div>
