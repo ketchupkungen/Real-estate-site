@@ -25,7 +25,7 @@ export class SalesObjectSummaryComponent implements OnInit {
 	ngOnInit(): void {
 		this.route.params
 			.switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
-			.subscribe(object => this.salesObject = object);
+			.subscribe((object: any) => this.salesObject = object);
 	}
 
 }
