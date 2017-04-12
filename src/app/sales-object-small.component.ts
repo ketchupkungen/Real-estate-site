@@ -12,7 +12,7 @@ import { SalesObject } 	from '../class/sales-object.class';
 export class SalesObjectSmallComponent implements OnInit {
 	salesObjects: SalesObject[];
 
-	constructor(private _salesObjectService: SalesObjectService) { }
+	constructor(private salesObjectService: SalesObjectService) { }
 
 	ngOnInit(): void {
 		this.getSalesObjects();
@@ -20,11 +20,11 @@ export class SalesObjectSmallComponent implements OnInit {
 
 	//This method only gets 3 sales objects at the moment (needs this limit to not send all the data)
 	getSalesObjects(): void {
-		this._salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects.slice(0, 3));
+		this.salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects.slice(0, 3));
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
-		return "url('" + salesObject.img[indexNo].src + "')";
+		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
 	}
 
 }

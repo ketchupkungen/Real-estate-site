@@ -24,6 +24,10 @@ export class SalesObjectService {
 					.then(objects => objects.find(object => object.id === id));
 	}
 
+	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
+		return "url('" + salesObject.img[indexNo].src + "')";
+	}
+
 	private handleError(error: any): Promise<any> {
 		console.error('An error occurred', error);
 		return Promise.reject(error.mesage || error);

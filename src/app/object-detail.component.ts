@@ -29,4 +29,8 @@ export class ObjectDetailComponent implements OnInit {
 			.subscribe(object => this.salesObject = object);
 	}
 
+	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
+		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
+	}
+
 }
