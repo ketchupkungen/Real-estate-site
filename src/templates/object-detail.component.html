@@ -1,6 +1,7 @@
 <div *ngIf="salesObject">
-	<div class="sales-object-detail-background">
-		<h1 class="text-muted">{{ salesObject.place.adress }} {{ salesObject.place.city }}</h1><h3><small class="text-muted">{{ salesObject.place.municipality }}</small></h3>
+	<div class="sales-object-detail-background" [style.background-image]="getSalesObjectImg(salesObject,0)">
+		<p class="display-3 text-white">{{ salesObject.place.adress }} {{ salesObject.place.city }}</p>
+		<p class="display-4 text-white">{{ salesObject.place.municipality }}</p>
 	</div>
 	<sales-object-header></sales-object-header>
 </div>

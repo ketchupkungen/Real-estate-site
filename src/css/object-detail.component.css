@@ -1,3 +1,5 @@
 .sales-object-detail-background {
-	min-height: 250px;
+	background-position: 50% 80%;
+  background-size: cover;
+	height: 70vh;
 }
