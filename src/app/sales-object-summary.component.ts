@@ -5,7 +5,7 @@ import { Location } from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 import { SalesObjectService } from './sales-object.service';
-import { SalesObject } 				from '../class/sales-object.class';
+import { SalesObject } 	from '../class/sales-object.class';
 
 @Component({
   selector: 'sales-object-summary',
