@@ -12,7 +12,7 @@ export class ReturnToTop {
 
   @HostListener('window:scroll', ['$event'])
   doSomething(event: any) {
-    if(window.pageYOffset > 200) {
+    if(window.pageYOffset > 50) {
       this.showToTopButton = true;
     } else {
       this.showToTopButton = false;
