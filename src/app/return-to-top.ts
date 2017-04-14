@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
 	selector: 'return-to-top',
@@ -8,47 +8,24 @@ import { Component} from '@angular/core';
 
 export class ReturnToTop {
 
-    showScrollToTop() {
+  showToTopButton = false;
 
-      function showScroller(){
-          window.scroll();
-          if (window.pageYOffset >= 50) {
-              // nedanstående rad fick npm install att krasha
-              //('#return-to-top').fadeIn(200);
-          } else {
-              // nedanstående rad fick npm install att krasha
-              // ('#return-to-top').fadeOut(200);
-          }
-      }
-      showScroller();
-    }
-
-    scrollToTop(){
-
-      function scroller(){
-        window.scrollBy(0,-40);
-        if(window.pageYOffset > 0){
-          setTimeout(scroller,10);
-        }
-      }
-      scroller();
-    }
-}
-
-
-
-
-// ===== Scroll to Top ====
-/*
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  @HostListener('window:scroll', ['$event'])
+  doSomething(event: any) {
+    if(window.pageYOffset > 200) {
+      this.showToTopButton = true;
     } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      this.showToTopButton = false;
     }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 700);
-});*/
+  }
+
+  scrollToTop(){
+    function scroller(){
+      window.scrollBy(0,-40);
+      if(window.pageYOffset > 0){
+        setTimeout(scroller,10);
+      }
+    }
+    scroller();
+  }
+}
