@@ -38,8 +38,8 @@
     top: 0.1px;
 }
 
-.show {
-    opacity: 1 !important;
+#return-to-top.show {
+    opacity: 1;
 }
 
 .step {

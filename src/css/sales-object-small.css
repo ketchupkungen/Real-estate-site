@@ -2,6 +2,10 @@
 	margin-top: 5vh;
 }
 
+.card-container a:hover {
+	text-decoration: none;
+}
+
 .img-object-small {
 	background-position: 50% 80%;
   background-size: cover;
