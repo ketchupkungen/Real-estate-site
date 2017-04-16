@@ -11,7 +11,61 @@ import { SalesObject } 	from '../class/sales-object.class';
 
 export class SalesObjectSmallComponent implements OnInit {
 	salesObjects: SalesObject[];
-	sortArgs = ['rooms'];
+	sortArgs=['-dateAdded'];
+	sortingOptions = [
+		{
+			name: 'Pris',
+			options: [
+				{
+					type: 'price',
+					name: 'Lägsta till högsta'
+				},
+				{
+					type: '-price',
+					name: 'Högsta till lägsta'
+				}
+			]
+		},
+		{
+			name: 'Datum tillagt',
+			options: [
+				{
+					type: '-dateAdded',
+					name: 'Nyaste först'
+				},
+				{
+					type: 'dateAdded',
+					name: 'Äldsta först'
+				}
+			]
+		},
+		{
+			name: 'Byggnadsår',
+			options: [
+				{
+					type: '-buildDate',
+					name: 'Yngsta först'
+				},
+				{
+					type: 'buildDate',
+					name: 'Äldsta först'
+				}
+			]
+		},
+		{
+			name: 'Antal rum',
+			options: [
+				{
+					type: 'rooms',
+					name: 'Minst rum först'
+				},
+				{
+					type: '-rooms',
+					name: 'Flest rum först'
+				}
+			]
+		}
+	];
 
 	constructor(private salesObjectService: SalesObjectService) { }
 
@@ -26,6 +80,10 @@ export class SalesObjectSmallComponent implements OnInit {
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
+	}
+
+	changeSortArgs(arg:string){
+		this.sortArgs = [arg];
 	}
 
 }

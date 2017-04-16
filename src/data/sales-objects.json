@@ -1,6 +1,7 @@
 [
 	{
 		"id": 1,
+		"dateAdded": "2017-03-18",
 		"type": "Bostadsrättslägenhet",
 		"price": 350000,
 		"priceMonth": 3900,
@@ -45,6 +46,7 @@
 	},
 	{
 		"id": 2,
+		"dateAdded": "2017-03-01",
 		"type": "Bostadsrättsradhus",
 		"price": 600000,
 		"priceMonth": 5600,
@@ -89,6 +91,7 @@
 	},
 	{
 		"id": 3,
+		"dateAdded": "2017-04-02",
 		"type": "Villa",
 		"price": 1200000,
 		"priceMonth": 3400,

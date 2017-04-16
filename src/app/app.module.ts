@@ -28,7 +28,6 @@ import { ObjectDetailComponent } from './object-detail.component';
 import { BrokersComponent } from './brokers.component';
 import { CompanyCardComponent } from './contact-company.component';
 import { SalesObjectSummaryComponent } from './sales-object-summary.component';
-import { SearchResultComponent } from './search-result.component';
 
 @NgModule({
   imports: [
@@ -78,8 +77,7 @@ import { SearchResultComponent } from './search-result.component';
     ContactPageComponent,
     ObjectDetailComponent,
     BrokersComponent,
-    SalesObjectSummaryComponent,
-    SearchResultComponent
+    SalesObjectSummaryComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
