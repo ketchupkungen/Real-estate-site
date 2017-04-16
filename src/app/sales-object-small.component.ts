@@ -11,6 +11,7 @@ import { SalesObject } 	from '../class/sales-object.class';
 
 export class SalesObjectSmallComponent implements OnInit {
 	salesObjects: SalesObject[];
+	sortArgs = ['rooms'];
 
 	constructor(private salesObjectService: SalesObjectService) { }
 

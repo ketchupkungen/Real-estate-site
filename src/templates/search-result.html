@@ -1,0 +1,18 @@
+<div class="vspace"></div>
+<div class="container">
+	<div class="row">
+		<div *ngFor="let sortArg of sortingOptions" class="col-6 col-md-3">
+			<div ngbDropdown>
+				<button class="btn btn-secondary dropdown-hover" id="dropdownMenu1" ngbDropdownToggle>
+					{{sortArg.type}}
+				</button>
+				<div class="dropdown-menu dropdown-hover" aria-labelledby="dropdownMenu1">
+					<button *ngFor="let option of sortArg.options" class="dropdown-item dropdown-hover">
+						{{option}}
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<sales-object-small></sales-object-small>
