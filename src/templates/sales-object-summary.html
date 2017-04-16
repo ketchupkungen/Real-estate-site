@@ -1,39 +1,37 @@
-<div class="container-fluid" *ngIf="salesObject">
-	<div class="row">
-		<div class="col-12">
-			<div class="card mb-3">
-			  <div class="card-block">
-		    	<div class="row">
-		    		<div class="col-7">
-					    <h4 class="card-title"><small>Beskrivning</small></h4>
-		    			<p class="card-text"><small class="text-muted">{{salesObject.text.info}}</small></p>
-		    			<div class="viewings">
-				  			<small class="display-4 text-muted">Visningar</small>
-				  			<table class="table table-sm">
-								  <thead>
-								    <tr>
-								      <th class="text-muted">Datum</th>
-								      <th class="text-muted">Från</th>
-								      <th class="text-muted">Till</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-								    <tr *ngFor="let showing of salesObject.showings">
-								      <th scope="row" class="text-muted">{{showing.date}}</th>
-								      <td>{{showing.from}}</td>
-								      <td>{{showing.to}}</td>
-								    </tr>
-								  </tbody>
-								</table>
-							</div>
-		    		</div>
-		    		<div class="col-5">
-				    	<h4 class="card-title"><small>Interiör</small></h4>
-	  					<p *ngFor="let text of salesObject.text.roomInfo"><small class="text-muted">{{text}}</small></p>
-		    		</div>
+<div class="row mt-4" *ngIf="salesObject">
+	<div class="col-12">
+		<div class="card mb-3">
+		  <div class="card-block">
+	    	<div class="row">
+	    		<div class="col-7">
+				    <h4 class="card-title"><small>Beskrivning</small></h4>
+	    			<p class="card-text"><small class="text-muted">{{salesObject.text.info}}</small></p>
+	    			<div class="viewings">
+			  			<small class="display-4 text-muted">Visningar</small>
+			  			<table class="table table-sm">
+							  <thead>
+							    <tr>
+							      <th class="text-muted">Datum</th>
+							      <th class="text-muted">Från</th>
+							      <th class="text-muted">Till</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr *ngFor="let showing of salesObject.showings">
+							      <th scope="row" class="text-muted">{{showing.date}}</th>
+							      <td>{{showing.from}}</td>
+							      <td>{{showing.to}}</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
 	    		</div>
-			  </div>
-			</div>
+	    		<div class="col-5">
+			    	<h4 class="card-title"><small>Interiör</small></h4>
+  					<p *ngFor="let text of salesObject.text.roomInfo"><small class="text-muted">{{text}}</small></p>
+	    		</div>
+    		</div>
+		  </div>
 		</div>
 	</div>
 </div>

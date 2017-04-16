@@ -34,13 +34,13 @@
 			]
 		},
 		"img": [
-			{"src":"/img/objectId1-img1.jpg"},
-			{"src":"/img/objectId1-img2.jpg"},
-			{"src":"/img/objectId1-img3.jpg"},
-			{"src":"/img/objectId1-img4.jpg"},
-			{"src":"/img/objectId1-img5.jpg"},
-			{"src":"/img/objectId1-img6.jpg"},
-			{"src":"/img/objectId1-img7.jpg"}
+			{"src":"/img/objectId1-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img6.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img7.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	},
 	{
@@ -79,12 +79,12 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId2-img1.jpg"},
-			{"src":"img/objectId2-img2.jpg"},
-			{"src":"img/objectId2-img3.jpg"},
-			{"src":"img/objectId2-img4.jpg"},
-			{"src":"img/objectId2-img5.jpg"},
-			{"src":"img/objectId2-img6.jpg"}
+			{"src":"img/objectId2-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img6.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	},
 	{
@@ -122,12 +122,10 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId3-img1.jpg"},
-			{"src":"img/objectId3-img2.jpg"},
-			{"src":"img/objectId3-img3.jpg"},
-			{"src":"img/objectId3-img4.jpg"},
-			{"src":"img/objectId3-img5.jpg"},
-			{"src":"img/objectId3-img6.jpg"}
+			{"src":"img/objectId3-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	}
 ]

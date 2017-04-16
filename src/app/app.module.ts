@@ -22,6 +22,7 @@ import { ReturnToTop } from './return-to-top';
 import { LayoutComponent } from './layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
 import { SearchPageComponent} from './search-page.component';
+import { ContactPageComponent} from './contact-page.component';
 import { ObjectDetailComponent } from './object-detail.component';
 
 import { BrokersComponent } from './brokers.component';
@@ -48,6 +49,10 @@ import { SearchResultComponent } from './search-result.component';
         component: SearchPageComponent
       },
       {
+        path: 'contact-page',
+        component: ContactPageComponent
+      },
+      {
         path: 'detail/:id',
         component: ObjectDetailComponent
       }
@@ -70,6 +75,7 @@ import { SearchResultComponent } from './search-result.component';
     BrokersComponent,
     CompanyCardComponent,
     SearchPageComponent,
+    ContactPageComponent,
     ObjectDetailComponent,
     BrokersComponent,
     SalesObjectSummaryComponent,
