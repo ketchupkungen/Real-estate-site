@@ -10,4 +10,7 @@
 
 .recommended-border {
 	border: 1px solid lightgrey;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
 }
