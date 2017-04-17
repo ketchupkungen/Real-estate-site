@@ -388,5 +388,196 @@
 			{"src":"/img/layout5.jpg", "description":"Våning 2"},
 			{"src":"/img/layout6.jpg", "description":"Våning 3"}
 		]
+	},
+	{
+		"id": 9,
+		"dateAdded": "2017-03-03",
+		"type": "Villa",
+		"price": 200000,
+		"priceMonth": 5900,
+		"buildDate": 2010,
+		"showings": [
+			{"date": "2017-05-21", "from": "11:00:00", "to": "13:00:00"},
+			{"date": "2017-05-25", "from": "09:00:00", "to": "11:00:00"},
+			{"date": "2017-05-26", "from": "11:30:00", "to": "14:30:00"},
+			{"date": "2017-05-28", "from": "11:00:00", "to": "13:00:00"}
+		],
+		"sold":false,
+		"rooms": 10,
+		"bathrooms": 2,
+		"area": 140,
+		"totalArea": 300,
+		"sellerId": 3,
+		"place": {
+			"city": "Kivik",
+			"municipality": "Simrishamn",
+			"adress": "Dendärvägen 23",
+			"postcode": 27149
+		},
+		"text": {
+			"info": "Bacon meatball ham ham hock, andouille corned beef ball tip doner pork chop beef sirloin turkey tenderloin. Hamburger pig cupim, sirloin pancetta chuck ham short loin bacon shankle ham hock capicola filet mignon chicken. Meatball burgdoggen pig sirloin ham hock, fatback beef ribs jerky pork belly kevin ground round meatloaf chuck. Ham biltong beef shank, capicola ham hock jerky kevin meatloaf frankfurter sausage pancetta corned beef t-bone. Capicola short loin tongue leberkas bresaola. Kevin leberkas ground round strip steak sausage, doner turkey meatloaf chuck cow rump. Tenderloin short ribs andouille strip steak sausage. Kielbasa pork chop jerky capicola leberkas meatloaf tongue landjaeger hamburger. Short ribs flank burgdoggen ground round turkey sirloin shank kielbasa chicken jerky. Pig bresaola bacon tenderloin. Ribeye short loin burgdoggen chuck filet mignon jowl tail andouille ball tip. Picanha jowl shankle bresaola. Salami kielbasa frankfurter shank. Shoulder swine tenderloin fatback turkey leberkas, chicken flank cow kevin beef. Pork loin landjaeger pork chop spare ribs prosciutto strip steak.",
+			"shortInfo": "Bacon ipsum dolor amet pork loin swine shank bresaola brisket, burgdoggen biltong pork chop pig fatback. Kielbasa ham pancetta ribeye venison shankle shank spare ribs doner beef. Tri-tip fatback biltong shoulder tail. Shoulder bacon biltong short ribs landjaeger pastrami cupim sausage drumstick kevin andouille alcatra turkey. Ball tip doner beef porchetta. Short ribs venison bacon, sirloin salami alcatra rump kielbasa chicken jowl filet mignon brisket landjaeger leberkas.",
+			"roomInfo": [
+				"Välkomnande ingång på tomten via stensatt gång, tomten är inringad av nybyggt staket.",
+				"Ingång sker antingen via tvättstuga eller genom huvudingången. Från huvudingången har ni en bra uppfattning om hela bostaden, Här finns gott om möjlighet för avhängning och förvaring. Hallen är målad och tapetserad och på golvet ligger parkett. Från hallen tar ni er enkelt in i vardagsrummet som ligger rakt fram, här finns gott om plats för både vardagsrumsmöblemang och matplats om så önskas. Här finns även utgång till en uteplats och gräsmatta. Vardagsrummet är vitmålat och på golvet ligger parkettgolv.",
+				"Från hallen når ni även tvättstugan som är utrustad med tvättmaskin, torktumlare, tvättställ och bra förvaring.",
+				"Vidare från hallen når ni köket som med härligt ljusinsläpp ger ett mysigt kök med bra förvaringsmöjlighet och matplats för ca 6 personer.",
+				"Trädgårdstomt med fruktträd, gräsmatta på tre sidor med gott om utrymme för lek och spel."
+			]
+		},
+		"img": [
+			{"src":"img/objectId9-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId9-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId9-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
+		],
+
+		"layout": [
+			{"src":"/img/layout4.jpg", "description":"Våning 1"},
+			{"src":"/img/layout5.jpg", "description":"Våning 2"}
+		]
+	},
+	{
+		"id": 10,
+		"dateAdded": "2017-03-03",
+		"type": "Bostadsrättsradhus",
+		"price": 3000000,
+		"priceMonth": 7000,
+		"buildDate": 2000,
+		"showings": [
+			{"date": "2017-05-21", "from": "11:00:00", "to": "13:00:00"},
+			{"date": "2017-05-25", "from": "09:00:00", "to": "11:00:00"},
+			{"date": "2017-05-26", "from": "11:30:00", "to": "14:30:00"},
+			{"date": "2017-05-28", "from": "11:00:00", "to": "13:00:00"}
+		],
+		"sold":false,
+		"rooms": 15,
+		"bathrooms": 3,
+		"area": 140,
+		"totalArea": 190,
+		"sellerId": 2,
+		"place": {
+			"city": "Malmö",
+			"municipality": "Malmö",
+			"adress": "Fictionv 10",
+			"postcode": 27043
+		},
+		"text": {
+			"info": "Bacon meatball ham ham hock, andouille corned beef ball tip doner pork chop beef sirloin turkey tenderloin. Hamburger pig cupim, sirloin pancetta chuck ham short loin bacon shankle ham hock capicola filet mignon chicken. Meatball burgdoggen pig sirloin ham hock, fatback beef ribs jerky pork belly kevin ground round meatloaf chuck. Ham biltong beef shank, capicola ham hock jerky kevin meatloaf frankfurter sausage pancetta corned beef t-bone. Capicola short loin tongue leberkas bresaola. Kevin leberkas ground round strip steak sausage, doner turkey meatloaf chuck cow rump. Tenderloin short ribs andouille strip steak sausage. Kielbasa pork chop jerky capicola leberkas meatloaf tongue landjaeger hamburger. Short ribs flank burgdoggen ground round turkey sirloin shank kielbasa chicken jerky. Pig bresaola bacon tenderloin. Ribeye short loin burgdoggen chuck filet mignon jowl tail andouille ball tip. Picanha jowl shankle bresaola. Salami kielbasa frankfurter shank. Shoulder swine tenderloin fatback turkey leberkas, chicken flank cow kevin beef. Pork loin landjaeger pork chop spare ribs prosciutto strip steak.",
+			"shortInfo": "Bacon ipsum dolor amet pork loin swine shank bresaola brisket, burgdoggen biltong pork chop pig fatback. Kielbasa ham pancetta ribeye venison shankle shank spare ribs doner beef. Tri-tip fatback biltong shoulder tail. Shoulder bacon biltong short ribs landjaeger pastrami cupim sausage drumstick kevin andouille alcatra turkey. Ball tip doner beef porchetta. Short ribs venison bacon, sirloin salami alcatra rump kielbasa chicken jowl filet mignon brisket landjaeger leberkas.",
+			"roomInfo": [
+				"Välkomnande ingång på tomten via stensatt gång, tomten är inringad av nybyggt staket.",
+				"Ingång sker antingen via tvättstuga eller genom huvudingången. Från huvudingången har ni en bra uppfattning om hela bostaden, Här finns gott om möjlighet för avhängning och förvaring. Hallen är målad och tapetserad och på golvet ligger parkett. Från hallen tar ni er enkelt in i vardagsrummet som ligger rakt fram, här finns gott om plats för både vardagsrumsmöblemang och matplats om så önskas. Här finns även utgång till en uteplats och gräsmatta. Vardagsrummet är vitmålat och på golvet ligger parkettgolv.",
+				"Från hallen når ni även tvättstugan som är utrustad med tvättmaskin, torktumlare, tvättställ och bra förvaring.",
+				"Vidare från hallen når ni köket som med härligt ljusinsläpp ger ett mysigt kök med bra förvaringsmöjlighet och matplats för ca 6 personer.",
+				"Trädgårdstomt med fruktträd, gräsmatta på tre sidor med gott om utrymme för lek och spel."
+			]
+		},
+		"img": [
+			{"src":"img/objectId10-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId10-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId10-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
+		],
+
+		"layout": [
+			{"src":"/img/layout4.jpg", "description":"Våning 1"},
+			{"src":"/img/layout5.jpg", "description":"Våning 2"},
+			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+		]
+	},
+	{
+		"id": 11,
+		"dateAdded": "2017-03-03",
+		"type": "Bostadsrättsradhus",
+		"price": 1650000,
+		"priceMonth": 6000,
+		"buildDate": 1995,
+		"showings": [
+			{"date": "2017-05-21", "from": "11:00:00", "to": "13:00:00"},
+			{"date": "2017-05-25", "from": "09:00:00", "to": "11:00:00"},
+			{"date": "2017-05-26", "from": "11:30:00", "to": "14:30:00"},
+			{"date": "2017-05-28", "from": "11:00:00", "to": "13:00:00"}
+		],
+		"sold":false,
+		"rooms": 10,
+		"bathrooms": 2,
+		"area": 150,
+		"totalArea": 200,
+		"sellerId": 1,
+		"place": {
+			"city": "Brösarp",
+			"municipality": "Tomelilla",
+			"adress": "Storgatan 2",
+			"postcode": 29148
+		},
+		"text": {
+			"info": "Bacon meatball ham ham hock, andouille corned beef ball tip doner pork chop beef sirloin turkey tenderloin. Hamburger pig cupim, sirloin pancetta chuck ham short loin bacon shankle ham hock capicola filet mignon chicken. Meatball burgdoggen pig sirloin ham hock, fatback beef ribs jerky pork belly kevin ground round meatloaf chuck. Ham biltong beef shank, capicola ham hock jerky kevin meatloaf frankfurter sausage pancetta corned beef t-bone. Capicola short loin tongue leberkas bresaola. Kevin leberkas ground round strip steak sausage, doner turkey meatloaf chuck cow rump. Tenderloin short ribs andouille strip steak sausage. Kielbasa pork chop jerky capicola leberkas meatloaf tongue landjaeger hamburger. Short ribs flank burgdoggen ground round turkey sirloin shank kielbasa chicken jerky. Pig bresaola bacon tenderloin. Ribeye short loin burgdoggen chuck filet mignon jowl tail andouille ball tip. Picanha jowl shankle bresaola. Salami kielbasa frankfurter shank. Shoulder swine tenderloin fatback turkey leberkas, chicken flank cow kevin beef. Pork loin landjaeger pork chop spare ribs prosciutto strip steak.",
+			"shortInfo": "Bacon ipsum dolor amet pork loin swine shank bresaola brisket, burgdoggen biltong pork chop pig fatback. Kielbasa ham pancetta ribeye venison shankle shank spare ribs doner beef. Tri-tip fatback biltong shoulder tail. Shoulder bacon biltong short ribs landjaeger pastrami cupim sausage drumstick kevin andouille alcatra turkey. Ball tip doner beef porchetta. Short ribs venison bacon, sirloin salami alcatra rump kielbasa chicken jowl filet mignon brisket landjaeger leberkas.",
+			"roomInfo": [
+				"Välkomnande ingång på tomten via stensatt gång, tomten är inringad av nybyggt staket.",
+				"Ingång sker antingen via tvättstuga eller genom huvudingången. Från huvudingången har ni en bra uppfattning om hela bostaden, Här finns gott om möjlighet för avhängning och förvaring. Hallen är målad och tapetserad och på golvet ligger parkett. Från hallen tar ni er enkelt in i vardagsrummet som ligger rakt fram, här finns gott om plats för både vardagsrumsmöblemang och matplats om så önskas. Här finns även utgång till en uteplats och gräsmatta. Vardagsrummet är vitmålat och på golvet ligger parkettgolv.",
+				"Från hallen når ni även tvättstugan som är utrustad med tvättmaskin, torktumlare, tvättställ och bra förvaring.",
+				"Vidare från hallen når ni köket som med härligt ljusinsläpp ger ett mysigt kök med bra förvaringsmöjlighet och matplats för ca 6 personer.",
+				"Trädgårdstomt med fruktträd, gräsmatta på tre sidor med gott om utrymme för lek och spel."
+			]
+		},
+		"img": [
+			{"src":"img/objectId11-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId11-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId11-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
+		],
+
+		"layout": [
+			{"src":"/img/layout4.jpg", "description":"Våning 1"},
+			{"src":"/img/layout5.jpg", "description":"Våning 2"},
+			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+		]
+	},
+	{
+		"id": 12,
+		"dateAdded": "2017-03-03",
+		"type": "Villa",
+		"price": 2650000,
+		"priceMonth": 6900,
+		"buildDate": 2015,
+		"showings": [
+			{"date": "2017-05-21", "from": "11:00:00", "to": "13:00:00"},
+			{"date": "2017-05-25", "from": "09:00:00", "to": "11:00:00"},
+			{"date": "2017-05-26", "from": "11:30:00", "to": "14:30:00"},
+			{"date": "2017-05-28", "from": "11:00:00", "to": "13:00:00"}
+		],
+		"sold":false,
+		"rooms": 12,
+		"bathrooms": 3,
+		"area": 200,
+		"totalArea": 290,
+		"sellerId": 1,
+		"place": {
+			"city": "Kivik",
+			"municipality": "Simrishamn",
+			"adress": "Kivikgatan 1",
+			"postcode": 27155
+		},
+		"text": {
+			"info": "Bacon meatball ham ham hock, andouille corned beef ball tip doner pork chop beef sirloin turkey tenderloin. Hamburger pig cupim, sirloin pancetta chuck ham short loin bacon shankle ham hock capicola filet mignon chicken. Meatball burgdoggen pig sirloin ham hock, fatback beef ribs jerky pork belly kevin ground round meatloaf chuck. Ham biltong beef shank, capicola ham hock jerky kevin meatloaf frankfurter sausage pancetta corned beef t-bone. Capicola short loin tongue leberkas bresaola. Kevin leberkas ground round strip steak sausage, doner turkey meatloaf chuck cow rump. Tenderloin short ribs andouille strip steak sausage. Kielbasa pork chop jerky capicola leberkas meatloaf tongue landjaeger hamburger. Short ribs flank burgdoggen ground round turkey sirloin shank kielbasa chicken jerky. Pig bresaola bacon tenderloin. Ribeye short loin burgdoggen chuck filet mignon jowl tail andouille ball tip. Picanha jowl shankle bresaola. Salami kielbasa frankfurter shank. Shoulder swine tenderloin fatback turkey leberkas, chicken flank cow kevin beef. Pork loin landjaeger pork chop spare ribs prosciutto strip steak.",
+			"shortInfo": "Bacon ipsum dolor amet pork loin swine shank bresaola brisket, burgdoggen biltong pork chop pig fatback. Kielbasa ham pancetta ribeye venison shankle shank spare ribs doner beef. Tri-tip fatback biltong shoulder tail. Shoulder bacon biltong short ribs landjaeger pastrami cupim sausage drumstick kevin andouille alcatra turkey. Ball tip doner beef porchetta. Short ribs venison bacon, sirloin salami alcatra rump kielbasa chicken jowl filet mignon brisket landjaeger leberkas.",
+			"roomInfo": [
+				"Välkomnande ingång på tomten via stensatt gång, tomten är inringad av nybyggt staket.",
+				"Ingång sker antingen via tvättstuga eller genom huvudingången. Från huvudingången har ni en bra uppfattning om hela bostaden, Här finns gott om möjlighet för avhängning och förvaring. Hallen är målad och tapetserad och på golvet ligger parkett. Från hallen tar ni er enkelt in i vardagsrummet som ligger rakt fram, här finns gott om plats för både vardagsrumsmöblemang och matplats om så önskas. Här finns även utgång till en uteplats och gräsmatta. Vardagsrummet är vitmålat och på golvet ligger parkettgolv.",
+				"Från hallen når ni även tvättstugan som är utrustad med tvättmaskin, torktumlare, tvättställ och bra förvaring.",
+				"Vidare från hallen når ni köket som med härligt ljusinsläpp ger ett mysigt kök med bra förvaringsmöjlighet och matplats för ca 6 personer.",
+				"Trädgårdstomt med fruktträd, gräsmatta på tre sidor med gott om utrymme för lek och spel."
+			]
+		},
+		"img": [
+			{"src":"img/objectId12-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId12-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId12-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
+		],
+
+		"layout": [
+			{"src":"/img/layout4.jpg", "description":"Våning 1"},
+			{"src":"/img/layout5.jpg", "description":"Våning 2"},
+			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+		]
 	}
 ]
