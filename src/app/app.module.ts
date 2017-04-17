@@ -21,6 +21,7 @@ import { SearchComponent }                 from './search.component';
 import { SalesObjectSmallComponent }       from './sales-object-small.component';
 import { ReturnToTop }                     from './return-to-top';
 import { SalesObjectLayoutComponent }      from './sales-object-layout.component';
+import { SalesObjectInformationComponent }      from './sales-object-information.component';
 import { SellWithUsComponent }             from './sell-with-us.component';
 import { SearchPageComponent}              from './search-page.component';
 import { ContactPageComponent}             from './contact-page.component';
@@ -73,6 +74,7 @@ import { SalesObjectContactComponent }     from './sales-object-contact.componen
     SalesObjectSmallComponent,
     ReturnToTop,
     SalesObjectLayoutComponent,
+    SalesObjectInformationComponent,
     SellWithUsComponent,
     BrokersComponent,
     CompanyCardComponent,

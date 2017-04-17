@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div *ngIf="salesObject" class="information">
+			    <h4 class="card-title">Beskrivning</h4>
+				<p class="card-text text-muted">{{salesObject.text.shortInfo}}</p>
+
+				<h4 class="card-title">Mer information</h4>
+				<p class="card-text text-muted">{{salesObject.text.info}}</p>
+
+		    	<h4 class="card-title">Interiör</h4>
+				<p *ngFor="let text of salesObject.text.roomInfo" class="text-muted">{{text}}</p>
+
+				<!-- Förslag: Energi deklaration/energiförbrukning -->
+
+				<div class="viewings">
+		  			<small class="display-4 text-muted">Visningar</small>
+		  			<table class="table table-sm">
+						<thead>
+						    <tr>
+						    	<th class="text-muted">Datum</th>
+						    	<th class="text-muted">Från</th>
+						    	<th class="text-muted">Till</th>
+						    </tr>
+						</thead>
+						<tbody>
+						    <tr *ngFor="let showing of salesObject.showings">
+						    	<th scope="row" class="text-muted">{{showing.date}}</th>
+						    	<td>{{showing.from}}</td>
+						    	<td>{{showing.to}}</td>
+						    </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
