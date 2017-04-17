@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class SearchComponent {
 	filterOptions = [
 		{
-			type: 'Rum(minimum)',
+			type: 'Rum(min)',
 			options: [
 				'1 rum',
 				'2 rum',
@@ -20,7 +20,7 @@ export class SearchComponent {
 			]
 		},
 		{
-			type: 'Boarea(minimum)',
+			type: 'Boarea(min)',
 			options: [
 				'25 kvm',
 				'50 kvm',

@@ -10,9 +10,19 @@ export class FooterComponent {
 
 	tags = [
 
-		'Kontakt',
-		'Om oss',
-		'Jobb'
+		{
+			name: 'Kontakt',
+			link: 'contact-page'
+		},
+		{
+			name: 'Om oss',
+			link: '/'
+		},
+		{
+			name: 'Jobb',
+			link: '/'
+		}
+
 
 	];
 
