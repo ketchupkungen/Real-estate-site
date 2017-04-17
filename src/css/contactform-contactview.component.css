@@ -1,8 +1,9 @@
 
 
-.container-boarder{
-  border: 1px solid rgba(0,0,0,.125);
-  border-radius: .25rem;
-  margin-top: 25px;
-  padding: 15px;
+
+
+.container-background {
+  background-image: url("../img/contact-image.png");
+  width: 100%;
+  padding: 20px;
 }

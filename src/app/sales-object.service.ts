@@ -28,6 +28,10 @@ export class SalesObjectService {
 		return "url('" + salesObject.img[indexNo].src + "')";
 	}
 
+	getSalesObjectLayout(salesObject: SalesObject, indexNo: number):string {
+		return "url('" + salesObject.layout[indexNo].src + "')";
+	}
+
 	private handleError(error: any): Promise<any> {
 		console.error('An error occurred', error);
 		return Promise.reject(error.mesage || error);

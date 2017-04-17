@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'contact-page',
+  styleUrls: ['css/contact-page.component.css'],
   template: `
   	<company-card></company-card>
-  	<contactform-contactview></contactform-contactview>
+  	<contactform-contactview class="contact"></contactform-contactview>
   	<brokers></brokers>
   `,
 })
