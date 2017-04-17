@@ -9,6 +9,7 @@
 .search-component .dropdown {
 	width: 100%;
 	color: white;
+	margin-bottom: 10px;
 }
 
 .search-component .dropdown button {
@@ -19,3 +20,4 @@
 .dropdown-hover{
   cursor: pointer;
 }
+

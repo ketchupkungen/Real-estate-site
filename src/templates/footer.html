@@ -11,7 +11,7 @@
 					<li><a href="#" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
 				</ul>
 				<ul>
-					<li *ngFor="let tag of tags"><a href="#">{{tag}}</a></li>
+					<li *ngFor="let tag of tags"><a href="" routerLink="{{tag.link}}">{{tag.name}}</a></li>
 				</ul>
 
 			</div>
