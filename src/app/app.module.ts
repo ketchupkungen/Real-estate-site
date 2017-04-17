@@ -7,6 +7,7 @@ import { HttpModule }                      from '@angular/http';
 import { SalesObjectService }              from './sales-object.service';
 
 import { OrderByPipe }                     from './order-by.pipe';
+import { FilterByPipe }                    from './filter-by.pipe';
 
 import { AppComponent }                    from './app.component';
 import { HeaderComponent }                 from './header.component';
@@ -26,7 +27,6 @@ import { SearchPageComponent}              from './search-page.component';
 import { ContactPageComponent}             from './contact-page.component';
 import { ObjectDetailComponent }           from './object-detail.component';
 import { SalesObjectRecommendedComponent } from './sales-object-recommended.component';
-
 import { BrokersComponent }                from './brokers.component';
 import { CompanyCardComponent }            from './contact-company.component';
 import { SalesObjectSummaryComponent }     from './sales-object-summary.component';
@@ -63,6 +63,7 @@ import { SalesObjectContactComponent }     from './sales-object-contact.componen
   ],
   declarations: [
     OrderByPipe,
+    FilterByPipe,
     AppComponent,
     HeaderComponent,
     FooterComponent,
