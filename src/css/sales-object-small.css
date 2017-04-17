@@ -12,3 +12,14 @@
 .img-object-small:last-child {
 	border-right: 0px;
 }
+
+.sorting-controls .dropdown {
+	width: 100%;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.sorting-controls .dropdown button {
+	width: 100%;
+	text-align: left;
+}
