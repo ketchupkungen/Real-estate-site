@@ -1,7 +1,7 @@
-import { Component, OnInit } 		from '@angular/core';
+import { Component, OnInit, Input } 		from '@angular/core';
 
 import { SalesObjectService } from './sales-object.service';
-import { SalesObject } 	from '../class/sales-object.class';
+import { SalesObject } 				from '../class/sales-object.class';
 
 @Component({
   selector: 'sales-object-recommended',
@@ -10,13 +10,17 @@ import { SalesObject } 	from '../class/sales-object.class';
 })
 
 export class SalesObjectRecommendedComponent implements OnInit {
+	@Input() activeSalesObject: any;
+
 	salesObjects: SalesObject[];
-	sortArgs=['-dateAdded'];
+	sortNewest=['-dateAdded'];
+	filterFrom: any;
 
 	constructor(private salesObjectService: SalesObjectService) { }
 
 	ngOnInit(): void {
 		this.getSalesObjects();
+		this.filterFrom=this.activeSalesObject;
 	}
 
 	getSalesObjects(): void {
