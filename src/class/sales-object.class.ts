@@ -14,4 +14,5 @@ export class SalesObject {
 	place: any;
 	info: string;
 	img: any;
+	layout: any;
 }

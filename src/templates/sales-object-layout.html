@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div *ngIf="salesObject" class="layout">
+				<div *ngFor="let layout of salesObject.layout">
+					<p>{{layout.description}}</p>
+					<img class="thumbnail-image" src="{{layout.src}}">
+				</div>
+			</div>
+			<div class="vertical-spacer"></div>
+		</div>
+	</div>
+</div>

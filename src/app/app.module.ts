@@ -19,7 +19,7 @@ import { SalesObjectImagesComponent } from './sales-object-images.component';
 import { SearchComponent } from './search.component';
 import { SalesObjectSmallComponent } from './sales-object-small.component';
 import { ReturnToTop } from './return-to-top';
-import { LayoutComponent } from './layout.component';
+import { SalesObjectLayoutComponent } from './sales-object-layout.component';
 import { SellWithUsComponent } from './sell-with-us.component';
 import { SearchPageComponent} from './search-page.component';
 import { ContactPageComponent} from './contact-page.component';
@@ -69,7 +69,7 @@ import { SalesObjectSummaryComponent } from './sales-object-summary.component';
     SearchComponent,
     SalesObjectSmallComponent,
     ReturnToTop,
-    LayoutComponent,
+    SalesObjectLayoutComponent,
     SellWithUsComponent,
     BrokersComponent,
     CompanyCardComponent,
