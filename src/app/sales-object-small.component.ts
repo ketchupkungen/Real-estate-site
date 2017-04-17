@@ -11,6 +11,61 @@ import { SalesObject } 	from '../class/sales-object.class';
 
 export class SalesObjectSmallComponent implements OnInit {
 	salesObjects: SalesObject[];
+	sortArgs=['-dateAdded'];
+	sortingOptions = [
+		{
+			name: 'Pris',
+			options: [
+				{
+					type: 'price',
+					name: 'Lägsta till högsta'
+				},
+				{
+					type: '-price',
+					name: 'Högsta till lägsta'
+				}
+			]
+		},
+		{
+			name: 'Datum tillagt',
+			options: [
+				{
+					type: '-dateAdded',
+					name: 'Nyaste först'
+				},
+				{
+					type: 'dateAdded',
+					name: 'Äldsta först'
+				}
+			]
+		},
+		{
+			name: 'Byggnadsår',
+			options: [
+				{
+					type: '-buildDate',
+					name: 'Yngsta först'
+				},
+				{
+					type: 'buildDate',
+					name: 'Äldsta först'
+				}
+			]
+		},
+		{
+			name: 'Antal rum',
+			options: [
+				{
+					type: 'rooms',
+					name: 'Minst rum först'
+				},
+				{
+					type: '-rooms',
+					name: 'Flest rum först'
+				}
+			]
+		}
+	];
 
 	constructor(private salesObjectService: SalesObjectService) { }
 
@@ -18,13 +73,16 @@ export class SalesObjectSmallComponent implements OnInit {
 		this.getSalesObjects();
 	}
 
-	//This method only gets 3 sales objects at the moment (needs this limit to not send all the data)
 	getSalesObjects(): void {
-		this.salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects.slice(0, 3));
+		this.salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects);
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
+	}
+
+	changeSortArgs(arg:string){
+		this.sortArgs = [arg];
 	}
 
 }

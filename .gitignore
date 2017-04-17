@@ -104,5 +104,5 @@ _test-output
 _temp
 .jshintrc
 
-
+tslint.json
 .vscode/settings.json

@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }  from '@angular/router';
 import { HttpModule }    from '@angular/http';
 
+import { SalesObjectService } from './sales-object.service';
+
+import { OrderByPipe } from './order-by.pipe';
+
 import { AppComponent }  from './app.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
@@ -20,7 +24,7 @@ import { SellWithUsComponent } from './sell-with-us.component';
 import { SearchPageComponent} from './search-page.component';
 import { ContactPageComponent} from './contact-page.component';
 import { ObjectDetailComponent } from './object-detail.component';
-import { SalesObjectService } from './sales-object.service';
+
 import { BrokersComponent } from './brokers.component';
 import { CompanyCardComponent } from './contact-company.component';
 import { SalesObjectSummaryComponent } from './sales-object-summary.component';
@@ -55,6 +59,7 @@ import { SalesObjectSummaryComponent } from './sales-object-summary.component';
     HttpModule
   ],
   declarations: [
+    OrderByPipe,
     AppComponent,
     HeaderComponent,
     FooterComponent,

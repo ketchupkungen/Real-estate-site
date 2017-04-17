@@ -1,5 +1,5 @@
-.card-container {
-	margin-top: 5vh;
+.card-container a:hover {
+	text-decoration: none;
 }
 
 .img-object-small {

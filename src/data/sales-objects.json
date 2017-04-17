@@ -1,6 +1,7 @@
 [
 	{
 		"id": 1,
+		"dateAdded": "2017-03-18",
 		"type": "Bostadsrättslägenhet",
 		"price": 350000,
 		"priceMonth": 3900,
@@ -34,17 +35,18 @@
 			]
 		},
 		"img": [
-			{"src":"/img/objectId1-img1.jpg"},
-			{"src":"/img/objectId1-img2.jpg"},
-			{"src":"/img/objectId1-img3.jpg"},
-			{"src":"/img/objectId1-img4.jpg"},
-			{"src":"/img/objectId1-img5.jpg"},
-			{"src":"/img/objectId1-img6.jpg"},
-			{"src":"/img/objectId1-img7.jpg"}
+			{"src":"/img/objectId1-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img6.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img7.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	},
 	{
 		"id": 2,
+		"dateAdded": "2017-03-01",
 		"type": "Bostadsrättsradhus",
 		"price": 600000,
 		"priceMonth": 5600,
@@ -79,16 +81,17 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId2-img1.jpg"},
-			{"src":"img/objectId2-img2.jpg"},
-			{"src":"img/objectId2-img3.jpg"},
-			{"src":"img/objectId2-img4.jpg"},
-			{"src":"img/objectId2-img5.jpg"},
-			{"src":"img/objectId2-img6.jpg"}
+			{"src":"img/objectId2-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img6.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	},
 	{
 		"id": 3,
+		"dateAdded": "2017-04-02",
 		"type": "Villa",
 		"price": 1200000,
 		"priceMonth": 3400,
@@ -122,12 +125,52 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId3-img1.jpg"},
-			{"src":"img/objectId3-img2.jpg"},
-			{"src":"img/objectId3-img3.jpg"},
-			{"src":"img/objectId3-img4.jpg"},
-			{"src":"img/objectId3-img5.jpg"},
-			{"src":"img/objectId3-img6.jpg"}
+			{"src":"img/objectId3-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId3-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
+		]
+	},
+	{
+		"id": 4,
+		"dateAdded": "2017-04-16",
+		"type": "Villa",
+		"price": 2300000,
+		"priceMonth": 4300,
+		"buildDate": 1992,
+		"showings": [
+			{"date": "2017-08-05", "from": "11:00:00", "to": "13:00:00"},
+			{"date": "2017-08-09", "from": "09:00:00", "to": "11:00:00"},
+			{"date": "2017-08-02", "from": "12:30:00", "to": "15:30:00"},
+			{"date": "2017-08-12", "from": "11:00:00", "to": "13:00:00"}
+		],
+		"sold": false,
+		"rooms": 11,
+		"bathrooms": 2,
+		"area": 190,
+		"totalArea": 210,
+		"sellerId": 4,
+		"place": {
+			"city": "Vikingstad",
+			"municipality": "Linköping",
+			"adress": "Backgårdsgatan 17",
+			"postcode": 59049
+		},
+		"text": {
+			"info": "Lägenheten har en modern och funktionell planlösning och är bekvämt belägen på markplan med egen uteplats och trädgårdstäppa med eftermiddagssol, gavelläget ger bostaden ett underbart ljusinsläpp med fönster från tre håll.",
+			"shortInfo": "Här bor ni i förortsidyll på landet men ändå centralt då pendeln tar er till Linköping city på endast sju minuter med avgång var tjugonde minut, direktbuss till US, universitet samt Mjärdevi Center. Vikingstad samhälle erbjuder mataffär, pizzeria, skola åk 1-6 och tempererade bassänger i Valkebobadet.",
+			"roomInfo": [
+				"Välkomna till detta drömboende uppfört 2014/2015. Här möts ni av den öppna planlösningen mellan köket och vardagsrummet som tillsammans med två gavelfönster ger ett fint ljusflöde i hela lägenheten. Det eleganta köket från Ballingslöv är utrustat med stiliga detaljer såsom ljus mosaik över diskbänk som snyggt bryts av mot mörkare bänkskiva, elegant belysning i form av flertalet spotlights, samt vitvaror i vitt utförande av märket Bosch.",
+				"Från vardagsrummet når ni den härliga uteplatsen med tillhörande trädgårdstäppa belägen i ett solvänligt läge, här kan ni njuta av den behagliga eftermiddags och kvällssolen. De tre sovrummen är praktiskt separerade i olika delar av lägenheten, det större sovrummet har en skjutdörrsgarderob för ultimat förvaring.",
+				"Dessutom finns här ett lyxigt helkaklat badrum med spotlights i tak och goda möjligheter till tvätthantering i form av såväl arbetsbänk som tvättmaskin och torktumlare.",
+				"Goda möjligheter till förvaring ges genom stort separat förråd. Varje lägenhetsinnehavre är garanterad en p-plats med el-stolpe."
+			]
+		},
+		"img": [
+			{"src":"img/objectId4-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId4-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId4-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId4-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		]
 	}
 ]
