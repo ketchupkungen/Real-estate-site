@@ -21,7 +21,7 @@ export class ReturnToTop {
 
   scrollToTop(){
     function scroller(){
-      window.scrollBy(0,-40);
+      window.scrollBy(0,-100);
       if(window.pageYOffset > 0){
         setTimeout(scroller,10);
       }

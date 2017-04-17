@@ -8,12 +8,12 @@ import { SalesObjectService } from './sales-object.service';
 import { SalesObject } 	from '../class/sales-object.class';
 
 @Component({
-	selector: 'layout',
-	templateUrl: 'templates/sales-object-layout.html',
-	styleUrls: [ 'css/sales-object-layout.css' ]
+	selector: 'information',
+	templateUrl: 'templates/sales-object-information.html',
+	styleUrls: [ 'css/sales-object-information.css' ]
 })
 
-export class SalesObjectLayoutComponent implements OnInit {
+export class SalesObjectInformationComponent implements OnInit {
 
 	salesObject: SalesObject[];
     

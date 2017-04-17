@@ -1,3 +1,12 @@
 .vspace{
 	height: 30px;
 }
+
+h4 {
+	margin-top: 20px;
+}
+
+.site-title {
+	font-family: 'Tangerine', cursive;
+	font-size: 40px;
+}

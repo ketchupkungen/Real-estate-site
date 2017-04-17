@@ -26,15 +26,4 @@ export class FooterComponent {
 
 	];
 
-	scrollToTop(){
-
-		function scroller(){
-			window.scrollBy(0,-40);
-			if(window.pageYOffset > 0){
-				setTimeout(scroller,10);
-			}
-		}
-		scroller();
-	}
-
 }
