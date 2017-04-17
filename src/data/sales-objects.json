@@ -230,8 +230,8 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId4-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId4-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId5-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId5-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId4-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId4-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		],
@@ -242,7 +242,7 @@
 	},
 	{
 		"id": 6,
-		"dateAdded": "2017-04-02",
+		"dateAdded": "2017-04-12",
 		"type": "Villa",
 		"price": 1400000,
 		"priceMonth": 3900,
@@ -276,8 +276,8 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId3-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId3-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId6-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId6-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId3-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId3-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		],
@@ -289,7 +289,7 @@
 	},
 	{
 		"id": 7,
-		"dateAdded": "2017-03-20",
+		"dateAdded": "2017-02-20",
 		"type": "Bostadsrättslägenhet",
 		"price": 360000,
 		"priceMonth": 4000,
@@ -323,8 +323,8 @@
 			]
 		},
 		"img": [
-			{"src":"/img/objectId1-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"/img/objectId1-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId7-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId7-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"/img/objectId1-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"/img/objectId1-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"/img/objectId1-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
@@ -340,7 +340,7 @@
 	},
 	{
 		"id": 8,
-		"dateAdded": "2017-03-03",
+		"dateAdded": "2017-01-03",
 		"type": "Bostadsrättsradhus",
 		"price": 650000,
 		"priceMonth": 5900,
@@ -375,8 +375,8 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId2-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId2-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId8-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId8-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId2-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId2-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
 			{"src":"img/objectId2-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
