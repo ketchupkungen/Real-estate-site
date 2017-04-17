@@ -1,0 +1,13 @@
+.card-container a:hover {
+	text-decoration: none;
+}
+
+.img-object-small {
+	background-position: 50% 80%;
+  background-size: cover;
+  height: 150px;
+}
+
+.recommended-border {
+	border: 1px solid lightgrey;
+}

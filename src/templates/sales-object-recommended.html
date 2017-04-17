@@ -1,0 +1,54 @@
+<div class="container card-container mt-4">
+	<small class="display-4 text-muted">Liknande bostäder</small>
+	<div class="row recommended-border rounded">
+		<div *ngFor="let salesObject of salesObjects | orderBy: sortArgs; let i = index" class="mt-3 col-xs-12 col-sm-6 col-md-4">
+			<a *ngIf="i < 3" [routerLink]="['/detail', salesObject.id]">
+				<div class="card rounded-0">
+					<div class="row no-gutters container-img">
+						<div class="col-12 img-object-small" [style.background-image]="getSalesObjectImg(salesObject,0)">
+					  </div>
+				  </div>
+				  <div class="card-block">
+	    			<p class="card-text">
+	    				<small class="text-muted text-uppercase">{{salesObject.type}}</small>
+	    			</p>
+				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">,<br> {{salesObject.place.municipality}}</small></h4>
+			    	<div class="row">
+			    		<div class="col-12">
+			    			<p class="card-text">{{salesObject.place.adress}}</p>
+			    		</div>
+		    		</div>
+		    		<div class="row">
+			    		<div class="col-6">
+			    			<p class="card-text">
+			    				<small class="text-muted">PRIS: </small><br>
+			    				<small class="font-weight-bold">{{salesObject.price}} kr</small>
+			    			</p>
+		    			</div>
+		    			<div class="col-6">
+			    			<p class="card-text">
+			    				<small class="text-muted">MÅNADSAVG.: </small><br>
+			    				<small class="font-weight-bold">{{salesObject.priceMonth}} kr</small>
+			    			</p>
+		    			</div>
+	    			</div>
+	    			<div class="row">
+	    				<div class="col-6">
+			    			<p class="card-text">
+			    				<small class="text-muted">RUM: </small><br>
+			    				<small class="font-weight-bold">{{salesObject.rooms}} st</small>
+			    			</p>
+		    			</div>
+		    			<div class="col-6">
+			    			<p class="card-text">
+			    				<small class="text-muted">BOAREA: </small><br>
+			    				<small class="font-weight-bold">{{salesObject.area}} kvm</small>
+			    			</p>
+		    			</div>
+		    		</div>
+				  </div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
