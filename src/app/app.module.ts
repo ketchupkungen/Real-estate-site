@@ -29,6 +29,7 @@ import { SalesObjectRecommendedComponent } from './sales-object-recommended.comp
 import { BrokersComponent }                from './brokers.component';
 import { CompanyCardComponent }            from './contact-company.component';
 import { SalesObjectSummaryComponent }     from './sales-object-summary.component';
+import { SalesObjectContactComponent }     from './sales-object-contact.component';
 
 @NgModule({
   imports: [
@@ -79,7 +80,8 @@ import { SalesObjectSummaryComponent }     from './sales-object-summary.componen
     ObjectDetailComponent,
     BrokersComponent,
     SalesObjectSummaryComponent,
-    SalesObjectRecommendedComponent
+    SalesObjectRecommendedComponent,
+    SalesObjectContactComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
