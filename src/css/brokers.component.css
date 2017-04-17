@@ -1,8 +1,3 @@
-.card-container {
-	margin-top: 5vh;
-	margin-bottom: 25px;
-}
-
-.brokerProfile{
-  margin-top: 15px;
+.card-profile {
+  width: 20rem;
 }

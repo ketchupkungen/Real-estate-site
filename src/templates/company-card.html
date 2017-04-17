@@ -1,8 +1,26 @@
-<div class="container card-container container-styling">
-	<div class="row">
+<div class="container card-container">
+	<div class="row mb-2 mt-2">
     <div class="col-12">
       <div class="card">
-        <div class="card-block">OM {{usObject}}</div>
+        <div class="card-block">
+          <h2>{{companyName}}</h2>
+          <div class="row mt-2">
+            <div class="col-6">
+              <h5>Direkt Kontakt</h5>
+              <p><b>Telefon</b> {{companyPhone}}</p>
+              <p><b>Mail Kontakt</b> {{companyMailHq}}</p>
+              <p><b>Mail Support</b> {{companyMailSupport}}</p>
+            </div>
+            <div class="col-6">
+              <h5>Besöksadress</h5>
+              <p><b>Stad</b> {{companyCity}}</p>
+              <p><b>Adress</b> {{companyAddress}}</p>
+              <p><b>Postkod</b> {{companyPostcode}}</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
 	</div>
