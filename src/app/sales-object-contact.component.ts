@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component ({
   selector: 'sales-object-contact',
@@ -8,4 +9,10 @@ import { Component } from '@angular/core';
 
 export class SalesObjectContactComponent {
 
+  constructor (private http: Http) {
+    this.http.get('data/us.json').subscribe();
+  }
+  ngOnInit () {
+
+  }
 }
