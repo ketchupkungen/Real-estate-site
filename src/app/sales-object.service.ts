@@ -32,6 +32,10 @@ export class SalesObjectService {
 		return "url('" + salesObject.layout[indexNo].src + "')";
 	}
 
+  getSalesObjectSellerId(salesObject: SalesObject, id: number){
+    
+  }
+
 	private handleError(error: any): Promise<any> {
 		console.error('An error occurred', error);
 		return Promise.reject(error.mesage || error);

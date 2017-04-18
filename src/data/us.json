@@ -14,6 +14,7 @@
 	},
 	"sellers": [
 		{
+      "id": 1,
 			"firstName":"Kalle",
 			"lastName":"Bengtsson",
 			"contact": {
@@ -23,6 +24,7 @@
       "profile_image_src":"img/employees/kallebengtsson.svg"
 		},
 		{
+      "id": 2,
 			"firstName":"Mango",
 			"lastName":"Lugosson",
 			"contact": {
@@ -32,6 +34,7 @@
       "profile_image_src":"img/employees/mangolugosson.svg"
 		},
 		{
+      "id": 3,
 			"firstName":"Erika",
 			"lastName":"Östrand",
 			"contact": {
@@ -41,6 +44,7 @@
       "profile_image_src":"img/employees/erikaostrand.svg"
 		},
 		{
+      "id": 4,
 			"firstName":"Sture",
 			"lastName":"Eriksson",
 			"contact": {
@@ -50,6 +54,7 @@
       "profile_image_src":"img/employees/stureeriksson.svg"
 		},
 		{
+      "id": 5,
 			"firstName":"Erik",
 			"lastName":"Olsson",
 			"contact": {
@@ -59,6 +64,7 @@
       "profile_image_src":"img/employees/erikolsson.svg"
 		},
 		{
+      "id": 6,
 			"firstName":"Bob",
 			"lastName":"Bobsson",
 			"contact": {
@@ -68,6 +74,7 @@
       "profile_image_src":"img/employees/bobbobsson.svg"
 		},
 		{
+      "id": 7,
 			"firstName":"Göran",
 			"lastName":"Jörgensen",
 			"contact": {
