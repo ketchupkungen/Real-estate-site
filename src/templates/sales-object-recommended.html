@@ -1,5 +1,5 @@
 <div *ngIf="salesObjects" class="card-container mt-4 mr-4 ml-4">
-	<small class="display-4 text-muted">Liknande bostäder</small>
+	<h4 class="card-title"><small>Liknande visningar</small></h4>
 	<div class="row recommended-border">
 		<div *ngFor="let salesObject of salesObjects | filterBy: filterSalesObject | orderBy: sortNewest; let i = index" class="mt-3 mb-3 col-xs-12 col-sm-6 col-md-4">
 			<a *ngIf="i < 3" [routerLink]="['/detail', salesObject.id]">
