@@ -16,7 +16,18 @@ export class SearchComponent {
 				'3 rum',
 				'4 rum',
 				'5 rum',
-				'6 rum'
+				'6 rum',
+				'7 rum',
+				'8 rum',
+				'9 rum',
+				'10 rum',
+				'11 rum',
+				'12 rum',
+				'13 rum',
+				'14 rum',
+				'15 rum',
+				'Ingen gräns'
+
 			]
 		},
 		{
@@ -27,7 +38,10 @@ export class SearchComponent {
 				'75 kvm',
 				'100 kvm',
 				'150 kvm',
-				'200 kvm'
+				'200 kvm',
+				'250 kvm',
+				'300 kvm',
+				'Ingen gräns'
 			]
 		},
 		{
