@@ -10,7 +10,7 @@ import { Http } from '@angular/http';
 export class SalesObjectContactComponent {
 
   constructor (private http: Http) {
-    this.http.get('data/us.json').subscribe();
+    this.http.get('data/us.json').subscribe();  
   }
   ngOnInit () {
 
