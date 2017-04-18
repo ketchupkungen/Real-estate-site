@@ -16,7 +16,7 @@ import { SalesObject } 				from '../class/sales-object.class';
 
 export class SalesObjectRecommendedComponent implements OnInit {
 	salesObjects: SalesObject[];
-	filterSalesObject: SalesObject;
+	filterSalesObject: any;
 	sortNewest=['-dateAdded'];
 
 	constructor(
