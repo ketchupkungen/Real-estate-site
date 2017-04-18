@@ -4,7 +4,7 @@
     <div *ngFor="let sellerObject of sellersObject; let i = index">
       <div class="col-2 mb-4">
         <div class="card card-profile">
-          <img class="card-img-top" src="{{sellerObject.profile_image_src}}" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="{{sellerObject.profile_image_src}}" alt="Card image cap">
           <div class="card-block">
             <h4 class="card-title">{{sellerObject.firstName + " " + sellerObject.lastName}}</h4>
             <p class="card-text">{{sellerObject.contact.phone}}</p>
