@@ -1,3 +1,7 @@
 .card-profile {
-  width: 20rem;
+	word-wrap: break-word;
+}
+
+.card-profile img {
+	max-height: 250px;
 }
