@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
-import { Location } from '@angular/common';
+import { Component, OnInit } 				from '@angular/core';
+import { ActivatedRoute, Params } 	from '@angular/router';
+import { Location } 								from '@angular/common';
 
 import 'rxjs/add/operator/switchMap';
 
 import { SalesObjectService } from './sales-object.service';
-import { SalesObject } from '../class/sales-object.class';
+import { SalesObject } 				from '../class/sales-object.class';
  
 @Component({
   selector: 'object-detail-component',
@@ -14,7 +14,6 @@ import { SalesObject } from '../class/sales-object.class';
   providers: [SalesObjectService]
 })
 export class ObjectDetailComponent implements OnInit {
-	
 	salesObject: any;
 
 	constructor(

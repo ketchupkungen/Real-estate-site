@@ -1,5 +1,5 @@
 <div class="vspace"></div>
-<div class="container sorting-controls">
+<div class="container-fluid sorting-controls">
 	<p class="label">Sortera efter:</p>
 	<div class="row">
 		<div *ngFor="let sortArg of sortingOptions" class="col-6 col-md-3">
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 </div>
-<div class="container card-container mt-4">
+<div class="container-fluid card-container mt-4">
 	<a *ngFor="let salesObject of salesObjects | orderBy: sortArgs; let i = index" [routerLink]="['/detail', salesObject.id]">
 		<div class="row">
 			<div class="col-12">
