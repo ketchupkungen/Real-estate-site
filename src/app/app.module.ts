@@ -32,6 +32,8 @@ import { BrokersComponent }                from './brokers.component';
 import { CompanyCardComponent }            from './contact-company.component';
 import { SalesObjectSummaryComponent }     from './sales-object-summary.component';
 import { SalesObjectContactComponent }     from './sales-object-contact.component';
+import { AboutUsComponent }                from './about-us.component';
+import { JobbsComponent }                  from './jobbs.component';
 
 @NgModule({
   imports: [
@@ -54,6 +56,14 @@ import { SalesObjectContactComponent }     from './sales-object-contact.componen
       {
         path: 'contact-page',
         component: ContactPageComponent
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent
+      },
+      {
+        path: 'jobbs',
+        component: JobbsComponent
       },
       {
         path: 'detail/:id',
@@ -85,7 +95,9 @@ import { SalesObjectContactComponent }     from './sales-object-contact.componen
     BrokersComponent,
     SalesObjectSummaryComponent,
     SalesObjectRecommendedComponent,
-    SalesObjectContactComponent
+    SalesObjectContactComponent,
+    AboutUsComponent,
+    JobbsComponent
   ],
   providers: [ SalesObjectService ],
   bootstrap: [ AppComponent ]
