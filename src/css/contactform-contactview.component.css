@@ -1,9 +1,12 @@
 
-
+contactform-contactview{
+  background-color: red;
+}
 
 
 .container-background {
-  background-image: url("../img/contact-image.png");
+  background-image: url("../img/contact-image.jpeg");
+  background-size: cover;
   width: 100%;
   padding: 20px;
 }
