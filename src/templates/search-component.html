@@ -8,13 +8,19 @@
 	</form>
 
 	<div class="row">
-		<div *ngFor="let filter of filterOptions" class="col-6 col-md-3">
-			<select class="custom-select">
-			  <option selected>{{filter.type}}</option>
-			  <option *ngFor="let option of filter.options">
-			  	{{option}}
-			  </option>
-			</select>
+		<div *ngFor="let filter of localMem.filters" class="col-6 col-md-3">
+			<div ngbDropdown>
+		        <button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
+		        	<span *ngIf="!filter.selectedOption"> {{filter.type}}</span>
+		        	<span *ngIf="filter.selectedOption">{{filter.selectedOption}}</span>
+		        </button>
+		        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		          <button class="dropdown-item" *ngFor="let option of filter.options" 
+		          (click)="chooseFilter(filter, option)">
+		          	{{option}}
+		          </button>
+		        </div>
+	      	</div>
 		</div>
 	</div>
 	<div class="vspace"></div>

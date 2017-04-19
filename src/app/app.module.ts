@@ -5,6 +5,7 @@ import { RouterModule }                    from '@angular/router';
 import { HttpModule }                      from '@angular/http';
 
 import { SalesObjectService }              from './sales-object.service';
+import { MemService }                      from './mem.service';
 
 import { OrderByPipe }                     from './order-by.pipe';
 import { FilterByPipe }                    from './filter-by.pipe';
@@ -87,7 +88,8 @@ import { SalesObjectContactComponent }     from './sales-object-contact.componen
     SalesObjectRecommendedComponent,
     SalesObjectContactComponent
   ],
-  providers: [ SalesObjectService ],
+  providers: [ SalesObjectService,
+               MemService], 
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

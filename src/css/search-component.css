@@ -6,9 +6,14 @@
 	background-color: AliceBlue;
 }
 
-.search-component .custom-select {
+.search-component .dropdown {
 	width: 100%;
+	color: white;
 	margin-bottom: 10px;
+}
+
+.search-component .dropdown button {
+	width: 100%;
 }
 
 .dropdown-hover{
