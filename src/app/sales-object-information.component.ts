@@ -16,8 +16,8 @@ import { SalesObject } 	from '../class/sales-object.class';
 export class SalesObjectInformationComponent implements OnInit {
 
 	salesObject: SalesObject[];
-    
-    constructor(
+
+  constructor(
 		private salesObjectService: SalesObjectService,
 		private route: ActivatedRoute,
 		private location: Location
@@ -27,5 +27,9 @@ export class SalesObjectInformationComponent implements OnInit {
         this.route.params
             .switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
             .subscribe((object: any) => this.salesObject = object);
-	}	
+	}
+
+  numberWithSpaces(price:number) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
 }
