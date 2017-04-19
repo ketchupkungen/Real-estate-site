@@ -16,11 +16,11 @@ export class FooterComponent {
 		},
 		{
 			name: 'Om oss',
-			link: '/'
+			link: 'about-us'
 		},
 		{
 			name: 'Jobb',
-			link: '/'
+			link: 'jobbs'
 		}
 
 

@@ -8,7 +8,7 @@
 					{{sortArg.name}}
 				</button>
 				<div class="dropdown-menu dropdown-hover" aria-labelledby="dropdownMenu1">
-					<button *ngFor="let option of sortArg.options" 
+					<button *ngFor="let option of sortArg.options"
 							class="dropdown-item dropdown-hover"
 							(click)="changeSortArgs(option.type)">
 						{{option.name}}
@@ -44,11 +44,11 @@
 			    		<div class="col-5">
 			    			<p class="card-text">
 			    				<small class="text-muted">PRIS: </small>
-			    				<small class="font-weight-bold">{{salesObject.price}} kr</small>
+			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</small>
 			    			</p>
 			    			<p class="card-text">
 			    				<small class="text-muted">MÅNADSAVGIFT: </small>
-			    				<small class="font-weight-bold">{{salesObject.priceMonth}} kr</small>
+			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
 			    			</p>
 			    			<p class="card-text">
 			    				<small class="text-muted">RUM: </small>
