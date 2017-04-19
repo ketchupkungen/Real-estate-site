@@ -41,4 +41,7 @@ export class SalesObjectRecommendedComponent implements OnInit {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
 	}
 
+  numberWithSpaces(price:number) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
 }
