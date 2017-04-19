@@ -20,7 +20,7 @@
 .footerLinks a {
 	text-decoration: none;
 	margin: 0 5px 0 5px;
-	font-size: 15px;
+	font-size: 20px;
 	color: black;
 	padding: 5px;
 	
@@ -50,8 +50,8 @@
 }
 
 p.copyright {
-	font-family: times;
-	font-size: 10px;
+	/*font-family: times;*/
+	font-size: 12px;
 }
 
 /*
