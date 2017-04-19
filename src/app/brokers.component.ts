@@ -20,4 +20,8 @@ export class BrokersComponent {
 		return sellerObject.profile_image_src;
 	}
 
+  numberWithSpaces(price:number) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
 }

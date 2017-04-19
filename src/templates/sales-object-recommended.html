@@ -22,13 +22,13 @@
 			    		<div class="col-6">
 			    			<p class="card-text">
 			    				<small class="text-muted">PRIS: </small><br>
-			    				<small class="font-weight-bold">{{salesObject.price}} kr</small>
+			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</small>
 			    			</p>
 		    			</div>
 		    			<div class="col-6">
 			    			<p class="card-text">
 			    				<small class="text-muted">MÅNADSAVG.: </small><br>
-			    				<small class="font-weight-bold">{{salesObject.priceMonth}} kr</small>
+			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
 			    			</p>
 		    			</div>
 	    			</div>
@@ -42,7 +42,7 @@
 		    			<div class="col-6">
 			    			<p class="card-text">
 			    				<small class="text-muted">BOAREA: </small><br>
-			    				<small class="font-weight-bold">{{salesObject.area}} kvm</small>
+			    				<small class="font-weight-bold">{{salesObject.area}} m<sup>2</sup></small>
 			    			</p>
 		    			</div>
 		    		</div>
