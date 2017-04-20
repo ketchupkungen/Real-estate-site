@@ -6,6 +6,7 @@ import { HttpModule }                      from '@angular/http';
 
 import { SalesObjectService }              from './sales-object.service';
 import { MemService }                      from './mem.service';
+import { RestService }                     from './rest.service';
 
 import { OrderByPipe }                     from './order-by.pipe';
 import { FilterByPipe }                    from './filter-by.pipe';
@@ -23,7 +24,7 @@ import { SearchComponent }                 from './search.component';
 import { SalesObjectSmallComponent }       from './sales-object-small.component';
 import { ReturnToTop }                     from './return-to-top';
 import { SalesObjectLayoutComponent }      from './sales-object-layout.component';
-import { SalesObjectInformationComponent }      from './sales-object-information.component';
+import { SalesObjectInformationComponent } from './sales-object-information.component';
 import { SellWithUsComponent }             from './sell-with-us.component';
 import { SearchPageComponent}              from './search-page.component';
 import { ContactPageComponent}             from './contact-page.component';
@@ -101,7 +102,8 @@ import { JobbsComponent }                  from './jobbs.component';
     JobbsComponent
   ],
   providers: [ SalesObjectService,
-               MemService], 
+               MemService,
+               RestService ], 
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

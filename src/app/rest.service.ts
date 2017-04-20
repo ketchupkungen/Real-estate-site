@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { Http } from "@angular/http";
-import { RestEntity } from "../class/rest/rest-entity.class";
+import { Http } 			from "@angular/http";
+import { RestEntity } from "../class/rest/rest-entity.class.js";
 
 @Injectable()
 export class RestService {

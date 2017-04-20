@@ -2,22 +2,13 @@
 var express = require('express');
 
 // Mongoose added
-var fs = require('fs');
-var bodyparser = require('body-parser');
 var mongoose = require('mongoose');
 require('mongoosefromclass')(mongoose);
 
-// Create a new express server, store in the variable app
-var app = express();
-
-// Make the express server abl.e to read the body of requests
-app.use(bodyparser.json({ limit: '5mb' }));
-app.use(bodyparser.urlencoded({ extended: false }));
-
 //Fake JSON Data
 var salesData = require('./src/data/sales-data.json');
-var brokersData = require('./src/data/brokers-data.json');
-var usData = require('./src/data/us-data.json');
+// var brokersData = require('./src/data/brokers-data.json');
+// var usData = require('./src/data/us-data.json');
 
 // Mongoose added
 global.mongoose = mongoose;
@@ -28,30 +19,20 @@ global.mongoose = mongoose;
 mongoose.Promise = Promise;
 
 // Load classes, make them global and then convert selected ones to modules
-var classesToLoad = {
-	Sale: 'module'
-	// Broker: 'module',
-	// Us: 'module'
-};
+global.Restrouter = require('./modules/restrouter.class');
+global.Sale = require('./modules/sale.class');
 
-for(let className in classesToLoad) {
-	let pathName = './modules/' + className.toLowerCase() + '.class';
-	global[className] = require(pathName);
-}
+global.Sale = mongoose.fromClass(global.Sale);
 
-for(let className in classesToLoad) {
-	if(classesToLoad[className] == 'module') {
-		global[className] = mongoose.fromClass(global[className]);
-	}
-}
+// Create a new express server, store in the variable app
+var app = express();
 
 // Point to folders where we have static files
 // (our frontend code)
 app.use(express.static('src'));
 app.use(express.static('./'));
 
-// Other routes go here
-// ...
+new Restrouter(app, Sale);
 
 // Never cache request starting with "/rest/"
 app.use((req, res, next)=>{
