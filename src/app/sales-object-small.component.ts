@@ -1,6 +1,8 @@
 import { Component, OnInit } 		from '@angular/core';
 
-import { SalesObjectService } from './sales-object.service';
+import { SalesObjectService } 		from './sales-object.service';
+import { MemService }				from './mem.service';
+
 import { SalesObject } 	from '../class/sales-object.class';
 
 @Component({
@@ -10,67 +12,45 @@ import { SalesObject } 	from '../class/sales-object.class';
 })
 
 export class SalesObjectSmallComponent implements OnInit {
+	localMem: any;
 	salesObjects: SalesObject[];
-	sortArgs=['-dateAdded'];
-	sortingOptions = [
+	sortingTypes = [
 		{
 			name: 'Pris',
-			options: [
-				{
-					type: 'price',
-					name: 'Lägsta till högsta'
-				},
-				{
-					type: '-price',
-					name: 'Högsta till lägsta'
-				}
-			]
+			value: 'price'
 		},
 		{
 			name: 'Datum tillagt',
-			options: [
-				{
-					type: '-dateAdded',
-					name: 'Nyaste först'
-				},
-				{
-					type: 'dateAdded',
-					name: 'Äldsta först'
-				}
-			]
+			value: 'dateAdded'
 		},
 		{
 			name: 'Byggnadsår',
-			options: [
-				{
-					type: '-buildDate',
-					name: 'Yngsta först'
-				},
-				{
-					type: 'buildDate',
-					name: 'Äldsta först'
-				}
-			]
+			value: 'buildDate'
 		},
 		{
-			name: 'Antal rum',
-			options: [
-				{
-					type: 'rooms',
-					name: 'Minst rum först'
-				},
-				{
-					type: '-rooms',
-					name: 'Flest rum först'
-				}
-			]
+			name: 'Bo-yta',
+			value: 'area'
 		}
 	];
+	selectedOption = ['-dateAdded'];
+	selectedType = this.sortingTypes[1];
 
-	constructor(private salesObjectService: SalesObjectService) { }
+	constructor(
+		private salesObjectService: SalesObjectService,
+		private memService: MemService
+	) { 
+		this.localMem = memService.get(this);
+	}
 
 	ngOnInit(): void {
 		this.getSalesObjects();
+		this.localMem.sortingTypes = this.sortingTypes;
+		if(!this.localMem.selectedType){
+			this.localMem.selectedType = this.selectedType;
+		}
+		if(!this.localMem.selectedOption){
+			this.localMem.selectedOption = this.selectedOption;
+		}
 	}
 
 	getSalesObjects(): void {
@@ -81,12 +61,22 @@ export class SalesObjectSmallComponent implements OnInit {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
 	}
 
-	changeSortArgs(arg:string){
-		this.sortArgs = [arg];
+	toggleOption(type: any){
+		if(type.name === this.localMem.selectedType.name){
+			if(this.localMem.selectedOption[0].charAt(0) === '-'){
+				this.localMem.selectedOption = [type.value];
+			}
+			else{
+				this.localMem.selectedOption = ['-' + type.value];	
+			}
+		}
+		else{
+			this.localMem.selectedType = type;
+			this.localMem.selectedOption = [type.value];
+		}
 	}
 
-  numberWithSpaces(price:number) {
-    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  }
-
+	numberWithSpaces(price:number) {
+	  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+	}
 }
