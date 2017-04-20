@@ -29,4 +29,19 @@ export class CompanyCardComponent {
     this.http.get('data/us.json').subscribe(res => this.companyAddress = res.json().place.adress);
     this.http.get('data/us.json').subscribe(res => this.companyPostcode = res.json().place.postcode);
   }
+
+  convertNumberToPostcode(postNumber:number){
+
+    if(postNumber){
+      let postNumberStr = postNumber.toString();
+      if (postNumberStr.length == 5){
+        let first = postNumberStr.slice(0, 3);
+        let second = postNumberStr.slice(3, 5);
+        return first + " " + second;
+      }
+    }
+
+    return "xxx xx";
+  }
+
 }

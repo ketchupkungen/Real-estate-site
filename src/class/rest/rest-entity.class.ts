@@ -10,6 +10,7 @@ export class RestEntity {
   http: any; // injected by the service
 
   constructor(entityName: string){
+
     // Real backend/REST api
     this.baseUrl = '/rest/' + entityName + '/';
   }
