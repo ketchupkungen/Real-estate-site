@@ -9,7 +9,7 @@ import { MemService } from './mem.service';
 
 export class SearchComponent implements OnInit{
 	localMem: any;
-	filters = [
+ 	filters = [
 		{
 			type: 'Rum(min)',
 			options: [
@@ -89,5 +89,4 @@ export class SearchComponent implements OnInit{
 			this.localMem.filters[filterIndex].selectedOption = option; 
 		}
 	}
-
 }
