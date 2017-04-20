@@ -45,9 +45,8 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout1.jpg", "description":"Våning 1"},
-			{"src":"/img/layout2.jpg", "description":"Våning 2"},
-			{"src":"/img/layout3.jpg", "description":"Våning 3"}
+			{"src":"/img/layout1.jpg", "description":"Bottenvåning"},
+			{"src":"/img/layout2.jpg", "description":"Andra våningen"}
 		]
 	},
 	{
@@ -96,9 +95,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"},
-			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåning"},
+			{"src":"/img/layout5.jpg", "description":"Andra våning"},
+			{"src":"/img/layout6.jpg", "description":"Tredje våning"}
 		]
 	},
 	{
@@ -144,8 +143,8 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout3.jpg", "description":"Våning 1"},
-			{"src":"/img/layout4.jpg", "description":"Våning 2"}
+			{"src":"/img/layout3.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout4.jpg", "description":"Andra våningen"}
 		]
 	},
 	{
@@ -191,7 +190,7 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout6.jpg", "description":"Våning 1"}
+			{"src":"/img/layout6.jpg"}
 		]
 	},
 	{
@@ -237,7 +236,7 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout6.jpg", "description":"Våning 1"}
+			{"src":"/img/layout6.jpg"}
 		]
 	},
 	{
@@ -283,8 +282,8 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout3.jpg", "description":"Våning 1"},
-			{"src":"/img/layout4.jpg", "description":"Våning 2"}
+			{"src":"/img/layout3.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout4.jpg", "description":"Andra våningen"}
 		]
 	},
 	{
@@ -333,9 +332,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout1.jpg", "description":"Våning 1"},
-			{"src":"/img/layout2.jpg", "description":"Våning 2"},
-			{"src":"/img/layout3.jpg", "description":"Våning 3"}
+			{"src":"/img/layout1.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout2.jpg", "description":"Andra våningen"},
+			{"src":"/img/layout3.jpg", "description":"Tredje våningen"}
 		]
 	},
 	{
@@ -383,9 +382,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"},
-			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout5.jpg", "description":"Andra våningen"},
+			{"src":"/img/layout6.jpg", "description":"Tredje våningen"}
 		]
 	},
 	{
@@ -431,8 +430,8 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout5.jpg", "description":"Andra våningen"}
 		]
 	},
 	{
@@ -478,9 +477,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"},
-			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout5.jpg", "description":"Andra våningen"},
+			{"src":"/img/layout6.jpg", "description":"Tredje våningen"}
 		]
 	},
 	{
@@ -526,9 +525,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"},
-			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout5.jpg", "description":"Andra våningen"},
+			{"src":"/img/layout6.jpg", "description":"Tredje våningen"}
 		]
 	},
 	{
@@ -574,9 +573,9 @@
 		],
 
 		"layout": [
-			{"src":"/img/layout4.jpg", "description":"Våning 1"},
-			{"src":"/img/layout5.jpg", "description":"Våning 2"},
-			{"src":"/img/layout6.jpg", "description":"Våning 3"}
+			{"src":"/img/layout4.jpg", "description":"Bottenvåningen"},
+			{"src":"/img/layout5.jpg", "description":"Andra våningen"},
+			{"src":"/img/layout6.jpg", "description":"tredje våningen"}
 		]
 	}
 ]

@@ -1,10 +1,10 @@
-import { Component, OnInit } 				from '@angular/core';
+import { Component, OnInit } 		from '@angular/core';
 import { ActivatedRoute, Params } 	from '@angular/router';
-import { Location } 								from '@angular/common';
+import { Location } 				from '@angular/common';
 
 import 'rxjs/add/operator/switchMap';
 
-import { SalesObjectService } from './sales-object.service';
+import { SalesObjectService } 		from './sales-object.service';
 import { SalesObject } 				from '../class/sales-object.class';
  
 @Component({
