@@ -32,4 +32,15 @@ export class SalesObjectInformationComponent implements OnInit {
   numberWithSpaces(price:number) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
   }
+
+  convertNumberToPostcode(postNumber:number){
+    let postNumberStr = postNumber.toString();
+    if (postNumberStr.length == 5){
+      let first = postNumberStr.slice(0, 3);
+      let second = postNumberStr.slice(3, 5);
+      return first + " " + second;
+    }
+    return "xxx xx";
+  }
+
 }
