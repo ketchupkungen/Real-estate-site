@@ -26,6 +26,7 @@
 	    				<small class="text-muted text-uppercase">{{salesObject.type}}</small>
 	    			</p>
 				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
+				    <p class="card-text">{{salesObject.place.adress}}</p>
 			    	<div class="row">
 			    		<div class="col-sm-7">
 			    			<p class="card-text">{{salesObject.place.adress}}</p>
@@ -43,6 +44,14 @@
                   </tbody>
                 </table>
 			    		</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-12">
+		    				<h4 class="card-text">
+		    					<small class="text-muted">PRIS: </small>
+			    				{{numberWithSpaces(salesObject.price)}} kr
+			    			</h4>
+		    			</div>
 		    		</div>
 				  </div>
 				</div>
