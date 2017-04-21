@@ -10,15 +10,15 @@
 			  			<h4 class="card-title">Visningar</h4>
 			  			<table class="table table-sm">
 							  <thead>
-							    <tr>
-							      <th class="text-muted">Datum</th>
-							      <th class="text-muted">Från</th>
-							      <th class="text-muted">Till</th>
+							    <tr class="table-info">
+							      <th>Datum</th>
+							      <th>Från</th>
+							      <th>Till</th>
 							    </tr>
 							  </thead>
 							  <tbody>
 							    <tr *ngFor="let showing of salesObject.showings">
-							      <th scope="row" class="text-muted">{{showing.date}}</th>
+							      <th scope="row">{{showing.date}}</th>
 							      <td>{{showing.from}}</td>
 							      <td>{{showing.to}}</td>
 							    </tr>
