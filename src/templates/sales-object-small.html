@@ -27,10 +27,6 @@
 	    			</p>
 				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
 				    <p class="card-text">{{salesObject.place.adress}}</p>
-				    <!--<h4 class="card-text">
-	    				{{numberWithSpaces(salesObject.price)}} kr
-	    			</h4>
-	    			<div class="vspace"></div>-->
 			    	<div class="row">
 			    		<div class="col-7">
 			    			<p class="card-text">
@@ -39,16 +35,20 @@
 			    		</div>
 			    		<div class="col-5">
 			    			<p class="card-text">
-			    				<small class="text-muted">RUM: </small><br>
-			    				<small class="font-weight-bold">{{salesObject.rooms}} st</small>
+			    				<small class="text-muted">RUM: </small>
+			    				<small class="font-weight-bold  move-down-text">{{salesObject.rooms}} st</small>
 			    			</p>
 			    			<p class="card-text">
-			    				<small class="text-muted">BOAREA: </small><br>
-			    				<small class="font-weight-bold">{{salesObject.area}} m<sup>2</sup></small>
+			    				<small class="text-muted">BOAREA: </small>
+			    				<small class="font-weight-bold  move-down-text">{{salesObject.area}} m<sup>2</sup></small>
+			    			</p>
+			    			<p class="card-text">
+			    				<small class="text-muted move-down-text">BYGGT: </small>
+			    				<small class="font-weight-bold move-down-text">{{salesObject.buildDate}}</small>
 			    			</p>			    		
 			    			<p class="card-text">
-			    				<small class="text-muted">MÅNADSAVGIFT: </small><br>
-			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
+			    				<small class="text-muted">MÅNADSAVGIFT: </small>
+			    				<small class="font-weight-bold  move-down-text">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
 			    			</p>
 			    		</div>
 		    		</div>

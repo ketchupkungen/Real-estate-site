@@ -23,3 +23,15 @@
 	cursor: pointer;
 	color: PaleVioletRed;
 }
+
+.moove {
+	display: block;
+}
+
+
+@media screen and (max-width: 500px) {
+	.move-down-text {
+		display: block;
+
+	}
+}
