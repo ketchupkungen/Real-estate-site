@@ -39,8 +39,6 @@ export class SalesObjectContactComponent {
 			.subscribe((object: any) => {
         this.salesObject = object;
         this.brooker = this.us.sellers[this.salesObject.sellerId];
-        console.log(this.salesObject);
-        console.log(this.brooker);
       });
 	}
 }
