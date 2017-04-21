@@ -2,16 +2,13 @@
 var express = require('express');
 
 // Mongoose added
-var fs = require('fs');
 var mongoose = require('mongoose');
-
-// Create a new express server, store in the variable app
-var app = express();
+require('mongoosefromclass')(mongoose);
 
 //Fake JSON Data
-// var salesData = require('./src/data/salesData.json');
-// var brokersData = require('./src/data/brokersData.json');
-// var usData = require('./src/data/usData.json');
+var salesData = require('./src/data/sales-data.json');
+// var brokersData = require('./src/data/brokers-data.json');
+// var usData = require('./src/data/us-data.json');
 
 // Mongoose added
 global.mongoose = mongoose;
@@ -21,13 +18,29 @@ global.mongoose = mongoose;
 // (takes away the warning "mpromise is deprecated")
 mongoose.Promise = Promise;
 
+// Load classes, make them global and then convert selected ones to modules
+global.Restrouter = require('./modules/restrouter.class');
+global.Sale = require('./modules/sale.class');
+
+global.Sale = mongoose.fromClass(global.Sale);
+
+// Create a new express server, store in the variable app
+var app = express();
+
 // Point to folders where we have static files
 // (our frontend code)
 app.use(express.static('src'));
 app.use(express.static('./'));
 
-// Other routes go here
-// ...
+new Restrouter(app, Sale);
+
+// Never cache request starting with "/rest/"
+app.use((req, res, next)=>{
+	if(req.url.indexOf('/rest/') >= 0) {
+		res.set("Cache-Control", "no-store, must-revalidate");
+	}
+	next();
+});
 
 // If no other route rule fulfilled then return index.html
 app.get('*',(req, res)=>{
@@ -45,4 +58,50 @@ function onceConnected() {
 	app.listen(3000, ()=>{
 	  console.log('Express app listening on port 3000!');
 	});
+
+	// For each collection type we have JSON of
+	// If the db counts 0 of either item
+	// It will insert the JSON into the db.
+	createFakeDataFromJSON();
+}
+
+function createFakeDataFromJSON() {
+    Sale.count(function(err, count) {
+        if (count === 0) {
+            createDeafultSales();
+        }
+    });
+
+    // Broker.count(function(err, count) {
+    // 	if (count === 0) {
+    // 		createDefaultBroker();
+    // 	}
+    // });
+
+    // Us.count(function(err, count) {
+    //     if (count === 0) {
+    //         createDeafultUs();
+    //     }
+    // });
+
+	function createDeafultSales() {
+		salesData.forEach(function(data) {
+			new Sale(data).save();
+		});
+	}
+
+	// function createDefaultBrokers() {
+	// 	thingsLeftToSave += brokersData.length;
+
+	// 	brokersData.forEach(function(education) {
+	// 		new Broker(brokers).save();
+	// 	});
+	// }
+
+	// function createDeafultUs() {
+	// 	thingsLeftToSave += usData.length;
+
+	// 	new Us(usData).save();
+	// }
+
 }

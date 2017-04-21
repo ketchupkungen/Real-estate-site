@@ -32,8 +32,8 @@ export class SalesObjectService {
 		return "url('" + salesObject.layout[indexNo].src + "')";
 	}
 
-  getSalesObjectSellerId(salesObject: SalesObject, id: number){
-    
+  getSalesObjectSellerId(salesObject: SalesObject){
+    return salesObject.sellerId;
   }
 
 	private handleError(error: any): Promise<any> {

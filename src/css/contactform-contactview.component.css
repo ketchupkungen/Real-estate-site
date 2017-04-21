@@ -3,10 +3,22 @@ contactform-contactview{
   background-color: red;
 }
 
+.vspace{
+	height: 30px;
+}
 
-.container-background {
+.contact-us-form {
   background-image: url("../img/contact-image.jpeg");
   background-size: cover;
   width: 100%;
   padding: 20px;
+}
+
+.contact-us-form h2 {
+	color: white;
+}
+
+.contact-us-form form{
+	background: rgb(0, 0, 0); /* fallback color */
+   	background: rgba(0, 0, 0, 0.5);
 }

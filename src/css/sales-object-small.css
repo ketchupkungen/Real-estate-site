@@ -4,22 +4,22 @@
 
 .img-object-small {
 	background-position: 50% 80%;
-  background-size: cover;
-  border-right: 1px solid lightgrey;
-  height: 250px;
+  	background-size: cover;
+  	border-right: 1px solid lightgrey;
+  	height: 250px;
 }
 
 .img-object-small:last-child {
 	border-right: 0px;
 }
 
-.sorting-controls .dropdown {
+.sorting-controls a{
 	width: 100%;
-	color: white;
 	margin-bottom: 10px;
+	display: inline-block;
 }
 
-.sorting-controls .dropdown button {
-	width: 100%;
-	text-align: left;
+.sorting-controls a:hover{
+	cursor: pointer;
+	color: PaleVioletRed;
 }

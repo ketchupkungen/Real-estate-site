@@ -1,0 +1,15 @@
+{
+	"name": "Dhyr & Rumson",
+	"contact": {
+		"phone": "040-27301",
+		"mail": {
+			"hq": "hq@dhyrorumson.se",
+			"support": "support@dhyrorumson.se"
+		}
+	},
+	"place": {
+		"city": "Malmö",
+		"adress": "Gullesväg, 1",
+		"postcode": 27032
+	}
+}

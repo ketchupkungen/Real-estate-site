@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MemService } from './mem.service';
 
 @Component({
   selector: 'search',
@@ -6,8 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['css/search-component.css']
 })
 
-export class SearchComponent {
-	filterOptions = [
+export class SearchComponent implements OnInit{
+	localMem: any;
+ 	filters = [
 		{
 			type: 'Rum(min)',
 			options: [
@@ -19,16 +21,9 @@ export class SearchComponent {
 				'6 rum',
 				'7 rum',
 				'8 rum',
-				'9 rum',
-				'10 rum',
-				'11 rum',
-				'12 rum',
-				'13 rum',
-				'14 rum',
-				'15 rum',
-				'Ingen gräns'
-
-			]
+				'visa alla'
+			],
+			selectedOption: ''
 		},
 		{
 			type: 'Boarea(min)',
@@ -41,8 +36,9 @@ export class SearchComponent {
 				'200 kvm',
 				'250 kvm',
 				'300 kvm',
-				'Ingen gräns'
-			]
+				'visa alla'
+			],
+			selectedOption: ''
 		},
 		{
 			type: 'Typ av bostad',
@@ -51,7 +47,9 @@ export class SearchComponent {
 				'Bostadsrätt',
 				'Villa',
 				'Fritidshus',
-			]
+				'visa alla'
+			],
+			selectedOption: ''
 		},{
 			type: 'Pris(max)',
 			options: [
@@ -66,8 +64,29 @@ export class SearchComponent {
 				'10 000 000',
 				'15 000 000',
 				'30 000 000',
-				'inget maxpris'
-			]
+				'visa alla'
+			],
+			selectedOption: ''
 		}
 	];
+
+	constructor(private memService: MemService){
+		this.localMem = memService.get(this);
+	}
+
+	ngOnInit(){
+		if(!this.localMem.filters){
+			this.localMem.filters = this.filters;
+		}
+	}
+
+	chooseFilter(filter: Object, option: string){
+		let filterIndex = this.localMem.filters.indexOf(filter);
+		if(option === 'visa alla'){
+			this.localMem.filters[filterIndex].selectedOption = '';
+		}
+		else{
+			this.localMem.filters[filterIndex].selectedOption = option; 
+		}
+	}
 }

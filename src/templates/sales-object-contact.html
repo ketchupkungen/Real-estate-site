@@ -6,16 +6,16 @@
         tenetur consequuntur harum cum dolores numquam fuga rerum culpa enim quod.</p>
     </div>
   </div>
-  <div class="row">
+  <div class="row" *ngIf="brooker">
     <div class="col-6">
       <br>
       <p>
-        <strong>Namn: </strong> Erik Olsson <br/>
-        <strong>Telefon: </strong> 070-3401948 <br/>
-        <strong>Epost: </strong> erik.olsson@dhyrorumson.se <br/>
-        <strong>About: </strong> Cow capicola brisket, flank meatball ham pastrami boudin meatloaf shank tongue sirloin burgdoggen strip steak turkey. Chicken andouille drumstick, jowl rump burgdoggen tongue short ribs bresaola hamburger salami kielbasa. Brisket pastrami porchetta pork pork belly pig. Burgdoggen kevin capicola jowl kielbasa frankfurter pork.
+        <strong>Namn: </strong> {{brooker.firstName}} {{brooker.lastName}} <br/>
+        <strong>Telefon: </strong> {{brooker.contact.phone}} <br/>
+        <strong>Epost: </strong> {{brooker.contact.mail}} <br/>
+        <strong>About: </strong> {{brooker.contact.personDesc}}
       </p>
     </div>
-    <div class="col-6"><img src="img/employees/erikolsson.svg" style="width:60%"></div>
+    <div class="col-6"><img src="{{brooker.profile_image_src}}" style="width:60%"></div>
   </div>
 </div>
