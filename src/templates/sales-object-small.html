@@ -34,31 +34,39 @@
 	    				<small class="text-muted text-uppercase">{{salesObject.type}}</small>
 	    			</p>
 				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
+				    <p class="card-text">{{salesObject.place.adress}}</p>
+				    <!--<h4 class="card-text">
+	    				{{numberWithSpaces(salesObject.price)}} kr
+	    			</h4>
+	    			<div class="vspace"></div>-->
 			    	<div class="row">
 			    		<div class="col-7">
-			    			<p class="card-text">{{salesObject.place.adress}}</p>
 			    			<p class="card-text">
 			    				<small class="text-muted">{{salesObject.text.shortInfo}}</small>
 			    			</p>
 			    		</div>
 			    		<div class="col-5">
 			    			<p class="card-text">
-			    				<small class="text-muted">PRIS: </small>
-			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</small>
-			    			</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">MÅNADSAVGIFT: </small>
-			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
-			    			</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">RUM: </small>
+			    				<small class="text-muted">RUM: </small><br>
 			    				<small class="font-weight-bold">{{salesObject.rooms}} st</small>
 			    			</p>
 			    			<p class="card-text">
-			    				<small class="text-muted">BOAREA: </small>
-			    				<small class="font-weight-bold">{{salesObject.area}} kvm</small>
+			    				<small class="text-muted">BOAREA: </small><br>
+			    				<small class="font-weight-bold">{{salesObject.area}} m<sup>2</sup></small>
+			    			</p>			    		
+			    			<p class="card-text">
+			    				<small class="text-muted">MÅNADSAVGIFT: </small><br>
+			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
 			    			</p>
 			    		</div>
+		    		</div>
+		    		<div class="row">
+		    			<div class="col-12">
+		    				<h4 class="card-text">
+		    					<small class="text-muted">PRIS: </small>
+			    				{{numberWithSpaces(salesObject.price)}} kr
+			    			</h4>
+		    			</div>
 		    		</div>
 				  </div>
 				</div>
