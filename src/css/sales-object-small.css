@@ -23,3 +23,11 @@
 	cursor: pointer;
 	color: PaleVioletRed;
 }
+
+.table {
+  font-size: 14px;
+  max-width: 350px;
+}
+.last-element {
+  margin-bottom: 20px;
+}
