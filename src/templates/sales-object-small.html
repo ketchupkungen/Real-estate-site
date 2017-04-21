@@ -25,10 +25,9 @@
 	    			<p class="card-text">
 	    				<small class="text-muted text-uppercase">{{salesObject.type}}</small>
 	    			</p>
-				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
-				    <p class="card-text">{{salesObject.place.adress}}</p>
 			    	<div class="row">
 			    		<div class="col-sm-7">
+                <h4 class="card-title city">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
 			    			<p class="card-text">{{salesObject.place.adress}}</p>
 			    			<p class="card-text last-element">
 			    				<small class="text-muted">{{salesObject.text.shortInfo}}</small>
@@ -45,34 +44,9 @@
                 </table>
 			    		</div>
 		    		</div>
-		    		<div class="row">
-		    			<div class="col-12">
-		    				<h4 class="card-text">
-		    					<small class="text-muted">PRIS: </small>
-			    				{{numberWithSpaces(salesObject.price)}} kr
-			    			</h4>
-		    			</div>
-		    		</div>
 				  </div>
 				</div>
 			</div>
 		</div>
 	</a>
 </div>
-
-<!--<p class="card-text">
-  <small class="text-muted">PRIS: </small>
-  <small class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</small>
-</p>
-<p class="card-text">
-  <small class="text-muted">MÅNADSAVGIFT: </small>
-  <small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
-</p>
-<p class="card-text">
-  <small class="text-muted">RUM: </small>
-  <small class="font-weight-bold">{{salesObject.rooms}} st</small>
-</p>
-<p class="card-text">
-  <small class="text-muted">BOAREA: </small>
-  <small class="font-weight-bold">{{salesObject.area}} kvm</small>
-</p>-->

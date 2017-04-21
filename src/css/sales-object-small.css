@@ -31,6 +31,9 @@
 .last-element {
   margin-bottom: 20px;
 }
+h4.city {
+  margin-top:0;
+}
 
 .moove {
 	display: block;
