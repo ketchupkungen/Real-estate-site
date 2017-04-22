@@ -1,5 +1,11 @@
+.card-container a {
+	color: dodgerblue ;
+}
+
 .card-container a:hover {
 	text-decoration: none;
+	color: darkblue;
+	box-shadow: 10px 10px 10px black;
 }
 
 .img-object-small {

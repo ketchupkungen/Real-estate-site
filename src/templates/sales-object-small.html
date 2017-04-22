@@ -34,10 +34,12 @@
 			    		<div class="col-sm-5">
                 <table class="table table-sm">
                   <tbody>
-                    <tr class="table-info"><td>Pris</td><td>{{numberWithSpaces(salesObject.price)}} kr</td></tr>
-                    <tr><td>Månatlig kostnad</td><td>{{numberWithSpaces(salesObject.priceMonth)}} kr</td></tr>
-                    <tr><td>Antal rum</td><td>{{salesObject.rooms}} st</td></tr>
-                    <tr><td>Boarea</td><td>{{salesObject.area}} kvm</td></tr>
+                    <tr class="table-info"><td class="text-muted">Pris:</td><td class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</td></tr>
+                    <tr><td class="text-muted">Månatlig kostnad:</td><td class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</td></tr>
+                    <tr><td class="text-muted">Antal rum:</td><td class="font-weight-bold">{{salesObject.rooms}} st</td></tr>
+                    <tr><td class="text-muted">Boarea:</td><td class="font-weight-bold">
+                    {{salesObject.area}} m&#178;</td></tr>
+                    <tr><td class="text-muted">Byggd:</td><td class="font-weight-bold">{{salesObject.buildDate}}</td></tr>
                   </tbody>
                 </table>
 			    		</div>

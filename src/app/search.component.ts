@@ -28,14 +28,14 @@ export class SearchComponent implements OnInit{
 		{
 			type: 'Boarea(min)',
 			options: [
-				'25 kvm',
-				'50 kvm',
-				'75 kvm',
-				'100 kvm',
-				'150 kvm',
-				'200 kvm',
-				'250 kvm',
-				'300 kvm',
+				'25 m²',
+				'50 m²',
+				'75 m²',
+				'100 m²',
+				'150 m²',
+				'200 m²',
+				'250 m²',
+				'300 m²',
 				'visa alla'
 			],
 			selectedOption: ''

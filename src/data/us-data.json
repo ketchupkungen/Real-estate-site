@@ -1,4 +1,5 @@
 {
+	"logo":"/img/logo.jpg",
 	"name": "Dhyr & Rumson",
 	"contact": {
 		"phone": "040-27301",
@@ -11,5 +12,84 @@
 		"city": "Malmö",
 		"adress": "Gullesväg, 1",
 		"postcode": 27032
-	}
+	},
+	"sellers": [
+		{
+      "id": 1,
+			"firstName":"Kalle",
+			"lastName":"Bengtsson",
+			"contact": {
+				"phone": "070-2730125",
+				"mail": "kalle.bengtsson@dhyrorumson.se",
+				"personDesc": "Bacon ipsum dolor amet brisket fatback sirloin ham turkey. Short loin beef ribs brisket, ground round sirloin burgdoggen turducken."
+			},
+      "profile_image_src":"img/employees/kallebengtsson.svg"
+		},
+		{
+      "id": 2,
+			"firstName":"Mango",
+			"lastName":"Lugosson",
+			"contact": {
+				"phone": "070-1140524",
+				"mail": "mango.lugosson@dhyrorumson.se",
+				"personDesc": "Salami cow tri-tip, burgdoggen beef ribs pork belly short loin andouille frankfurter shankle pancetta."
+			},
+      "profile_image_src":"img/employees/mangolugosson.svg"
+		},
+		{
+      "id": 3,
+			"firstName":"Erika",
+			"lastName":"Östrand",
+			"contact": {
+				"phone": "070-2201148",
+				"mail": "erika.ostrand@dhyrorumson.se",
+				"personDesc": "Beef prosciutto kielbasa pork chop pig salami jowl leberkas. Pork filet mignon brisket doner picanha hamburger."
+			},
+      "profile_image_src":"img/employees/erikaostrand.svg"
+		},
+		{
+      "id": 4,
+			"firstName":"Sture",
+			"lastName":"Eriksson",
+			"contact": {
+				"phone": "070-6701848",
+				"mail": "sture.eriksson@dhyrorumson.se",
+				"personDesc": "Turducken ground round andouille leberkas beef, shank sausage biltong shankle. Tenderloin tongue ground round hamburger. "
+			},
+      "profile_image_src":"img/employees/stureeriksson.svg"
+		},
+		{
+      "id": 5,
+			"firstName":"Erik",
+			"lastName":"Olsson",
+			"contact": {
+				"phone": "070-3401948",
+				"mail": "erik.olsson@dhyrorumson.se",
+				"personDesc": "Turducken ground round andouille leberkas beef, shank sausage biltong shankle. Tenderloin tongue ground round."
+			},
+      "profile_image_src":"img/employees/erikolsson.svg"
+		},
+		{
+      "id": 6,
+			"firstName":"Bob",
+			"lastName":"Bobsson",
+			"contact": {
+				"phone": "070-1207148",
+				"mail": "bob.bobsson@dhyrorumson.se",
+				"personDesc": "Burgdoggen kevin leberkas swine beef corned beef, biltong short loin pig venison pastrami flank. Cow shankle jowl"
+			},
+      "profile_image_src":"img/employees/bobbobsson.svg"
+		},
+		{
+      "id": 7,
+			"firstName":"Göran",
+			"lastName":"Jörgensen",
+			"contact": {
+				"phone": "070-1897148",
+				"mail": "goran.jorgensen@dhyrorumson.se",
+				"personDesc": "Cow capicola brisket, flank meatball ham pastrami boudin meatloaf shank tongue sirloin burgdoggen strip steak turkey"
+			},
+      "profile_image_src":"img/employees/goranjorgensen.svg"
+		}
+	]
 }
