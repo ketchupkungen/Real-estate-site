@@ -22,11 +22,12 @@
 	width: 100%;
 	margin-bottom: 10px;
 	display: inline-block;
+	color: #4c96d7;
 }
 
 .sorting-controls a:hover{
 	cursor: pointer;
-	color: PaleVioletRed;
+	color: #083b66;
 }
 
 .table {
