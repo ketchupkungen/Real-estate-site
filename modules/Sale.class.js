@@ -2,7 +2,6 @@ module.exports = class Sale {
 
 	schema() {
 		return {
-			_id: {type: String},
 			dateAdded: {type: Date, default: Date.now},
 			type: {type: String, required: true},
 			price: {type: Number, required: true},

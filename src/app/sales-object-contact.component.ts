@@ -3,9 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Http } from '@angular/http';
 
-import 'rxjs/add/operator/switchMap';
+import { RestService }          from './rest.service';
 
-import { SalesObjectService } from './sales-object.service';
 import { SalesObject } 	from '../class/sales-object.class';
 
 @Component ({
@@ -20,7 +19,7 @@ export class SalesObjectContactComponent {
   private brooker: Object;
 
 	constructor(
-		private salesObjectService: SalesObjectService,
+    private restService: RestService,
 		private route: ActivatedRoute,
 		private location: Location,
     private http: Http
@@ -34,11 +33,12 @@ export class SalesObjectContactComponent {
           err => console.log(err));
 
     // Find the amenable brooker for clicked salesObject
-    this.route.params
-			.switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
-			.subscribe((object: any) => {
-        this.salesObject = object;
-        this.brooker = this.us.sellers[this.salesObject.sellerId];
-      });
+    let Sales = this.restService.newRestEntity("sale");
+    let id = this.route.snapshot.params['id'];
+
+    Sales.find(id).then((data:any)=>{
+      this.salesObject = data;
+      this.brooker = this.us.sellers[this.salesObject.sellerId];
+    });
 	}
 }
