@@ -4,11 +4,12 @@
 			<div class="vspace"></div>
 			<div *ngIf="salesObject" class="layout">
 				<div *ngFor="let layout of salesObject.layout">
-					<img class="img-fluid" src="{{layout.src}}">
 					<p>{{layout.description}}</p>
+					<img class="img-fluid" src="{{layout.src}}">
+					<div class="vspace"></div>
+					<div class="vspace"></div>
 				</div>
 			</div>
-			<div class="vspace"></div>
 		</div>
 	</div>
 </div>

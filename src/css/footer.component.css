@@ -22,12 +22,19 @@
 	margin: 0 5px 0 5px;
 	font-size: 20px;
 	color: black;
-	padding: 5px;
-	
+	padding: 5px;	
 }
 
 .footerLinks a:hover {
 	color: #808080;
+}
+
+.footerFollow a {
+	color: #4c96d7;
+}
+
+.footerFollow a:hover {
+	color: #083b66;
 }
 
 /*.footerTop {

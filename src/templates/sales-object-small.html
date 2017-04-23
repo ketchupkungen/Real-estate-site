@@ -25,31 +25,23 @@
 	    			<p class="card-text">
 	    				<small class="text-muted text-uppercase">{{salesObject.type}}</small>
 	    			</p>
-				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
 			    	<div class="row">
-			    		<div class="col-7">
+			    		<div class="col-sm-7">
+                <h4 class="card-title city">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
 			    			<p class="card-text">{{salesObject.place.adress}}</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">{{salesObject.text.shortInfo}}</small>
-			    			</p>
+			    			<p class="last-element text-muted">{{salesObject.text.shortInfo}}</p>
 			    		</div>
-			    		<div class="col-5">
-			    			<p class="card-text">
-			    				<small class="text-muted">PRIS: </small>
-			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</small>
-			    			</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">MÅNADSAVGIFT: </small>
-			    				<small class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</small>
-			    			</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">RUM: </small>
-			    				<small class="font-weight-bold">{{salesObject.rooms}} st</small>
-			    			</p>
-			    			<p class="card-text">
-			    				<small class="text-muted">BOAREA: </small>
-			    				<small class="font-weight-bold">{{salesObject.area}} kvm</small>
-			    			</p>
+			    		<div class="col-sm-5">
+                <table class="table table-sm">
+                  <tbody>
+                    <tr class="table-info"><td class="text-muted">Pris:</td><td class="font-weight-bold">{{numberWithSpaces(salesObject.price)}} kr</td></tr>
+                    <tr><td class="text-muted">Månatlig kostnad:</td><td class="font-weight-bold">{{numberWithSpaces(salesObject.priceMonth)}} kr</td></tr>
+                    <tr><td class="text-muted">Antal rum:</td><td class="font-weight-bold">{{salesObject.rooms}} st</td></tr>
+                    <tr><td class="text-muted">Boarea:</td><td class="font-weight-bold">
+                    {{salesObject.area}} m&#178;</td></tr>
+                    <tr><td class="text-muted">Byggd:</td><td class="font-weight-bold">{{salesObject.buildDate}}</td></tr>
+                  </tbody>
+                </table>
 			    		</div>
 		    		</div>
 				  </div>

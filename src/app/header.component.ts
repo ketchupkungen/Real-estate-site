@@ -1,13 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'header',
   templateUrl: 'templates/header-component.html',
 })
-export class HeaderComponent {
+export class HeaderComponent /*implements OnInit*/{
 	isNavbarCollapsed = true;
 
-	logo = 'Dhyr & Rumson';
+	//logo = "Dhyr & Rumson";
+	/*fullImagePath: string;
+
+	constructor() {
+		this.fullImagePath = '/img/logo.png'
+	}
+
+	ngOnInit() {
+	}*/
+
+	
 	menuLinks = [
 		{
 			name: 'Sök bostad',
