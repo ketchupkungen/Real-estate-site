@@ -9,7 +9,7 @@ export class FilterByPipe implements PipeTransform {
 
 		return items.filter((item: any) => 
 			item.place.municipality === filter.place.municipality &&
-			item.id !== filter.id
+			item._id !== filter._id
 		);
 	}
 }
