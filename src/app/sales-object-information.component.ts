@@ -1,11 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { Location } from '@angular/common';
+import { Location }               from '@angular/common';
 
-import 'rxjs/add/operator/switchMap';
-
-import { SalesObjectService } from './sales-object.service';
-import { SalesObject } 	from '../class/sales-object.class';
+import { RestService }        from './rest.service';
+import { SalesObject } 	      from '../class/sales-object.class';
 
 @Component({
 	selector: 'information',
@@ -15,18 +13,21 @@ import { SalesObject } 	from '../class/sales-object.class';
 
 export class SalesObjectInformationComponent implements OnInit {
 
-	salesObject: SalesObject[];
+	salesObject: SalesObject;
 
   constructor(
-		private salesObjectService: SalesObjectService,
-		private route: ActivatedRoute,
-		private location: Location
-	) { }
+    private route: ActivatedRoute,
+    private restService: RestService,
+    private location: Location
+	) {}
 
 	ngOnInit(): void {
-        this.route.params
-            .switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
-            .subscribe((object: any) => this.salesObject = object);
+    let Sales = this.restService.newRestEntity("sale");
+    let id = this.route.snapshot.params['id'];
+
+    Sales.find(id).then((data:any)=>{
+      this.salesObject = data;
+    });
 	}
 
   numberWithSpaces(price:number) {

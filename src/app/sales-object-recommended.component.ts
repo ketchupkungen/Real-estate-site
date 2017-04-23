@@ -2,8 +2,7 @@ import { Component, OnInit } 				from '@angular/core';
 import { ActivatedRoute, Params } 	from '@angular/router';
 import { Location } 								from '@angular/common';
 
-import 'rxjs/add/operator/switchMap';
-
+import { RestService }				from './rest.service';
 import { SalesObjectService } from './sales-object.service';
 import { SalesObject } 				from '../class/sales-object.class';
 
@@ -22,19 +21,21 @@ export class SalesObjectRecommendedComponent implements OnInit {
 	constructor(
 		private salesObjectService: SalesObjectService,
 		private route: ActivatedRoute,
+		private restService: RestService,
 		private location: Location
 	){}
 
 	ngOnInit(): void {
-		this.route.params
-			.switchMap((params: Params) => this.salesObjectService.getObject(+params['id']))
-			.subscribe(object => this.filterSalesObject = object);
+    let Sales = this.restService.newRestEntity("sale");
+    let id = this.route.snapshot.params['id'];
 
-		this.getSalesObjects();
-	}
+    Sales.find(id).then((data:any)=>{
+      this.filterSalesObject = data;
+    });
 
-	getSalesObjects(): void {
-		this.salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects);
+    Sales.find('').then((data:any)=>{
+      this.salesObjects = data;
+    });
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {

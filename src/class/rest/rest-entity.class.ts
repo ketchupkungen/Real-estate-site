@@ -16,7 +16,8 @@ export class RestEntity {
   }
 
   httpRequest(type:string, idOrQuery:string, requestBody:any){
-    let url:string = this.baseUrl +'/' + idOrQuery;
+    // Freddy: Had to remove + '/' + between baseUrl and idOrQuery
+    let url:string = this.baseUrl + idOrQuery;
     // remove trailing slahses
     while(url.substr(-1) == '/'){url = url.substring(0,url.length-1);}
     // make request

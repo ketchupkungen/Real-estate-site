@@ -1,9 +1,10 @@
-import { Component, OnInit } 		from '@angular/core';
+import { Component, OnInit }	from '@angular/core';
 
-import { SalesObjectService } 		from './sales-object.service';
-import { MemService }				from './mem.service';
+import { SalesObjectService }	from './sales-object.service';
+import { MemService }					from './mem.service';
+import { RestService }				from './rest.service';
 
-import { SalesObject } 	from '../class/sales-object.class';
+import { SalesObject } 				from '../class/sales-object.class';
 
 @Component({
   selector: 'sales-object-small',
@@ -37,7 +38,8 @@ export class SalesObjectSmallComponent implements OnInit {
 
 	constructor(
 		private salesObjectService: SalesObjectService,
-		private memService: MemService
+		private memService: MemService,
+		private restService: RestService
 	) { 
 		this.localMem = memService.get(this);
 	}
@@ -54,7 +56,11 @@ export class SalesObjectSmallComponent implements OnInit {
 	}
 
 	getSalesObjects(): void {
-		this.salesObjectService.getSalesObjects().then(salesObjects => this.salesObjects = salesObjects);
+    let Sales = this.restService.newRestEntity("sale");
+    
+    Sales.find('').then((data:any)=>{
+      this.salesObjects = data;
+    });
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
