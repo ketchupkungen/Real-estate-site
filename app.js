@@ -7,7 +7,7 @@ require('mongoosefromclass')(mongoose);
 
 //Fake JSON Data
 var salesData = require('./src/data/sales-data.json');
-// var brokersData = require('./src/data/brokers-data.json');
+var brokersData = require('./src/data/brokers-data.json');
 var usData = require('./src/data/us-data.json');
 
 // Mongoose added
@@ -24,6 +24,9 @@ global.Restrouter = require('./modules/restrouter.class');
 global.Sale = require('./modules/sale.class');
 global.Sale = mongoose.fromClass(global.Sale);
 
+global.Broker = require('./modules/broker.class');
+global.Broker = mongoose.fromClass(global.Broker);
+
 global.Us = require('./modules/us.class');
 global.Us = mongoose.fromClass(global.Us);
 
@@ -37,6 +40,7 @@ app.use(express.static('./'));
 
 new Restrouter(app, Sale);
 new Restrouter(app, Us);
+new Restrouter(app, Broker);
 
 // Never cache request starting with "/rest/"
 app.use((req, res, next)=>{
@@ -71,21 +75,21 @@ function onceConnected() {
 
 function createFakeDataFromJSON() {
     Sale.count(function(err, count) {
-        if (count === 0) {
-            createDefaultSales();
-        }
+      if (count === 0) {
+          createDefaultSales();
+      }
     });
 
-    // Broker.count(function(err, count) {
-    // 	if (count === 0) {
-    // 		createDefaultBroker();
-    // 	}
-    // });
+    Broker.count(function(err, count) {
+    	if (count === 0) {
+    		createDefaultBrokers();
+    	}
+    });
 
     Us.count(function(err, count) {
-         if (count === 0) {
-             createDefaultUs();
-         }
+       if (count === 0) {
+           createDefaultUs();
+       }
     });
 
 	function createDefaultSales() {
@@ -94,12 +98,11 @@ function createFakeDataFromJSON() {
 		});
 	}
 
-	// function createDefaultBrokers() {
-
-	// 	brokersData.forEach(function(education) {
-	// 		new Broker(brokers).save();
-	// 	});
-	// }
+	function createDefaultBrokers() {
+		brokersData.forEach(function(data) {
+			new Broker(data).save();
+		});
+	}
 
 	function createDefaultUs() {
 	 	new Us(usData).save();
