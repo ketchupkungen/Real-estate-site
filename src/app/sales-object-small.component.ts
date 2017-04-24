@@ -47,7 +47,6 @@ export class SalesObjectSmallComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		//this.getSalesObjects();
 		this.localMem.sortingTypes = this.sortingTypes;
 		if(!this.localMem.selectedType){
 			this.localMem.selectedType = this.selectedType;
@@ -59,14 +58,6 @@ export class SalesObjectSmallComponent implements OnInit {
       this.salesObjects = data;
     });
 	}
-
-	// getSalesObjects(): void {
-  //   let Sales = this.restService.newRestEntity("sale");
-    
-  //   Sales.find('').then((data:any)=>{
-  //     this.salesObjects = data;
-  //   });
-	// }
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
