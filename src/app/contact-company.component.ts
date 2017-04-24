@@ -1,5 +1,7 @@
-import { Component } 		from '@angular/core';
-import { Http } 			  from '@angular/http';
+import { Component, OnInit } 			from '@angular/core';
+
+import { RestService }					from './rest.service';
+import { UsObject } 					  from '../class/us-object.class';
 
 @Component({
   selector: 'company-card',
@@ -7,27 +9,20 @@ import { Http } 			  from '@angular/http';
   styleUrls: ['css/company-card.component.css']
 })
 
-export class CompanyCardComponent {
+export class CompanyCardComponent implements OnInit {
 
-  companyName:any;
-  companyPhone:any;
-  companyMailHq:any;
-  companyMailSupport:any;
+  usObject: UsObject;
 
-  companyCity:any;
-  companyAddress:any;
-  companyPostcode:any;
+  constructor(
+    private restService: RestService
+  ) {}
 
-  constructor(private http:Http) {
-    this.http.get('data/us.json').subscribe(res => this.companyName = res.json().name);
+  ngOnInit(): void {
+    let Us = this.restService.newRestEntity("us");
 
-    this.http.get('data/us.json').subscribe(res => this.companyPhone = res.json().contact.phone);
-    this.http.get('data/us.json').subscribe(res => this.companyMailHq = res.json().contact.mail.hq);
-    this.http.get('data/us.json').subscribe(res => this.companyMailSupport = res.json().contact.mail.support);
-
-    this.http.get('data/us.json').subscribe(res => this.companyCity = res.json().place.city);
-    this.http.get('data/us.json').subscribe(res => this.companyAddress = res.json().place.adress);
-    this.http.get('data/us.json').subscribe(res => this.companyPostcode = res.json().place.postcode);
+    Us.find('').then((data:any)=>{
+      this.usObject = data[0];
+    });
   }
 
   convertNumberToPostcode(postNumber:number){
