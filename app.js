@@ -8,7 +8,7 @@ require('mongoosefromclass')(mongoose);
 //Fake JSON Data
 var salesData = require('./src/data/sales-data.json');
 // var brokersData = require('./src/data/brokers-data.json');
-// var usData = require('./src/data/us-data.json');
+var usData = require('./src/data/us-data.json');
 
 // Mongoose added
 global.mongoose = mongoose;
@@ -20,9 +20,12 @@ mongoose.Promise = Promise;
 
 // Load classes, make them global and then convert selected ones to modules
 global.Restrouter = require('./modules/restrouter.class');
-global.Sale = require('./modules/sale.class');
 
+global.Sale = require('./modules/sale.class');
 global.Sale = mongoose.fromClass(global.Sale);
+
+global.Us = require('./modules/us.class');
+global.Us = mongoose.fromClass(global.Us);
 
 // Create a new express server, store in the variable app
 var app = express();
@@ -33,6 +36,7 @@ app.use(express.static('src'));
 app.use(express.static('./'));
 
 new Restrouter(app, Sale);
+new Restrouter(app, Us);
 
 // Never cache request starting with "/rest/"
 app.use((req, res, next)=>{
@@ -68,7 +72,7 @@ function onceConnected() {
 function createFakeDataFromJSON() {
     Sale.count(function(err, count) {
         if (count === 0) {
-            createDeafultSales();
+            createDefaultSales();
         }
     });
 
@@ -78,30 +82,27 @@ function createFakeDataFromJSON() {
     // 	}
     // });
 
-    // Us.count(function(err, count) {
-    //     if (count === 0) {
-    //         createDeafultUs();
-    //     }
-    // });
+    Us.count(function(err, count) {
+         if (count === 0) {
+             createDefaultUs();
+         }
+    });
 
-	function createDeafultSales() {
+	function createDefaultSales() {
 		salesData.forEach(function(data) {
 			new Sale(data).save();
 		});
 	}
 
 	// function createDefaultBrokers() {
-	// 	thingsLeftToSave += brokersData.length;
 
 	// 	brokersData.forEach(function(education) {
 	// 		new Broker(brokers).save();
 	// 	});
 	// }
 
-	// function createDeafultUs() {
-	// 	thingsLeftToSave += usData.length;
-
-	// 	new Us(usData).save();
-	// }
+	function createDefaultUs() {
+	 	new Us(usData).save();
+	}
 
 }
