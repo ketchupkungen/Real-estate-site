@@ -15,6 +15,14 @@ module.exports = class Us {
         city: {type: String},
         adress: {type: String},
         postcode: {type: Number}
+      },
+      about: {
+        header: {type: String},
+        texts: {type: Array}
+      },
+      jobs: {
+        header: {type: String},
+        texts: {type: Array}
       }
     };
   }
