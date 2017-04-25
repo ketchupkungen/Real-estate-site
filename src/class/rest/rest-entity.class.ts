@@ -32,7 +32,7 @@ export class RestEntity {
       });
   }
 
-  promiseMaker(type:string, idOrQuery:string = '', requestBody:any = undefined){
+  promiseMaker(type:string, idOrQuery:string, requestBody:any = undefined){
 
     return new Promise((resolve,reject):void =>{
       this.httpRequest(type,idOrQuery,requestBody).subscribe(

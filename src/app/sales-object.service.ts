@@ -8,7 +8,7 @@ import { SalesObject } from '../class/sales-object.class';
 @Injectable()
 export class SalesObjectService { 
 
-	constructor(private _http: Http){ }
+	constructor(private http: Http){ }
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return "url('" + salesObject.img[indexNo].src + "')";
