@@ -16,7 +16,7 @@
 		"bathrooms": 1,
 		"area": 80,
 		"totalArea": 120,
-		"sellerId": "58fdf5651ed8f4124c12e2c1",
+		"brokerId": 1,
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -62,7 +62,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 170,
-		"sellerId": "58fdf5651ed8f4124c12e2c3",
+		"brokerId": 2,
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -111,7 +111,7 @@
 		"bathrooms": 1,
 		"area": 120,
 		"totalArea": 180,
-		"sellerId": "58fdf5651ed8f4124c12e2c4",
+		"brokerId": 3,
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -157,7 +157,7 @@
 		"bathrooms": 2,
 		"area": 190,
 		"totalArea": 210,
-		"sellerId": "58fdf5651ed8f4124c12e2c5",
+		"brokerId": 4,
 		"place": {
 			"city": "Vikingstad",
 			"municipality": "Linköping",
@@ -202,7 +202,7 @@
 		"bathrooms": 2,
 		"area": 200,
 		"totalArea": 210,
-		"sellerId": "58fdf5651ed8f4124c12e2c1",
+		"brokerId": 5,
 		"place": {
 			"city": "Vikingstad",
 			"municipality": "Linköping",
@@ -247,7 +247,7 @@
 		"bathrooms": 1,
 		"area": 130,
 		"totalArea": 180,
-		"sellerId": "58fdf5651ed8f4124c12e2c2",
+		"brokerId": 6,
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -293,7 +293,7 @@
 		"bathrooms": 1,
 		"area": 90,
 		"totalArea": 120,
-		"sellerId": "58fdf5651ed8f4124c12e2c1",
+		"brokerId": 7,
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -340,7 +340,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 190,
-		"sellerId": "58fdf5651ed8f4124c12e2c5",
+		"brokerId": 1,
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -389,7 +389,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 300,
-		"sellerId": "58fdf5651ed8f4124c12e2c6",
+		"brokerId": 2,
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -435,7 +435,7 @@
 		"bathrooms": 3,
 		"area": 140,
 		"totalArea": 190,
-		"sellerId": "58fdf5651ed8f4124c12e2c6",
+		"brokerId": 3,
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -482,7 +482,7 @@
 		"bathrooms": 2,
 		"area": 150,
 		"totalArea": 200,
-		"sellerId": "58fdf5651ed8f4124c12e2c6",
+		"brokerId": 4,
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -529,7 +529,7 @@
 		"bathrooms": 3,
 		"area": 200,
 		"totalArea": 290,
-		"sellerId": "58fdf5651ed8f4124c12e2c1",
+		"brokerId": 5,
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",

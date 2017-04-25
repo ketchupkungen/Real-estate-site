@@ -4,6 +4,7 @@
 	{
 		"firstName":"Kalle",
 		"lastName":"Bengtsson",
+		"brokerId": 1,
 		"contact": {
 			"phone": "070-2730125",
 			"mail": "kalle.bengtsson@dhyrorumson.se",
@@ -14,6 +15,7 @@
 	{
 		"firstName":"Mango",
 		"lastName":"Lugosson",
+		"brokerId": 2,
 		"contact": {
 			"phone": "070-1140524",
 			"mail": "mango.lugosson@dhyrorumson.se",
@@ -24,6 +26,7 @@
 	{
 		"firstName":"Erika",
 		"lastName":"Östrand",
+		"brokerId": 3,
 		"contact": {
 			"phone": "070-2201148",
 			"mail": "erika.ostrand@dhyrorumson.se",
@@ -34,6 +37,7 @@
 	{
 		"firstName":"Sture",
 		"lastName":"Eriksson",
+		"brokerId": 4,
 		"contact": {
 			"phone": "070-6701848",
 			"mail": "sture.eriksson@dhyrorumson.se",
@@ -44,6 +48,7 @@
 	{
 		"firstName":"Erik",
 		"lastName":"Olsson",
+		"brokerId": 5,
 		"contact": {
 			"phone": "070-3401948",
 			"mail": "erik.olsson@dhyrorumson.se",
@@ -54,6 +59,7 @@
 	{
 		"firstName":"Bob",
 		"lastName":"Bobsson",
+		"brokerId": 6,
 		"contact": {
 			"phone": "070-1207148",
 			"mail": "bob.bobsson@dhyrorumson.se",
@@ -64,6 +70,7 @@
 	{
 		"firstName":"Göran",
 		"lastName":"Jörgensen",
+		"brokerId": 7,
 		"contact": {
 			"phone": "070-1897148",
 			"mail": "goran.jorgensen@dhyrorumson.se",
