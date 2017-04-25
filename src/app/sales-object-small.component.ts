@@ -60,6 +60,7 @@ export class SalesObjectSmallComponent implements OnInit {
 
     // Get salesObjects from searchService
     this.getSalesObjectsFromService();
+    
     this.globalMem.salesObjectSmallUpdate = ()=>{
     	this.getSalesObjectsFromService();
     };

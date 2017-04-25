@@ -14,15 +14,38 @@ export class SearchComponent implements OnInit{
 		{
 			type: 'Rum(min)',
 			options: [
-				'1 rum',
-				'2 rum',
-				'3 rum',
-				'4 rum',
-				'5 rum',
-				'6 rum',
-				'7 rum',
-				'8 rum',
-				'visa alla'
+				{
+					name: '1 rum',
+					value: '1'
+				},
+				{
+					name: '2 rum',
+					value: '2'
+				},
+				{
+					name: '3 rum',
+					value: '3'
+				},
+				{
+					name: '4 rum',
+					value: '4'
+				},
+				{
+					name: '5 rum',
+					value: '5'
+				},
+				{
+					name: '6 rum',
+					value: '6'
+				},
+				{
+					name: '7 rum',
+					value: '7'
+				},
+				{
+					name: 'visa alla',
+					value: ''
+				}
 			],
 			selectedOption: ''
 		},
@@ -93,9 +116,8 @@ export class SearchComponent implements OnInit{
 		if(!value || value === '') {
 			this.globalMem.searchValues = '';
 		} else {
-			this.globalMem.searchValues = 'find/{ type: /'+ value +'*/i }';
+			this.globalMem.searchValues = 'find/{ "place.city": /'+ value +'*/i }';
 		}
-
 	}
 
 	chooseFilter(filter: Object, option: string){
