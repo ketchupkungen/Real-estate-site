@@ -30,7 +30,7 @@ export class SalesObjectSmallComponent implements OnInit {
 			value: 'buildDate'
 		},
 		{
-			name: 'Bo-yta',
+			name: 'Boyta',
 			value: 'area'
 		}
 	];
@@ -54,6 +54,7 @@ export class SalesObjectSmallComponent implements OnInit {
 		if(!this.localMem.selectedOption){
 			this.localMem.selectedOption = this.selectedOption;
 		}
+    // Get salesObjects from searchService
     this.searchService.getSearchResult().then((data: any) => {
       this.salesObjects = data;
     });
