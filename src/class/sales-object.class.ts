@@ -1,5 +1,4 @@
 export class SalesObject {
-	_id: string;
 	type: string;
 	price: number;
 	priceMonth: number;
