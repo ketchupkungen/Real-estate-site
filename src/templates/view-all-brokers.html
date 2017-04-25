@@ -1,14 +1,14 @@
-<div class="container-fluid card-container">
+<div class="container-fluid card-container" *ngIf="brokersObject">
 	<div class="row">
 
-    <div *ngFor="let sellerObject of sellersObject; let i = index" class="col-xs-12 col-md-4 mb-4">
+    <div *ngFor="let brokerObject of brokersObject; let i = index" class="col-xs-12 col-md-4 mb-4">
       <div class="card card-profile">
-        <img class="card-img-top img-fluid" src="{{sellerObject.profile_image_src}}" alt="Card image cap">
+        <img class="card-img-top img-fluid" src="{{brokerObject.profile_image_src}}" alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">{{sellerObject.firstName + " " + sellerObject.lastName}}</h4>
-          <p class="card-text">{{sellerObject.contact.phone}}</p>
-          <p class="card-text">{{sellerObject.contact.mail}}</p>
-          <p class="card-text">{{sellerObject.contact.personDesc}}</p>
+          <h4 class="card-title">{{brokerObject.firstName + " " + brokerObject.lastName}}</h4>
+          <p class="card-text">{{brokerObject.contact.phone}}</p>
+          <p class="card-text">{{brokerObject.contact.mail}}</p>
+          <p class="card-text">{{brokerObject.contact.personDesc}}</p>
         </div>
       </div>
 	  </div>

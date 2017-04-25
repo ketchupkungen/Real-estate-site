@@ -17,7 +17,7 @@ module.exports = class Sale {
 			bathrooms: {type: Number},			
 			area: {type: Number},			
 			totalArea: {type: Number},			
-			sellerId: {type: Number},			
+			sellerId: {type: String},			
 			place: {
 				city: String,
 				municipality: String,

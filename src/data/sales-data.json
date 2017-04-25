@@ -1,6 +1,5 @@
 [
 	{
-		"id": 1,
 		"dateAdded": "2017-03-18",
 		"type": "Bostadsrättslägenhet",
 		"price": 350000,
@@ -17,7 +16,7 @@
 		"bathrooms": 1,
 		"area": 80,
 		"totalArea": 120,
-		"sellerId": 2,
+		"sellerId": "58fdf5651ed8f4124c12e2c1",
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -47,7 +46,6 @@
 		]
 	},
 	{
-		"id": 2,
 		"dateAdded": "2017-03-01",
 		"type": "Bostadsrättsradhus",
 		"price": 600000,
@@ -64,7 +62,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 170,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c3",
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -97,7 +95,6 @@
 		]
 	},
 	{
-		"id": 3,
 		"dateAdded": "2017-04-02",
 		"type": "Villa",
 		"price": 1200000,
@@ -114,7 +111,7 @@
 		"bathrooms": 1,
 		"area": 120,
 		"totalArea": 180,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c4",
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -144,7 +141,6 @@
 		]
 	},
 	{
-		"id": 4,
 		"dateAdded": "2017-04-16",
 		"type": "Villa",
 		"price": 2300000,
@@ -161,7 +157,7 @@
 		"bathrooms": 2,
 		"area": 190,
 		"totalArea": 210,
-		"sellerId": 4,
+		"sellerId": "58fdf5651ed8f4124c12e2c5",
 		"place": {
 			"city": "Vikingstad",
 			"municipality": "Linköping",
@@ -190,7 +186,6 @@
 		]
 	},
 	{
-		"id": 5,
 		"dateAdded": "2017-04-15",
 		"type": "Villa",
 		"price": 2400000,
@@ -207,7 +202,7 @@
 		"bathrooms": 2,
 		"area": 200,
 		"totalArea": 210,
-		"sellerId": 4,
+		"sellerId": "58fdf5651ed8f4124c12e2c1",
 		"place": {
 			"city": "Vikingstad",
 			"municipality": "Linköping",
@@ -236,7 +231,6 @@
 		]
 	},
 	{
-		"id": 6,
 		"dateAdded": "2017-04-12",
 		"type": "Villa",
 		"price": 1400000,
@@ -253,7 +247,7 @@
 		"bathrooms": 1,
 		"area": 130,
 		"totalArea": 180,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c2",
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -283,7 +277,6 @@
 		]
 	},
 	{
-		"id": 7,
 		"dateAdded": "2017-02-20",
 		"type": "Bostadsrättslägenhet",
 		"price": 360000,
@@ -300,7 +293,7 @@
 		"bathrooms": 1,
 		"area": 90,
 		"totalArea": 120,
-		"sellerId": 2,
+		"sellerId": "58fdf5651ed8f4124c12e2c1",
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -331,7 +324,6 @@
 		]
 	},
 	{
-		"id": 8,
 		"dateAdded": "2017-01-03",
 		"type": "Bostadsrättsradhus",
 		"price": 650000,
@@ -348,7 +340,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 190,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c5",
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -381,7 +373,6 @@
 		]
 	},
 	{
-		"id": 9,
 		"dateAdded": "2017-03-03",
 		"type": "Villa",
 		"price": 200000,
@@ -398,7 +389,7 @@
 		"bathrooms": 2,
 		"area": 140,
 		"totalArea": 300,
-		"sellerId": 3,
+		"sellerId": "58fdf5651ed8f4124c12e2c6",
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
@@ -428,7 +419,6 @@
 		]
 	},
 	{
-		"id": 10,
 		"dateAdded": "2017-03-03",
 		"type": "Bostadsrättsradhus",
 		"price": 3000000,
@@ -445,7 +435,7 @@
 		"bathrooms": 3,
 		"area": 140,
 		"totalArea": 190,
-		"sellerId": 2,
+		"sellerId": "58fdf5651ed8f4124c12e2c6",
 		"place": {
 			"city": "Malmö",
 			"municipality": "Malmö",
@@ -476,7 +466,6 @@
 		]
 	},
 	{
-		"id": 11,
 		"dateAdded": "2017-03-03",
 		"type": "Bostadsrättsradhus",
 		"price": 1650000,
@@ -493,7 +482,7 @@
 		"bathrooms": 2,
 		"area": 150,
 		"totalArea": 200,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c6",
 		"place": {
 			"city": "Brösarp",
 			"municipality": "Tomelilla",
@@ -524,7 +513,6 @@
 		]
 	},
 	{
-		"id": 12,
 		"dateAdded": "2017-03-03",
 		"type": "Villa",
 		"price": 2650000,
@@ -541,7 +529,7 @@
 		"bathrooms": 3,
 		"area": 200,
 		"totalArea": 290,
-		"sellerId": 1,
+		"sellerId": "58fdf5651ed8f4124c12e2c1",
 		"place": {
 			"city": "Kivik",
 			"municipality": "Simrishamn",
