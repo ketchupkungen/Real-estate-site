@@ -7,6 +7,7 @@ import { HttpModule }                      from '@angular/http';
 import { SalesObjectService }              from './sales-object.service';
 import { MemService }                      from './mem.service';
 import { RestService }                     from './rest.service';
+import { SearchService }                     from './search-service';
 
 import { OrderByPipe }                     from './order-by.pipe';
 import { FilterByPipe }                    from './filter-by.pipe';
@@ -103,7 +104,8 @@ import { JobbsComponent }                  from './jobbs.component';
   ],
   providers: [ SalesObjectService,
                MemService,
-               RestService ], 
+               RestService,
+               SearchService ], 
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -3,6 +3,7 @@ import { Component, OnInit }	from '@angular/core';
 import { SalesObjectService }	from './sales-object.service';
 import { MemService }					from './mem.service';
 import { RestService }				from './rest.service';
+import { SearchService }        from './search-service';
 
 import { SalesObject } 				from '../class/sales-object.class';
 
@@ -14,7 +15,7 @@ import { SalesObject } 				from '../class/sales-object.class';
 
 export class SalesObjectSmallComponent implements OnInit {
 	localMem: any;
-	salesObjects: SalesObject[];
+	salesObjects: any;
 	sortingTypes = [
 		{
 			name: 'Pris',
@@ -29,7 +30,7 @@ export class SalesObjectSmallComponent implements OnInit {
 			value: 'buildDate'
 		},
 		{
-			name: 'Bo-yta',
+			name: 'Boyta',
 			value: 'area'
 		}
 	];
@@ -39,13 +40,13 @@ export class SalesObjectSmallComponent implements OnInit {
 	constructor(
 		private salesObjectService: SalesObjectService,
 		private memService: MemService,
-		private restService: RestService
+		private restService: RestService,
+    private searchService: SearchService
 	) { 
 		this.localMem = memService.get(this);
 	}
 
 	ngOnInit(): void {
-		this.getSalesObjects();
 		this.localMem.sortingTypes = this.sortingTypes;
 		if(!this.localMem.selectedType){
 			this.localMem.selectedType = this.selectedType;
@@ -53,12 +54,8 @@ export class SalesObjectSmallComponent implements OnInit {
 		if(!this.localMem.selectedOption){
 			this.localMem.selectedOption = this.selectedOption;
 		}
-	}
-
-	getSalesObjects(): void {
-    let Sales = this.restService.newRestEntity("sale");
-    
-    Sales.find('').then((data:any)=>{
+    // Get salesObjects from searchService
+    this.searchService.getSearchResult().then((data: any) => {
       this.salesObjects = data;
     });
 	}
@@ -83,6 +80,6 @@ export class SalesObjectSmallComponent implements OnInit {
 	}
 
 	numberWithSpaces(price:number) {
-	  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+	  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 	}
 }
