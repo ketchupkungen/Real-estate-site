@@ -9,6 +9,7 @@ import { MemService } from './mem.service';
 
 export class SearchComponent implements OnInit{
 	localMem: any;
+	globalMem: any;
  	filters = [
 		{
 			type: 'Rum(min)',
@@ -70,7 +71,9 @@ export class SearchComponent implements OnInit{
 		}
 	];
 
-	constructor(private memService: MemService){
+	constructor(
+			private memService: MemService
+		){
 		this.localMem = memService.get(this);
 	}
 
@@ -78,6 +81,21 @@ export class SearchComponent implements OnInit{
 		if(!this.localMem.filters){
 			this.localMem.filters = this.filters;
 		}
+	}
+
+	onKey(event: any){
+		this.saveSearchValues(event.target.value);
+	  this.globalMem.salesObjectSmallUpdate();
+	}
+
+	saveSearchValues(value: any){
+		this.globalMem = this.memService.global();
+		if(!value || value === '') {
+			this.globalMem.searchValues = '';
+		} else {
+			this.globalMem.searchValues = 'find/{ type: /'+ value +'*/i }';
+		}
+
 	}
 
 	chooseFilter(filter: Object, option: string){
