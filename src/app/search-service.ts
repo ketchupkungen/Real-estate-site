@@ -23,11 +23,18 @@ export class SearchService {
 
   getSearchResult(): any {
     this.globalMem = this.memService.global();
-
     let Sales = this.restService.newRestEntity('sale');
 
     return new Promise((resolve, reject)=>{
-      Sales.find(this.globalMem.searchValues || '').then((data: any) => {
+      let valueWithRegexp = '/'+ this.globalMem.searchValues +'/i';
+
+      let query = `find/{ $or: [
+        { "place.city": `+valueWithRegexp+` },
+        { "place.municipality": `+valueWithRegexp+` },
+        { "type": `+valueWithRegexp+` }
+      ]}`
+
+      Sales.find(query).then((data: any) => {
         resolve(data);
       });
     });

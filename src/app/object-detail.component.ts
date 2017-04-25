@@ -20,12 +20,9 @@ export class ObjectDetailComponent implements OnInit {
 	){}
 
 	ngOnInit(): void {
-    let Sales = this.restService.newRestEntity("sale");
-    let id = this.route.snapshot.params['id'];
-
-    Sales.find(id).then((data:any)=>{
-      this.salesObject = data;
-    });
+		this.salesObjectService.getSalesObjectById(this.route).then((data: any) => {
+			this.salesObject = data;
+		});
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {

@@ -16,8 +16,8 @@
 		        </button>
 		        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
 		          <button class="dropdown-item" *ngFor="let option of filter.options" 
-		          (click)="chooseFilter(filter, option)">
-		          	{{option}}
+		          (click)="chooseFilter(filter, option.name)">
+		          	{{option.name}}
 		          </button>
 		        </div>
 	      	</div>

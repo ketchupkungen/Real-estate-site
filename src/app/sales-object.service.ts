@@ -2,7 +2,6 @@ import { Injectable } 						from '@angular/core';
 import { Http } 									from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 
-import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/switchMap';
 
 import { RestService } from './rest.service';
@@ -15,26 +14,23 @@ export class SalesObjectService {
 	constructor(
 		private http: Http,
 		private restService: RestService,
-		private route: ActivatedRoute
 	){ }
 
 	getSalesObjects(){
     let Sales = this.restService.newRestEntity("sale");
 
-    return new Promise((resolve, reject)=>{
-      Sales.find('').then((data: any) => {
-        resolve(data);
-      });
-    });
+    return Sales.find('');
 	}
 
-	getSalesObjectById(){
+	getSalesObjectById(route: any){
 		let Sales = this.restService.newRestEntity("sale");
 
-  	return new Promise((resolve, reject)=>{
-		  this.route.params
+		return new Promise((resolve, reject)=>{
+		  route.params
 		    .switchMap((params: Params) => Sales.find(params['id']))
-		    .subscribe(object => resolve(object));
+		    .subscribe((data: any) => {
+        	resolve(data);
+        });
     });
 	}
 
