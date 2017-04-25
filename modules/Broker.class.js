@@ -1,7 +1,6 @@
 module.exports = class Broker {
   schema() {
     return {
-      _id: {type: String},
       firstName: {type: String},
       lastName: {type: String},
       contact: {

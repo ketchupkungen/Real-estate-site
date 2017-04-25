@@ -94,6 +94,8 @@ function createFakeDataFromJSON() {
 
 	function createDefaultSales() {
 		salesData.forEach(function(data) {
+      // let random = Math.floor(6*brokersData.length);
+		  data.sellerId = brokersData[0]._id;
 			new Sale(data).save();
 		});
 	}

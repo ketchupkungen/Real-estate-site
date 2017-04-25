@@ -2,7 +2,6 @@ module.exports = class Us {
 
   schema() {
     return {
-
       name: {type: String, required: true},
       contact: {
         phone: String,
