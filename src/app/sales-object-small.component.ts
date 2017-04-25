@@ -1,9 +1,10 @@
-import { Component, OnInit }	from '@angular/core';
+import { Component, OnInit }			from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { SalesObjectService }	from './sales-object.service';
 import { MemService }					from './mem.service';
 import { RestService }				from './rest.service';
-import { SearchService }        from './search-service';
+import { SearchService }      from './search-service';
 
 import { SalesObject } 				from '../class/sales-object.class';
 
@@ -15,6 +16,7 @@ import { SalesObject } 				from '../class/sales-object.class';
 
 export class SalesObjectSmallComponent implements OnInit {
 	localMem: any;
+	globalMem: any;
 	salesObjects: any;
 	sortingTypes = [
 		{
@@ -44,6 +46,7 @@ export class SalesObjectSmallComponent implements OnInit {
     private searchService: SearchService
 	) { 
 		this.localMem = memService.get(this);
+ 	  this.globalMem = this.memService.global();
 	}
 
 	ngOnInit(): void {
@@ -54,22 +57,18 @@ export class SalesObjectSmallComponent implements OnInit {
 		if(!this.localMem.selectedOption){
 			this.localMem.selectedOption = this.selectedOption;
 		}
+
     // Get salesObjects from searchService
-    this.searchService.getSearchResult().then((data: any) => { 
-    	console.log(data);
-    });
+    this.getSalesObjectsFromService();
+    this.globalMem.salesObjectSmallUpdate = ()=>{
+    	this.getSalesObjectsFromService();
+    };
 	}
 
-	getSalesObjects(): void {
-    let Sales = this.restService.newRestEntity("sale");
-    // let searchOptions = 'find/{ type: /xil.*/ }';
-
-    // console.log("Search options: ",searchOptions);
-
-    Sales.find('').then((data:any)=>{
-      this.salesObjects = data;
+	getSalesObjectsFromService(){
+    this.searchService.getSearchResult().then((data: any) => { 
+    	this.salesObjects = data;
     });
-
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {

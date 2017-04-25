@@ -3,7 +3,7 @@
 	<form>
 		<div class="form-group">
 			<label for="searchBox">Sök</label>
-			<input class="form-control" id="searchBox" type="search" placeholder="Sök efter stad, bostadstyp, ort">
+			<input class="form-control" (keyup)="onKey($event)" id="searchBox" type="search" placeholder="Sök efter stad, bostadstyp, ort">
 		</div>
 	</form>
 
