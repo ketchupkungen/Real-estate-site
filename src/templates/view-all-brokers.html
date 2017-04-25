@@ -1,7 +1,7 @@
 <div class="container-fluid card-container" *ngIf="brokersObject">
 	<div class="row">
 
-    <div *ngFor="let brokerObject of brokersObject; let i = index" class="col-xs-12 col-md-4 mb-4">
+    <div *ngFor="let brokerObject of brokersObject" class="col-xs-12 col-md-4 mb-4">
       <div class="card card-profile">
         <img class="card-img-top img-fluid" src="{{brokerObject.profile_image_src}}" alt="Card image cap">
         <div class="card-block">
