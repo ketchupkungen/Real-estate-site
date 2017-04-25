@@ -57,7 +57,7 @@ export class SalesObjectSmallComponent implements OnInit {
     // Get salesObjects from searchService
     this.searchService.getSearchResult().then((data: any) => { 
     	console.log(data);
-    }
+    });
 	}
 
 	getSalesObjects(): void {
