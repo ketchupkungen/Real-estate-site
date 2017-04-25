@@ -32,6 +32,7 @@
 }
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
 }
 #return-to-top:hover i {
     color: #ffffff;
