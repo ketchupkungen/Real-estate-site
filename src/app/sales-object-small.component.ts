@@ -55,9 +55,21 @@ export class SalesObjectSmallComponent implements OnInit {
 			this.localMem.selectedOption = this.selectedOption;
 		}
     // Get salesObjects from searchService
-    this.searchService.getSearchResult().then((data: any) => {
+    this.searchService.getSearchResult().then((data: any) => { 
+    	console.log(data);
+    }
+	}
+
+	getSalesObjects(): void {
+    let Sales = this.restService.newRestEntity("sale");
+    // let searchOptions = 'find/{ type: /xil.*/ }';
+
+    // console.log("Search options: ",searchOptions);
+
+    Sales.find('').then((data:any)=>{
       this.salesObjects = data;
     });
+
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {

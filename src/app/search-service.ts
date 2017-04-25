@@ -17,7 +17,7 @@ export class SearchService {
     private restService: RestService
     ){ }
 
-  getSearchResult(val: object): any {
+  getSearchResult(): any {
     let Sales = this.restService.newRestEntity('sale');
 
     return new Promise((resolve, reject)=>{
