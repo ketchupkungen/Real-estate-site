@@ -9,7 +9,7 @@ export class SalesObject {
 	bathrooms: number;
 	area: number;
 	totalArea: number;
-	brokersId: string;
+	brokerId: string;
 	place: any;
 	info: string;
 	img: any;
