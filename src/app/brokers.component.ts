@@ -1,5 +1,7 @@
-import { Component } 		from '@angular/core';
-import { Http } 			  from '@angular/http';
+import { Component, OnInit }       from '@angular/core';
+
+import { RestService }             from './rest.service';
+import { BrokersObject }            from '../class/broker-object.class';
 
 @Component({
   selector: 'brokers',
@@ -7,18 +9,22 @@ import { Http } 			  from '@angular/http';
   styleUrls: ['css/brokers.component.css']
 })
 
-export class BrokersComponent {
+export class BrokersComponent implements OnInit {
 
-  sellersObject:any;
+  brokersObject:BrokersObject;
 
-  constructor(private http:Http) {
-    this.http.get('data/us.json')
-      .subscribe(res => this.sellersObject = res.json().sellers);
+  constructor(
+    private restService: RestService
+  ) {}
+
+  ngOnInit(): void {
+    let Brokers = this.restService.newRestEntity("broker");
+
+    Brokers.find('').then((data:any)=>{
+      console.log(data);
+      this.brokersObject = data;
+    });
   }
-
-	getBrokerProfileImage(sellerObject:any):string {
-		return sellerObject.profile_image_src;
-	}
 
   numberWithSpaces(price:number) {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");

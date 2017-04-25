@@ -6,6 +6,9 @@
 	    		<div class="col-xs-12 col-md-7">
 				    <h4 class="card-title">Beskrivning</h4>
 	    			<p class="card-text text-muted">{{salesObject.text.info}}</p>
+
+	    			<div class="vspace"></div>
+
 	    			<div class="viewings">
 			  			<h4 class="card-title">Visningar</h4>
 			  			<table class="table table-sm">
@@ -23,9 +26,12 @@
 							      <td>{{showing.to}}</td>
 							    </tr>
 							  </tbody>
-							</table>
-						</div>
+						</table>
+					</div>
 	    		</div>
+
+	    		<div class="vspace"></div>
+	    		
 	    		<div class="col-xs-12 col-md-5">
 			    	<h4 class="card-title">Interiör</h4>
   					<p *ngFor="let text of salesObject.text.roomInfo" class="text-muted">{{text}}</p>

@@ -2,18 +2,17 @@
   <div class="row">
     <div class="col-12">
       <h4>Ansvarig mäklare</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nesciunt ullam doloremque quos at, 
-        tenetur consequuntur harum cum dolores numquam fuga rerum culpa enim quod.</p>
+      <!--<p>{{brokerObject.brokerInfo}}</p>-->
     </div>
   </div>
-  <div class="row" *ngIf="brooker">
+  <div class="row" *ngIf="brokerObject">
     <div class="col-6">
       <br>
       <p>
-        <strong>Namn: </strong> {{brooker.firstName}} {{brooker.lastName}} <br/>
-        <strong>Telefon: </strong> {{brooker.contact.phone}} <br/>
-        <strong>Epost: </strong> {{brooker.contact.mail}} <br/>
-        <strong>About: </strong> {{brooker.contact.personDesc}}
+        <strong>Namn: </strong> {{brokerObject.firstName}} {{brokerObject.lastName}} <br/>
+        <strong>Telefon: </strong> {{brokerObject.contact.phone}} <br/>
+        <strong>Epost: </strong> {{brokerObject.contact.mail}} <br/>
+        <strong>About: </strong> {{brokerObject.contact.personDesc}}
       </p>
     </div>
     <div class="col-6"><img src="{{brooker.profile_image_src}}" style="width:60%"></div>

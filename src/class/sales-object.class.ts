@@ -10,7 +10,7 @@ export class SalesObject {
 	bathrooms: number;
 	area: number;
 	totalArea: number;
-	sellerId: number;
+	sellerId: string;
 	place: any;
 	info: string;
 	img: any;

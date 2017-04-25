@@ -1,11 +1,11 @@
-import { Component, OnInit } 		from '@angular/core';
+import { Component, OnInit } 		  from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { Location } from '@angular/common';
-import { Http } from '@angular/http';
+import { Location }               from '@angular/common';
 
-import { RestService }          from './rest.service';
+import { RestService }            from './rest.service';
 
-import { SalesObject } 	from '../class/sales-object.class';
+import { SalesObject } 	          from '../class/sales-object.class';
+import { BrokersObject }          from '../class/broker-object.class';
 
 @Component ({
   selector: 'sales-object-contact',
@@ -15,30 +15,28 @@ import { SalesObject } 	from '../class/sales-object.class';
 
 export class SalesObjectContactComponent {
   private salesObject: SalesObject;
-  private us: any;
-  private brooker: Object;
+  private brokersObject: BrokersObject;
+  private brokerObject: any; 
 
 	constructor(
     private restService: RestService,
 		private route: ActivatedRoute,
-		private location: Location,
-    private http: Http
+		private location: Location
 	) {}
 
 	ngOnInit(): void {
-    // Get content of us.json 
-    this.http.get('./data/us.json')
-        .map(res => res.json())
-        .subscribe(us => this.us = us,
-          err => console.log(err));
 
     // Find the amenable brooker for clicked salesObject
     let Sales = this.restService.newRestEntity("sale");
     let id = this.route.snapshot.params['id'];
+    let Brokers = this.restService.newRestEntity("broker");
 
     Sales.find(id).then((data:any)=>{
       this.salesObject = data;
-      this.brooker = this.us.sellers[this.salesObject.sellerId];
+      Brokers.find(this.salesObject.sellerId).then((data:any)=>{
+        console.log(data);
+        this.brokerObject = data[0];
+      });
     });
 	}
 }
