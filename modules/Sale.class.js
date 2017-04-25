@@ -23,7 +23,7 @@ module.exports = class Sale {
 				adress: String,
 				postcode: Number
 			},
-			brokerId: Number,
+			brokerId: String,
 			text: {
 				info: String,
 				shortInfo: String,
