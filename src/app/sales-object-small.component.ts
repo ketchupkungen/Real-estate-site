@@ -63,20 +63,26 @@ export class SalesObjectSmallComponent implements OnInit {
     
     this.globalMem.salesObjectSmallUpdate = ()=>{
     	this.getSalesObjectsFromService();
-    };
+    }
 	}
 
-	getSalesObjectsFromService(){
-    this.searchService.getSearchResult().then((data: any) => { 
-    	this.salesObjects = data;
-    });
+	getSalesObjectsFromService() {
+		if(this.globalMem.searchValues) {
+	    this.searchService.getSearchResult().then((data: any) => { 
+	    	this.salesObjects = data;
+	    });
+	  } else {
+	  	this.salesObjectService.getSalesObjects().then((data: any) => { 
+	    	this.salesObjects = data;
+	    });
+	  }
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return this.salesObjectService.getSalesObjectImg(salesObject, indexNo);
 	}
 
-	toggleOption(type: any){
+	toggleOption(type: any) {
 		if(type.name === this.localMem.selectedType.name){
 			if(this.localMem.selectedOption[0].charAt(0) === '-'){
 				this.localMem.selectedOption = [type.value];
