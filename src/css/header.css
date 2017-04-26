@@ -11,3 +11,16 @@
 .header-styling a:hover {
 	color: #083b66;
 }
+
+
+@media screen and (max-width: 400px) {
+	.logo-style {
+		height: 40px;
+	}
+
+	.header-styling {
+		height: 55px;
+	}
+
+
+}
