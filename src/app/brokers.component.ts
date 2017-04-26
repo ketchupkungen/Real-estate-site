@@ -21,7 +21,6 @@ export class BrokersComponent implements OnInit {
     let Brokers = this.restService.newRestEntity("broker");
 
     Brokers.find('').then((data:any)=>{
-      console.log(data);
       this.brokersObject = data;
     });
   }
