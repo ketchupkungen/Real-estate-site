@@ -47,7 +47,7 @@ export class SalesObjectInformationComponent implements OnInit {
     return "xxx xx";
   }
 
-  getDate(time:date){
+  getDate(time:Date){
     let d = new Date(time);
 
     let monthStr:String;
