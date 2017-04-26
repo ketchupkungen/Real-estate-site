@@ -42,7 +42,7 @@ export class SalesObjectService {
 		return "url('" + salesObject.layout[indexNo].src + "')";
 	}
 
-  getSalesObjectSellerId(salesObject: SalesObject){
-    return salesObject.sellerId;
+  getSalesObjectBrokerId(salesObject: SalesObject){
+    return salesObject.brokerId;
   }
 }

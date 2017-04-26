@@ -16,13 +16,12 @@ import { BrokersObject }          from '../class/broker-object.class';
 export class SalesObjectContactComponent {
   private salesObject: SalesObject;
   private brokersObject: BrokersObject;
-  private brokerObject: any; 
 
 	constructor(
     private restService: RestService,
 		private route: ActivatedRoute,
 		private location: Location
-	) {}
+	) { }
 
 	ngOnInit(): void {
 
@@ -31,11 +30,17 @@ export class SalesObjectContactComponent {
     let id = this.route.snapshot.params['id'];
     let Brokers = this.restService.newRestEntity("broker");
 
-    Sales.find(id).then((data:any)=>{
+    Sales.find(id).then((data: any) => {
       this.salesObject = data;
-      Brokers.find(this.salesObject.sellerId).then((data:any)=>{
-        console.log(data);
-        this.brokerObject = data[0];
+
+      let arg = '/'+ this.salesObject.brokerId +'/i';
+
+      let query = `find/{ $or: [
+        { "brokerId": `+ arg +` }
+      ]}`;
+
+      Brokers.find(query).then((broker: any) => {        
+         this.brokersObject = broker[0];
       });
     });
 	}

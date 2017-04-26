@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'header',
   templateUrl: 'templates/header-component.html',
+  styleUrls: ['css/header.css']
 })
 export class HeaderComponent /*implements OnInit*/{
 	isNavbarCollapsed = true;

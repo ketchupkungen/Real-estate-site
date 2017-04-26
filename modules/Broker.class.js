@@ -3,6 +3,7 @@ module.exports = class Broker {
     return {
       firstName: {type: String},
       lastName: {type: String},
+      brokerId: String,
       contact: {
         phone: String,
         mail: String,

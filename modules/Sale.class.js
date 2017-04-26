@@ -17,13 +17,13 @@ module.exports = class Sale {
 			bathrooms: {type: Number},
 			area: {type: Number},
 			totalArea: {type: Number},
-			sellerId: {type: String},
 			place: {
 				city: String,
 				municipality: String,
 				adress: String,
 				postcode: Number
 			},
+			brokerId: String,
 			text: {
 				info: String,
 				shortInfo: String,

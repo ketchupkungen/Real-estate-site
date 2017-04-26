@@ -10,8 +10,8 @@
 	<div class="row">
 		<div *ngFor="let filter of localMem.filters" class="col-6 col-md-3">
 			<div ngbDropdown>
-		        <button class="btn btn-secondary" id="dropdownMenu1" ngbDropdownToggle>
-		        	<span *ngIf="!filter.selectedName">{{filter.type}}</span>
+		        <button class="btn btn-secondary dropdown-hover" id="dropdownMenu1" ngbDropdownToggle>
+		        	<span *ngIf="!filter.selectedName"> {{filter.type}}</span>
 		        	<span *ngIf="filter.selectedName">{{filter.selectedName}}</span>
 		        </button>
 		        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">

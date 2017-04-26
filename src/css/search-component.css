@@ -3,7 +3,7 @@
 }
 
 .search-component {
-	background-color: AliceBlue;
+	background-color: #F5F5F5;
 }
 
 .search-component .dropdown {
@@ -16,7 +16,7 @@
 	width: 100%;
 }
 
-.dropdown-hover{
-  cursor: pointer;
+.search-component .dropdown button:hover {
+	cursor: pointer;
 }
 
