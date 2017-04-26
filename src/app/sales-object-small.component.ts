@@ -67,7 +67,8 @@ export class SalesObjectSmallComponent implements OnInit {
 	}
 
 	getSalesObjectsFromService() {
-		if(this.globalMem.searchValues) {
+		this.globalMem.filtersActive = this.globalMem.filtersActive || [];
+		if(this.globalMem.searchValues || this.globalMem.filtersActive.length > 0) {
 	    this.searchService.getSearchResult().then((data: any) => { 
 	    	this.salesObjects = data;
 	    });
