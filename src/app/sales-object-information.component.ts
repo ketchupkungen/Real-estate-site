@@ -2,6 +2,8 @@ import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
 
+import 'rxjs/add/operator/switchMap';
+
 import { RestService }        from './rest.service';
 import { SalesObject } 	      from '../class/sales-object.class';
 
@@ -23,11 +25,12 @@ export class SalesObjectInformationComponent implements OnInit {
 
 	ngOnInit(): void {
     let Sales = this.restService.newRestEntity("sale");
-    let id = this.route.snapshot.params['id'];
 
-    Sales.find(id).then((data:any)=>{
-      this.salesObject = data;
-    });
+    this.route.params
+      .switchMap((params: Params) => Sales.find(params['id']))
+      .subscribe((data: any) => {
+        this.salesObject = data;
+      });
 	}
 
   numberWithSpaces(price:number) {
@@ -42,6 +45,18 @@ export class SalesObjectInformationComponent implements OnInit {
       return first + " " + second;
     }
     return "xxx xx";
+  }
+
+  getDate(time:Date){
+    let d = new Date(time);
+
+    let monthStr:String;
+    let dateStr:String;
+
+    if(d.getMonth().toString().length == 1){monthStr = "0" + d.getMonth()}else{monthStr = "" + d.getMonth()}
+    if(d.getDate().toString().length == 1){dateStr = "0" + d.getDate()}else{dateStr = "" + d.getDate()}
+
+    return d.getFullYear() + "-" + monthStr + "-" + dateStr;
   }
 
 }

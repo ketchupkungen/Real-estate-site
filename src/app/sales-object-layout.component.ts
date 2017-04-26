@@ -2,6 +2,8 @@ import { Component, OnInit } 			from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } 							from '@angular/common';
 
+import 'rxjs/add/operator/switchMap';
+
 import { RestService }				from './rest.service';
 import { SalesObject } 				from '../class/sales-object.class';
 
@@ -21,11 +23,12 @@ export class SalesObjectLayoutComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-    let Sales = this.restService.newRestEntity("sale");
-    let id = this.route.snapshot.params['id'];
+		let Sales = this.restService.newRestEntity("sale");
 
-    Sales.find(id).then((data:any)=>{
-      this.salesObject = data;
-    });
+	  this.route.params
+	    .switchMap((params: Params) => Sales.find(params['id']))
+	    .subscribe((data: any) => {
+      	this.salesObject = data;
+      });
 	}
 }
