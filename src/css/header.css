@@ -16,10 +16,11 @@
 @media screen and (max-width: 400px) {
 	.logo-style {
 		height: 40px;
+		width: 80%;
 	}
 
 	.header-styling {
-		height: 55px;
+		height: 60px;
 	}
 
 
