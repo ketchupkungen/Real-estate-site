@@ -6,43 +6,45 @@
 				<h2>Vill du värdera din bostad?</h2>
 				<p>Det är helt kostnadsfritt och du binder dig ej till försäljning.</p>
 			    <div class="form-group row">
-			      <div class="col-sm-10">
+			      <div class="col-12">
 			        <input type="Email" class="form-control" id="inputEmail3" placeholder="Förnamn">
 			      </div>
 			    </div>
 			    <div class="form-group row">
-			      <div class="col-sm-10">
+			      <div class="col-12">
 			        <input type="text" class="form-control" id="inputPassword3" placeholder="Efternamn">
 			      </div>
 			    </div>
 			    <div class="form-group row">
-			      <div class="col-sm-10">
+			      <div class="col-12">
 			        <input type="tel" class="form-control" id="inputPassword3" placeholder="Mobiltelefon">
 			      </div>
 			    </div>
 			    <div class="form-group row">
-			      <div class="col-sm-10">
+			      <div class="col-12">
 			        <input type="email" class="form-control" id="inputPassword3" placeholder="Epost">
 			      </div>
 			    </div>
 			    <div class="vspace"></div>
 			    <div class="form-group row">
-			      <div class="col-md-7">
+			      <div class="col-7 col-md-9">
 			        <input type="text" class="form-control" id="inputPassword3" placeholder="Adress">
 			      </div>
-			      <div class="col-6 col-md-3">
-			        <input type="text" class="form-control" id="inputPassword3" placeholder="Post nr">
+			      <div class="col-5 col-md-3">
+			        <input type="text" class="form-control" id="inputPassword3" placeholder="Postnr">
 			      </div>
 			    </div>
 
 			    <div class="form-group row">
-			    	<div class="col-7">
+			    	<div class="col-9">
 					    <select class="custom-select">
 						  <option selected>Bostadstyp</option>
 						  <option *ngFor="let type of types">{{type}}</option>
 						</select>
 					</div>
-					<div class="col-3">
+				</div>
+				<div class="form-group row">
+					<div class="col-2">
 						<button type="submit" class="btn btn-primary sell-with-us-button">Skicka</button>
 					</div>
 				</div>

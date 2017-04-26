@@ -12,7 +12,7 @@ export class SearchComponent implements OnInit{
 	globalMem: any;
  	filters = [
 		{
-			type: 'Rum(min)',
+			type: 'Rum (min)',
 			options: [
 				{
 					name: '1 rum',
@@ -50,7 +50,7 @@ export class SearchComponent implements OnInit{
 			selectedName: ''
 		},
 		{
-			type: 'Boarea(min)',
+			type: 'Boarea (min)',
 			options: [
 				{
 					name: '25 m²',
@@ -113,7 +113,7 @@ export class SearchComponent implements OnInit{
 			],
 			selectedName: ''
 		},{
-			type: 'Pris(max)',
+			type: 'Pris (max)',
 			options: [
 				{
 					name: '500 000 kr',

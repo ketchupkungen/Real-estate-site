@@ -26,3 +26,9 @@ contactform-contactview{
 .contact-us-button:hover {
 	cursor: pointer;
 }
+
+@media screen and (max-width: 769px) {
+  .adress-margin {
+   margin-bottom: 15px;
+  }
+}
