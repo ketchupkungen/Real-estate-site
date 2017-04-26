@@ -2,6 +2,8 @@ import { Component, OnInit } 		  from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
 
+import 'rxjs/add/operator/switchMap';
+
 import { RestService }            from './rest.service';
 
 import { SalesObject } 	          from '../class/sales-object.class';
@@ -30,14 +32,16 @@ export class SalesObjectContactComponent {
     let id = this.route.snapshot.params['id'];
     let Brokers = this.restService.newRestEntity("broker");
 
-    Sales.find(id).then((data: any) => {
-      this.salesObject = data;
+    this.route.params
+      .switchMap((params: Params) => Sales.find(params['id']))
+      .subscribe((data: any) => {
+        this.salesObject = data;
 
-      let arg = '/'+ this.salesObject.brokerId +'/i';
+        let arg = '/'+ this.salesObject.brokerId +'/i';
 
-      let query = `find/{ $or: [
-        { "brokerId": `+ arg +` }
-      ]}`;
+        let query = `find/{ $or: [
+          { "brokerId": `+ arg +` }
+        ]}`;
 
       Brokers.find(query).then((broker: any) => {        
          this.brokersObject = broker[0];
