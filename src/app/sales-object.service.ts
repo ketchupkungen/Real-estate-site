@@ -41,8 +41,4 @@ export class SalesObjectService {
 	getSalesObjectLayout(salesObject: SalesObject, indexNo: number):string {
 		return "url('" + salesObject.layout[indexNo].src + "')";
 	}
-
-  getSalesObjectBrokerId(salesObject: SalesObject){
-    return salesObject.brokerId;
-  }
 }

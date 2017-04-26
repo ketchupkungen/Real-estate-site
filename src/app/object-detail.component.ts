@@ -1,5 +1,6 @@
 import { Component, OnInit } 			from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { Location } 							from '@angular/common';
 
 import { RestService }					from './rest.service';
 import { SalesObjectService } 	from './sales-object.service';
@@ -16,13 +17,18 @@ export class ObjectDetailComponent implements OnInit {
 	constructor(
 		private salesObjectService: SalesObjectService,
 		private route: ActivatedRoute,
-		private restService: RestService
+		private restService: RestService,
+		private location: Location
 	){}
 
 	ngOnInit(): void {
-		this.salesObjectService.getSalesObjectById(this.route).then((data: any) => {
-			this.salesObject = data;
-		});
+		let Sales = this.restService.newRestEntity("sale");
+
+	  this.route.params
+	    .switchMap((params: Params) => Sales.find(params['id']))
+	    .subscribe((data: any) => {
+      	this.salesObject = data;
+      });
 	}
 
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
