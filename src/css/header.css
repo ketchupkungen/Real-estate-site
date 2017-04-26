@@ -12,16 +12,15 @@
 	color: #083b66;
 }
 
-
 @media screen and (max-width: 400px) {
 	.logo-style {
 		height: 40px;
 		width: 80%;
 	}
 
-	.header-styling {
+	/*.header-styling {
 		height: 60px;
-	}
+	}*/
 
 
 }

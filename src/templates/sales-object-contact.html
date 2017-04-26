@@ -8,12 +8,20 @@
   <div class="row" *ngIf="brokersObject">
     <div class="col-6">
       <br>
-      <p>
-        <strong>Namn: </strong> {{brokersObject.firstName}} {{brokersObject.lastName}} <br/>
-        <strong>Telefon: </strong> {{brokersObject.contact.phone}} <br/>
-        <strong>Epost: </strong> {{brokersObject.contact.mail}} <br/>
-        <strong>About: </strong> {{brokersObject.contact.personDesc}}
-      </p>
+      <div>
+        <strong>Namn: </strong> 
+        <p>{{brokersObject.firstName}} {{brokersObject.lastName}}</p><br/>
+        <div class="small-vspace"></div>
+        <strong>Telefon: </strong>
+        <p>{{brokersObject.contact.phone}}</p><br/>
+        <div class="small-vspace"></div>
+        <strong>Epost: </strong>
+        <p>{{brokersObject.contact.mail}}</p><br/>
+        <div class="small-vspace"></div>
+        <strong>About: </strong> 
+        <p>{{brokersObject.contact.personDesc}}</p>
+        <div class="small-vspace"></div>
+      </div>
     </div>
     <div class="col-6"><img src="{{brokersObject.profile_image_src}}" style="width:60%"></div>
   </div>
