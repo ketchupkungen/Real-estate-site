@@ -33,21 +33,15 @@ export class SalesObjectContactComponent {
     Sales.find(id).then((data: any) => {
       this.salesObject = data;
 
-      let brokerIdForSalesObject = '/'+ this.salesObject.brokerId +'/i';
+      let arg = '/'+ this.salesObject.brokerId +'/i';
 
       let query = `find/{ $or: [
-        { "brokerId": `+brokerIdForSalesObject+` }
+        { "brokerId": `+ arg +` }
       ]}`;
 
       Brokers.find(query).then((broker: any) => {        
          this.brokersObject = broker[0];
-         // console.log(this.brokersObject.lastName);
       });
     });
 	}
 }
-
-// Brokers.find(this.salesObject.sellerId).then((data:any)=>{
-//         console.log(data);
-//         this.brokerObject = data[0];
-// });
