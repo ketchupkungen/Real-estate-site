@@ -34,9 +34,9 @@
 			]
 		},
 		"img": [
-			{"src":"/img/objectId1-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"/img/objectId1-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"/img/objectId1-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"/img/objectId1-img1.jpg", "caption":"Exteriör, en vacker framsida!"},
+			{"src":"/img/objectId1-img2.jpg", "caption":"En annan caption för bilden"},
+			{"src":"/img/objectId1-img3.jpg", "caption":"Vardagsrum med morgonsol"},
 			{"src":"/img/objectId1-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		],
 
@@ -81,10 +81,10 @@
 			]
 		},
 		"img": [
-			{"src":"img/objectId2-img1.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId2-img2.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId2-img3.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
-			{"src":"img/objectId2-img4.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"},
+			{"src":"img/objectId2-img1.jpg", "caption":"Vacker stenfasad"},
+			{"src":"img/objectId2-img2.jpg", "caption":"Öppen planlösning"},
+			{"src":"img/objectId2-img3.jpg", "caption":"Ljust vardagsrum med stora ytor"},
+			{"src":"img/objectId2-img4.jpg", "caption":"Ett härligt område"},
 			{"src":"img/objectId2-img5.jpg", "caption":"Vackert belägen i en rosendoftande skogsdunge!"}
 		],
 
