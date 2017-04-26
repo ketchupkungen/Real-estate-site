@@ -47,4 +47,16 @@ export class SalesObjectInformationComponent implements OnInit {
     return "xxx xx";
   }
 
+  getDate(time:Date){
+    let d = new Date(time);
+
+    let monthStr:String;
+    let dateStr:String;
+
+    if(d.getMonth().toString().length == 1){monthStr = "0" + d.getMonth()}else{monthStr = "" + d.getMonth()}
+    if(d.getDate().toString().length == 1){dateStr = "0" + d.getDate()}else{dateStr = "" + d.getDate()}
+
+    return d.getFullYear() + "-" + monthStr + "-" + dateStr;
+  }
+
 }

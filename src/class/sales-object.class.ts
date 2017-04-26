@@ -1,5 +1,6 @@
 export class SalesObject {
 	type: string;
+  dateAdded: Date;
 	price: number;
 	priceMonth: number;
 	buildDate: number;

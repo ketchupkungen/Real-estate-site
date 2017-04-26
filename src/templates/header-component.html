@@ -3,7 +3,7 @@
           aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand  site-title" routerLink="/"><img src="/img/logo.png" alt=""></a>
+  <a class="navbar-brand site-title" routerLink="/"><img src="/img/logo.png" alt="" class="logo-style"></a>
   <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="exCollapsingNavbar2">
     <div class="navbar-nav mr-auto">
       <a *ngFor="let link of menuLinks" class="nav-item nav-link" routerLink="/{{link.path}}" routerLinkActive="active"
