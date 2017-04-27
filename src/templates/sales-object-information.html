@@ -3,10 +3,7 @@
 		<div class="col-12">
 			<div *ngIf="salesObject">
 		    <h4 class="card-title">Interiör</h4>
-				<p *ngFor="let text of salesObject.text.roomInfo" class="text-muted">{{text}}</p>
-
-				<div class="vspace"></div>
-
+				<p *ngFor="let text of salesObject.text.roomInfo" class="text-muted mb-4">{{text}}</p>
 				<h4 class="card-title"><small>Specifikation</small></h4>
 				<table class="table table-sm table-striped">
 					<thead></thead>
@@ -62,11 +59,7 @@
 					</tbody>
 				</table>
 
-				<div class="vspace"></div>
-
-				<!-- Förslag: Energi deklaration/energiförbrukning -->
-
-				<div class="viewings">
+				<div class="viewings mt-4 mb-4">
 		  			<h4 class="card-title"><small>Visningar</small></h4>
 		  			<table class="table table-sm">
 						<thead>
@@ -85,8 +78,6 @@
 						</tbody>
 					</table>
 				</div>
-
-				<div class="vspace"></div>
 			</div>
 		</div>
 	</div>

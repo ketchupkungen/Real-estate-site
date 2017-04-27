@@ -1,13 +1,10 @@
 <div class="container">
-	<div class="row">
+	<div class="row mt-5 mb-5">
 		<div class="col-12">
-			<div class="vspace"></div>
 			<div *ngIf="salesObject" class="layout">
 				<div *ngFor="let layout of salesObject.layout">
 					<p>{{layout.description}}</p>
 					<img class="img-fluid" src="{{layout.src}}">
-					<div class="vspace"></div>
-					<div class="vspace"></div>
 				</div>
 			</div>
 		</div>

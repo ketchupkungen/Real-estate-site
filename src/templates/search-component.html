@@ -1,13 +1,12 @@
 <div class="container-fluid search-component">
-	<div class="vspace"></div>
-	<form>
+	<form class="mt-4">
 		<div class="form-group">
 			<label for="searchBox">Sök</label>
 			<input class="form-control" (keyup)="onKey($event)" id="searchBox" type="search" placeholder="Sök efter stad, bostadstyp, ort">
 		</div>
 	</form>
 
-	<div class="row">
+	<div class="row mb-4">
 		<div *ngFor="let filter of localMem.filters" class="col-6 col-md-3">
 			<div ngbDropdown>
 		        <button class="btn btn-secondary dropdown-hover" id="dropdownMenu1" ngbDropdownToggle>
@@ -23,5 +22,4 @@
 	      	</div>
 		</div>
 	</div>
-	<div class="vspace"></div>
 </div>

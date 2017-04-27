@@ -3,10 +3,6 @@ contactform-contactview{
   background-color: red;
 }
 
-.vspace{
-	height: 30px;
-}
-
 .contact-us-form {
   background-image: url("../img/contact-image.jpeg");
   background-size: cover;

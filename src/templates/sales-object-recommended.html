@@ -14,12 +14,11 @@
 	    			</p>
 				    <h4 class="card-title">{{salesObject.place.city}}<small class="text-muted">, {{salesObject.place.municipality}}</small></h4>
 				    <div class="row">
-						<div class="col-12">
+						<div class="col-12 mb-3">
 							<p class="card-text">
 								{{salesObject.place.adress}}
 							</p>
 						</div>
-						<div class="vspace"></div>
 				    </div>
 			    	<div class="row">
 			    		<div class="col-6">
@@ -36,7 +35,6 @@
 			    		</div>	
 		    		</div>
 		    		<div class="row">
-		    			
 		    			<div class="col-6">
 			    			<p class="card-text">
 			    				<small class="text-muted">BYGGT:</small><br>
@@ -51,8 +49,7 @@
 		    			</div>
 		    		</div>
 		    		<div class="row">
-		    			<div class="col-12">
-		    				<div class="vspace"></div>
+		    			<div class="col-12 pb-3">
 		    				<h5 class="card-text">
 		    					<small class="text-muted">Pris:</small>
 		    					{{numberWithSpaces(salesObject.price)}} kr
