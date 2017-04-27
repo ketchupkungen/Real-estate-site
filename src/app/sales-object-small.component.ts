@@ -17,7 +17,7 @@ import { SalesObject } 				from '../class/sales-object.class';
 export class SalesObjectSmallComponent implements OnInit {
 	localMem: any;
 	globalMem: any;
-	salesObjects: any;
+	salesObjects = [];
 	sortingTypes = [
 		{
 			name: 'Pris',
@@ -58,7 +58,6 @@ export class SalesObjectSmallComponent implements OnInit {
 			this.localMem.selectedOption = this.selectedOption;
 		}
 
-    // Get salesObjects from searchService
     this.getSalesObjectsFromService();
     
     this.globalMem.salesObjectSmallUpdate = ()=>{
@@ -69,7 +68,7 @@ export class SalesObjectSmallComponent implements OnInit {
 	getSalesObjectsFromService() {
 		this.globalMem.filtersActive = this.globalMem.filtersActive || [];
 		if(this.globalMem.searchValues || this.globalMem.filtersActive.length > 0) {
-	    this.searchService.getSearchResult().then((data: any) => { 
+	    this.searchService.getSearchResult().then((data: any) => {
 	    	this.salesObjects = data;
 	    });
 	  } else {

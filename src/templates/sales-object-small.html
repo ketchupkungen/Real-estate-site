@@ -10,6 +10,13 @@
 	</div>
 </div>
 <div class="container-fluid card-container mt-1">
+	<div *ngIf="salesObjects.length === 0">
+		<div class="row mt-4">
+			<div class="col-12">
+				<h5 class="text-center">Tyvärr hittades inga sökresultat <i class="fa fa-frown-o" aria-hidden="true"></i></h5>
+			</div>
+		</div>
+	</div>
 	<a *ngFor="let salesObject of salesObjects | orderBy: localMem.selectedOption ; let i = index" [routerLink]="['/detail', salesObject._id]">
 		<div class="row">
 			<div class="col-12">
