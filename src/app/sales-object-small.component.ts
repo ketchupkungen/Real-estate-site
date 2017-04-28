@@ -20,24 +20,22 @@ export class SalesObjectSmallComponent implements OnInit {
 	salesObjects: SalesObject[];
 	sortingTypes = [
 		{
-			name: 'Pris',
-			value: 'price'
-		},
-		{
 			name: 'Datum tillagt',
 			value: 'dateAdded'
 		},
 		{
-			name: 'Byggnadsår',
-			value: 'buildDate'
+			name: 'Pris',
+			value: 'price'
 		},
 		{
 			name: 'Boyta',
 			value: 'area'
+		},
+		{
+			name: 'Byggnadsår',
+			value: 'buildDate'
 		}
 	];
-	selectedOption = ['-dateAdded'];
-	selectedType = this.sortingTypes[1];
 
 	constructor(
 		private salesObjectService: SalesObjectService,
@@ -51,12 +49,9 @@ export class SalesObjectSmallComponent implements OnInit {
 
 	ngOnInit(): void {
 		this.localMem.sortingTypes = this.sortingTypes;
-		if(!this.localMem.selectedType){
-			this.localMem.selectedType = this.selectedType;
-		}
-		if(!this.localMem.selectedOption){
-			this.localMem.selectedOption = this.selectedOption;
-		}
+		this.localMem.selectedType = this.localMem.selectedType || this.sortingTypes[0];
+		this.localMem.selectedOption = this.localMem.selectedOption || ['-dateAdded'];
+		this.localMem.selectedSortUp = this.localMem.selectedSortUp || true;
 
 		this.salesObjects = this.salesObjects || [];
 
