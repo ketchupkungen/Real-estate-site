@@ -88,15 +88,19 @@ export class SalesObjectSmallComponent implements OnInit {
 		if(type.name === this.localMem.selectedType.name){
 			if(this.localMem.selectedOption[0].charAt(0) === '-'){
 				this.localMem.selectedOption = [type.value];
+				this.localMem.selectedSortUp = false;
 			}
 			else{
 				this.localMem.selectedOption = ['-' + type.value];	
+				this.localMem.selectedSortUp = true;
 			}
 		}
 		else{
 			this.localMem.selectedType = type;
 			this.localMem.selectedOption = [type.value];
+			this.localMem.selectedSortUp = false;
 		}
+		console.log("selectedOption: ", this.localMem.selectedOption," selectedSortUp: ",this.localMem.selectedSortUp);
 	}
 
 	numberWithSpaces(price:number) {

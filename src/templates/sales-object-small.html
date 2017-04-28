@@ -4,7 +4,11 @@
 		<div *ngFor="let type of localMem.sortingTypes" class="col-6 col-md-3">
 			<a (click)="toggleOption(type)">
 				{{type.name}}
-				<i class="fa fa-sort ml-2" aria-hidden="true"></i>
+					<i *ngIf="this.localMem.selectedType.name === type.name" 
+						 [ngClass]="{'fa-sort-asc': this.localMem.selectedSortUp, 
+						 						 'fa-sort-desc': !this.localMem.selectedSortUp}" 
+						 class="fa ml-2" aria-hidden="true">
+					</i>
 			</a>
 		</div>
 	</div>
