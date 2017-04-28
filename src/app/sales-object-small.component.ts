@@ -100,7 +100,6 @@ export class SalesObjectSmallComponent implements OnInit {
 			this.localMem.selectedOption = [type.value];
 			this.localMem.selectedSortUp = false;
 		}
-		console.log("selectedOption: ", this.localMem.selectedOption," selectedSortUp: ",this.localMem.selectedSortUp);
 	}
 
 	numberWithSpaces(price:number) {
