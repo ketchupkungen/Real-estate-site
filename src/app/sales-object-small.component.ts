@@ -17,7 +17,7 @@ import { SalesObject } 				from '../class/sales-object.class';
 export class SalesObjectSmallComponent implements OnInit {
 	localMem: any;
 	globalMem: any;
-	salesObjects = [];
+	salesObjects: SalesObject[];
 	sortingTypes = [
 		{
 			name: 'Pris',
@@ -57,6 +57,8 @@ export class SalesObjectSmallComponent implements OnInit {
 		if(!this.localMem.selectedOption){
 			this.localMem.selectedOption = this.selectedOption;
 		}
+
+		this.salesObjects = this.salesObjects || [];
 
     this.getSalesObjectsFromService();
     
