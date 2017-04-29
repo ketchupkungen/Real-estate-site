@@ -10,6 +10,7 @@ import { MemService } from './mem.service';
 export class SearchComponent implements OnInit{
 	localMem: any;
 	globalMem: any;
+	placeHolder: string;
  	filters = [
 		{
 			type: 'Rum (min)',
@@ -175,9 +176,18 @@ export class SearchComponent implements OnInit{
 	}
 
 	ngOnInit(){
+		this.globalMem = this.memService.global()
+
 		if(!this.localMem.filters){
 			this.localMem.filters = this.filters;
 		}
+
+		if(!this.globalMem.searchValues || this.globalMem.searchValues === '') {
+			this.placeHolder = 'Sök efter stad, bostadstyp eller ort';
+		} else {
+			this.placeHolder = this.globalMem.searchValues;
+		}
+
 	}
 
 	onKey(event: any){
@@ -186,10 +196,9 @@ export class SearchComponent implements OnInit{
 	}
 
 	saveSearchValues(value: any){
-		this.globalMem = this.memService.global();
-
 		if(!value || value === '') {
 			this.globalMem.searchValues = '';
+			this.placeHolder = 'Sök efter stad, bostadstyp eller ort';
 		} else {
 			this.globalMem.searchValues = value;
 		};
