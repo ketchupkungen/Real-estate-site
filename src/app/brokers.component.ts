@@ -1,7 +1,7 @@
 import { Component, OnInit }       from '@angular/core';
 
 import { RestService }             from './rest.service';
-import { BrokersObject }            from '../class/broker-object.class';
+import { BrokersObject }           from '../class/broker-object.class';
 
 @Component({
   selector: 'brokers',

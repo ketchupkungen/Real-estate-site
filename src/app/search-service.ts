@@ -26,11 +26,10 @@ export class SearchService {
     let activeLength = this.globalMem.filtersActive.length;
 
     return new Promise((resolve, reject)=>{
-      let valueWithRegexp: any;
       let query = '';
 
       if(this.globalMem.searchValues) {
-        valueWithRegexp = '/'+ this.globalMem.searchValues +'/i';
+        let valueWithRegexp = '/'+ this.globalMem.searchValues +'/i';
 
         query = `{ $or: [
           { "place.city": `+valueWithRegexp+` },
