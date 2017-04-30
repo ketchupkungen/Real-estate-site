@@ -5,7 +5,6 @@ import { Location } 							from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 
 import { RestService }					from './rest.service';
-import { SalesObjectService }		from './sales-object.service';
 
 import { SalesObject } 					from '../class/sales-object.class';
 
@@ -21,7 +20,6 @@ export class SalesObjectSummaryComponent implements OnInit {
 	constructor(
 		private route: ActivatedRoute,
 		private restService: RestService,
-		private salesObjectService: SalesObjectService,
 		private location: Location
 	) { }
 

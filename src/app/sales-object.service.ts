@@ -22,18 +22,6 @@ export class SalesObjectService {
     return Sales.find('');
 	}
 
-	getSalesObjectById(route: any){
-		let Sales = this.restService.newRestEntity("sale");
-
-		return new Promise((resolve, reject)=>{
-		  route.params
-		    .switchMap((params: Params) => Sales.find(params['id']))
-		    .subscribe((data: any) => {
-        	resolve(data);
-        });
-    });
-	}
-
 	getSalesObjectImg(salesObject: SalesObject, indexNo: number):string {
 		return "url('" + salesObject.img[indexNo].src + "')";
 	}
