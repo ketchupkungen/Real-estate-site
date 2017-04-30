@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {NgbTabsetConfig} from '@ng-bootstrap/ng-bootstrap';
+import { Component }       from '@angular/core';
+import { NgbTabsetConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'sales-object-header',

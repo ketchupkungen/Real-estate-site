@@ -2,6 +2,15 @@
 	word-wrap: break-word;
 }
 
-.card-profile img {
-	max-height: 250px;
+.img-profile-small {
+	background-position: 50% 30%;
+	background-size: cover;
+	border-right: 1px solid lightgrey;
+	height: 200px;
+}
+
+@media (max-width: 768px) {
+	.img-profile-small {
+		height: 300px;
+	}
 }

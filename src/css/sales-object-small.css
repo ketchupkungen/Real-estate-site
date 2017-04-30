@@ -8,9 +8,9 @@
 
 .img-object-small {
 	background-position: 50% 80%;
-  	background-size: cover;
-  	border-right: 1px solid lightgrey;
-  	height: 250px;
+	background-size: cover;
+	border-right: 1px solid lightgrey;
+	height: 250px;
 }
 
 .img-object-small:last-child {
@@ -25,8 +25,8 @@
 }
 
 .sorting-controls a:hover {
-	cursor: pointer;
 	color: #083b66;
+	cursor: pointer;
 }
 
 .table {
@@ -38,18 +38,6 @@
   margin-bottom: 20px;
 }
 
-h4.city {
-  margin-top:0;
-}
-
-.moove {
-	display: block;
-}
-
-
-@media screen and (max-width: 500px) {
-	.move-down-text {
-		display: block;
-
-	}
+.city {
+  margin-top: 0px;
 }
