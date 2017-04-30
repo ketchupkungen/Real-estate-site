@@ -1,6 +1,6 @@
 <div class="container-fluid sorting-controls mt-4">
 	<div class="row">
-		<div *ngFor="let type of localMem.sortingTypes" class="col-3 text-center">
+		<div *ngFor="let type of localMem.sortingTypes" class="col-6 col-md-3 text-center">
 			<a (click)="toggleOption(type)">
 				{{type.name}}
 					<i *ngIf="this.localMem.selectedType.name === type.name" 
