@@ -1,10 +1,9 @@
 .layout {
 	text-align: center;
-	display: block;
-	margin-bottom: 30px; 
+	display: block; 
 	width: 100%;
 }
 
-.vertical-spacer {
-  height:50px;
+.layout p {
+	margin-bottom: 2px;
 }
