@@ -92,7 +92,7 @@ export class SearchComponent implements OnInit{
 			selectedName: ''
 		},
 		{
-			type: 'Typ av bostad',
+			type: 'Bostadstyp',
 			options: [
 				{
 					name: 'Bostadsrätt',
